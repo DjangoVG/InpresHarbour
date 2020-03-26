@@ -1,0 +1,530 @@
+[24/03/20 21:49] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[24/03/20 21:49] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[24/03/20 21:49] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[24/03/20 21:49] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[24/03/20 21:49] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[24/03/20 21:49] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[24/03/20 21:49] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[24/03/20 21:49] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[24/03/20 21:49] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[24/03/20 21:49] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[24/03/20 21:50] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[24/03/20 21:50] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[24/03/20 21:50] : Enregistement des bateaux de pêches juste avant la fermeture.
+[24/03/20 21:50] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[24/03/20 21:50] : Enregistrement des bateaux de ponton juste avant la fermeture
+[24/03/20 21:50] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[24/03/20 21:50] : Enregistrement des bateaux de quai juste avant la fermeture
+[24/03/20 21:50] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 12:53] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 12:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 12:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 12:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 12:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 12:53] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 12:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 12:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 12:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 12:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 12:54] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 12:54] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 12:54] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 12:54] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 12:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 12:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 12:55] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 12:55] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 12:55] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 12:55] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 12:55] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 12:55] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 12:55] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 12:55] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 12:55] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 12:55] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 12:55] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 13:42] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 13:42] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 13:42] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 13:42] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 13:42] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 13:42] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 13:42] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 13:42] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 13:42] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 13:42] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 13:42] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 13:58] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 13:58] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 13:58] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 13:58] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 13:58] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 13:58] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 13:59] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 13:59] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 14:00] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 14:00] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 14:00] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 14:00] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 14:02] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 14:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 14:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 14:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 14:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 14:02] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 14:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 14:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 14:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 14:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 14:03] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 14:03] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 14:03] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 14:03] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 14:03] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 14:03] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 14:03] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 14:03] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:53] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 17:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 17:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 17:53] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 17:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 17:53] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 17:53] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:53] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:53] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:53] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 17:53] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:56] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 17:56] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 17:56] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 17:56] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 17:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 17:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 17:57] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 17:57] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 17:57] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:57] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:57] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:57] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:57] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 17:57] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 17:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 17:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 17:58] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 17:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:58] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 17:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:58] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 17:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:58] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 17:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 17:58] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 17:58] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[25/03/20 17:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[25/03/20 17:58] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[25/03/20 17:58] : Le fichier Ponton.data a bien été crée
+[25/03/20 17:58] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 17:58] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data
+[25/03/20 17:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[25/03/20 17:58] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[25/03/20 17:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[25/03/20 18:01] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:01] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:01] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:01] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:01] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:01] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:01] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:01] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:01] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:01] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:02] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:02] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:02] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:02] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:02] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:05] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:05] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:05] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:05] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:05] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:05] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:05] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:05] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:05] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:05] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:05] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:05] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:05] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:06] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:06] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:06] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:06] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:06] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:06] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:06] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:06] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:06] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[25/03/20 18:06] : Le fichier Ponton.data a bien été crée
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:06] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:06] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:06] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:12] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:12] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:12] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:12] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:12] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:12] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:12] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:12] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:12] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:12] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:14] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:14] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:14] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:14] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:14] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:14] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:14] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:14] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:18] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:18] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:18] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:18] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:18] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:18] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:18] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:18] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:18] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:18] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:20] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:20] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:20] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:20] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:20] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:20] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:20] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:20] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:21] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:21] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:21] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:21] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:21] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:21] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:21] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:21] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:21] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:21] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:28] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:28] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:28] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:28] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:28] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:28] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:28] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:28] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:28] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:28] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:30] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[25/03/20 18:30] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[25/03/20 18:30] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[25/03/20 18:30] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[25/03/20 18:30] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[25/03/20 18:30] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[25/03/20 18:30] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[25/03/20 18:30] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[25/03/20 18:30] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[25/03/20 18:30] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[25/03/20 18:31] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[25/03/20 18:31] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:31] : Enregistement des bateaux de pêches juste avant la fermeture.
+[25/03/20 18:31] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:31] : Enregistrement des bateaux de ponton juste avant la fermeture
+[25/03/20 18:31] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[25/03/20 18:31] : Enregistrement des bateaux de quai juste avant la fermeture
+[25/03/20 18:31] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 13:54] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[26/03/20 13:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[26/03/20 13:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[26/03/20 13:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[26/03/20 13:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[26/03/20 13:54] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[26/03/20 13:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[26/03/20 13:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[26/03/20 13:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[26/03/20 13:54] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[26/03/20 13:57] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[26/03/20 13:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[26/03/20 13:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[26/03/20 13:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[26/03/20 13:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[26/03/20 13:57] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[26/03/20 13:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[26/03/20 13:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[26/03/20 13:57] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[26/03/20 13:57] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[26/03/20 13:58] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 13:58] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 13:58] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 13:58] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 13:58] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 13:59] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[26/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[26/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[26/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[26/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[26/03/20 13:59] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[26/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[26/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[26/03/20 13:59] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[26/03/20 13:59] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[26/03/20 14:00] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:00] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:00] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:00] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 14:00] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:00] : SailorWithoutIdentificationException : BE_93.09.26-747.98
+[26/03/20 14:00] : SailorWithoutIdentificationException : BE_91.10.23-537.75
+[26/03/20 14:04] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 14:04] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:04] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 14:04] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:04] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 14:04] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:04] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 14:04] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:04] : ShipWithoutIdentificationException : BE_ckb012
+[26/03/20 14:04] : ShipWithoutIdentificationException : BE_bmd891
+[26/03/20 14:05] : ShipWithoutIdentificationException : BE_ckb012
+[26/03/20 14:05] : ShipWithoutIdentificationException : BE_bmd891
+[26/03/20 14:05] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:05] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:05] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:05] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:05] : ShipWithoutIdentificationException : BE_ckb012
+[26/03/20 14:05] : ShipWithoutIdentificationException : BE_bmd891
+[26/03/20 14:05] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:05] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:05] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:05] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 14:05] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:09] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:09] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:09] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:09] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:09] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[26/03/20 14:09] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[26/03/20 14:09] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[26/03/20 14:09] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[26/03/20 14:09] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[26/03/20 14:10] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 14:10] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:10] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 14:10] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:10] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 14:10] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 14:10] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 14:10] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 19:36] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 19:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 19:36] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 19:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 19:36] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 19:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 19:36] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 19:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 19:41] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 19:45] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 19:47] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 19:48] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 19:56] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:27] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:33] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:39] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:39] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[26/03/20 20:39] : Enregistement des bateaux de pêches juste avant la fermeture.
+[26/03/20 20:39] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[26/03/20 20:39] : Enregistrement des bateaux de ponton juste avant la fermeture
+[26/03/20 20:39] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[26/03/20 20:39] : Enregistrement des bateaux de quai juste avant la fermeture
+[26/03/20 20:39] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[26/03/20 20:39] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:42] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:42] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:47] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:48] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[26/03/20 20:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[26/03/20 20:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[26/03/20 20:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[26/03/20 20:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[26/03/20 20:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[26/03/20 20:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[26/03/20 20:56] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[26/03/20 20:56] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
