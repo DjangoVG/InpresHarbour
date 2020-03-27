@@ -370,7 +370,7 @@ public class PublishEquipage extends javax.swing.JFrame {
         String IdentifiantMarin = LabelNationalite + "_" + LabelRegistre; 
         String Nom = LabelNom.getText();
         String Prenom = LabelPrenom.getText();
-        String DateNaissance = BoxJour.getItemAt(0) + "/" + BoxMois.getItemAt(0) + "/" + BoxAnnee.getItemAt(0);
+        String DateNaissance = BoxJour.getSelectedItem() + " " + BoxMois.getSelectedItem() + " " + BoxAnnee.getSelectedItem();
         String NumRegistre = LabelRegistre.getText();
         String Nationalite = LabelNationalite.getText().toUpperCase();
         String Fonction = null;
@@ -393,10 +393,11 @@ public class PublishEquipage extends javax.swing.JFrame {
             Fonction = "Clandestin";
         }
         
-        DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
+        DateFormat df = DateFormat.getDateInstance(DateFormat.LONG, Locale.FRANCE);
         df.setLenient(false);
         Date dateNaissance;
         try{
+            System.out.println("Date : " + DateNaissance);
             dateNaissance = df.parse(DateNaissance);
             try {
                 Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, dateNaissance, Fonction);

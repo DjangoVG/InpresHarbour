@@ -5,8 +5,17 @@ import InpresHarbour.BateauPlaisance;
 import InpresHarbour.Equipage;
 import InpresHarbour.Ponton;
 import InpresHarbour.Quai;
+import InpresHarbour.ShipWithoutIdentificationException;
+import static java.lang.Float.parseFloat;
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
+import static capitainerie.Capitainerie.TableBateaux;
+import static capitainerie.Capitainerie.DTMBateaux;
+import static capitainerie.Capitainerie.ListeBateauPeches;
+import static capitainerie.Capitainerie.ListeBateauxPlaisances;
+import static capitainerie.Capitainerie.ListePonton;
+import static capitainerie.Capitainerie.ListeQuai;
 
 public class InfosBateau extends javax.swing.JFrame {
     public static Equipage equipage;
@@ -130,8 +139,18 @@ public class InfosBateau extends javax.swing.JFrame {
         jLabel7.setText("Tonnage :");
 
         BoutonEquipage.setText("Equipage");
+        BoutonEquipage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonEquipageActionPerformed(evt);
+            }
+        });
 
         BoutonOk.setText("OK");
+        BoutonOk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonOkActionPerformed(evt);
+            }
+        });
 
         BoutonAnnuler.setText("Annuler");
         BoutonAnnuler.addActionListener(new java.awt.event.ActionListener() {
@@ -277,6 +296,126 @@ public class InfosBateau extends javax.swing.JFrame {
     private void BoutonAnnulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAnnulerActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_BoutonAnnulerActionPerformed
+
+    private void BoutonEquipageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonEquipageActionPerformed
+        java.awt.EventQueue.invokeLater(() -> {
+            new PublishEquipage(equipage).setVisible(true);
+        });  
+    }//GEN-LAST:event_BoutonEquipageActionPerformed
+
+    private void BoutonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonOkActionPerformed
+        try {
+            TonnageBateau = parseFloat (LabelTonnage.getText());
+            PortAttacheBateau = LabelPort.getText();
+            String sub = (String) BoxSubmersible.getSelectedItem();
+            SubmersibleBateau = !"Non".equals(sub);
+            EnergieBateau = this.LabelEnergie.getText();
+            Supplement = this.LabelInfosSupplémentaires.getText();
+            if ("Plaisance".equals(TypeBateau)){
+                try {
+                    BateauPlaisance bpl = new BateauPlaisance (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
+                    for (int j = 0; j < ListePonton.size(); j++){
+                        Ponton p = ListePonton.get(j);
+                        int cap = p.getCapacite ();
+                        int tempA;
+                        int reste = cap%2;
+                        if (reste != 0){
+                            tempA = (cap/2)+1;
+                        }
+                        else{
+                            tempA = (cap/2);
+                        }
+                        int k = 0;
+                        ArrayList<BateauPlaisance> listA = p.getListeBateauCoté1();
+                        ArrayList<BateauPlaisance> listB = p.getListeBateauCoté2();
+                        for (int i=0; i < cap; i++){
+                            if (i < tempA){
+                                if (listA.get(i) != null){
+                                    if (listA.get(i).getIdentifiant().equals(bpl.getIdentifiant())){
+                                        if (Indice == -1){
+                                            ListeBateauxPlaisances.add(bpl);
+                                        }
+                                        else {
+                                            ListeBateauxPlaisances.remove(Indice);
+                                            ListeBateauxPlaisances.add(Indice, bpl);
+                                        }
+                                        if (Capitainerie.TableBateaux.getRowCount() >0)
+                                            Capitainerie.TableBateaux.remove(0);
+                                        ListePonton.get(j).modifierBateau(bpl, i, 1);                              
+                                    }
+                                }
+                            }
+                            else {
+                                if (listB.get(k) != null){                            
+                                    if (listB.get(k).getIdentifiant().equals(bpl.getIdentifiant())){
+                                        if (Indice == -1){
+                                            ListeBateauxPlaisances.add(bpl);
+                                        }
+                                        else {
+                                            ListeBateauxPlaisances.remove(Indice);
+                                            ListeBateauxPlaisances.add(Indice, bpl);
+                                        }
+                                        if (Capitainerie.TableBateaux.getRowCount() >0)                                        
+                                            Capitainerie.TableBateaux.remove(0);                                
+                                        ListePonton.get(j).modifierBateau(bpl, k, 2);
+                                    }
+                                }
+                                k++;
+                            }
+                        }
+                    }                
+                    Capitainerie.fichierLog.ecritLigne ("Le bateau " + IdentifiantBateau + " a bien été enregistré");
+                    Capitainerie.fichierLog.ecritLigne ("Le bateau n'est plus en attente");                
+                    setVisible (false); 
+                } catch (ShipWithoutIdentificationException ex) {
+                    Capitainerie.fichierLog.ecritLigne ("ShipWithoutIdentificationException : " + ex.getMessage());
+                }
+
+            }
+            else{
+                try {
+                    BateauPeche bpe = new BateauPeche (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
+                    for (int j = 0; j < ListeQuai.size(); j++){ // Boucle de création des lignes.
+                        Quai q = ListeQuai.get(j);
+                        ArrayList<BateauPeche> list = q.getListeBateau();
+                        for (int i=0; i < q.getCapacite(); i++){ // Boucle de création des colonnes.
+                            if (list.get(i) != null) {
+                                if (list.get(i).getIdentifiant().equals(bpe.getIdentifiant())){
+                                    if (Indice == -1){
+                                        ListeBateauPeches.add(bpe);
+                                    }
+                                    else {
+                                        ListeBateauPeches.remove(Indice);
+                                        ListeBateauPeches.add(Indice, bpe);
+                                    }               
+                                    if (Capitainerie.TableBateaux.getRowCount() >0)                                    
+                                        Capitainerie.TableBateaux.remove(0);                                
+                                    list.remove(i);
+                                    list.add(i, bpe);
+                                }
+                            }
+                        }
+                    }        
+                } catch (ShipWithoutIdentificationException ex) {
+                    Capitainerie.fichierLog.ecritLigne ("ShipWithoutIdentificationException : " + ex.getMessage());
+                }            
+            }
+            TableBateaux.setModel(DTMBateaux);
+            if (TableBateaux.getRowCount() != 0)
+                Capitainerie.BoutonBateauAmarré.setEnabled(true);  
+            else
+                Capitainerie.BoutonBateauAmarré.setEnabled(false);
+            Capitainerie.fichierLog.ecritLigne ("Le bateau " + IdentifiantBateau + " a bien été enregistré");
+            Capitainerie.fichierLog.ecritLigne ("Le bateau n'est plus en attente");                
+            setVisible (false);            
+            
+        }
+        catch (NumberFormatException e){
+            String msg;
+            msg = "Erreur : le tonnage doit être sur le format chiffre ! ";
+            JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
+        }         
+    }//GEN-LAST:event_BoutonOkActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonAnnuler;

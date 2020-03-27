@@ -7,6 +7,7 @@ import InpresHarbour.Ponton;
 import InpresHarbour.Quai;
 import java.util.ArrayList;
 import java.util.Vector;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class ListeAmarrage extends javax.swing.JFrame {
@@ -23,7 +24,8 @@ public class ListeAmarrage extends javax.swing.JFrame {
             System.out.println(ListePonton.get(i));
         }
         Type = t;
-        if ("Plaisance".equals(Type)){
+        if ("Plaisance".equals(Type))
+        {
             TablePonton = new DefaultTableModel ();
             TablePonton.addColumn("Ponton");
             TablePonton.addColumn("Emplacement");
@@ -166,6 +168,11 @@ public class ListeAmarrage extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        TableAmarrage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TableAmarrageMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(TableAmarrage);
 
         jLabel2.setText("Emplacement :");
@@ -253,6 +260,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_LabelSupprimerActionPerformed
 
     private void BoutonSelectionnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSelectionnerActionPerformed
+        System.out.println("Type : " + Type);
         String req = Capitainerie.LabelRequete.getText();
         String[] separe = req.split("/");
         String bat = separe[2];
@@ -260,13 +268,15 @@ public class ListeAmarrage extends javax.swing.JFrame {
         String im = separe[4];
         String id = pav + "_" + im;
        
-        if ("Plaisance".equals(Type)){  
+        if ("Plaisance".equals(Type))
+        {  
             System.out.println("Bateau de plaisance !");
             int existe = 0;
             TablePonton = (DefaultTableModel) this.TableAmarrage.getModel();
             int i = this.TableAmarrage.getSelectedRow(); 
             int tmp = i;
-            if (tmp != -1){
+            if (tmp != -1)
+            {
                 i = tmp;
                 // On vérifie que l'id n'est pas déjà dans le tableau.
                 for (int j = 0; j < TablePonton.getRowCount(); j++){
@@ -277,7 +287,8 @@ public class ListeAmarrage extends javax.swing.JFrame {
                         }
                     }
                 }
-                if (existe == 1){
+                if (existe == 1)
+                {
                     String msg = "Vous avez déja choisi cet emplacement !";
                     LabelEmplacement.setText (msg);
                     Capitainerie.LabelAmarrageChoisir.setText(msg);
@@ -285,45 +296,54 @@ public class ListeAmarrage extends javax.swing.JFrame {
                     this.setVisible(false);
                     this.TableAmarrage.clearSelection();                    
                 }
-                else {
+                else
+                {
                     int Emplacement = (int)TablePonton.getValueAt(i, 1);
                     int cote;
                     String Ponton;
-                    if ((String)TablePonton.getValueAt(i, 2) != null){
+                    if ((String)TablePonton.getValueAt(i, 2) != null)
+                    {
                         cote = 1;
                         Ponton = (String)TablePonton.getValueAt(i-Emplacement, 0);
                     }
-                    else{
+                    else
+                    {
                         cote = 2;
                         // Un peu de chipotage pour récupérer le ponton.
                         int tmpbis = (int) TablePonton.getValueAt(i-Emplacement-1, 1);
                         Ponton = (String)TablePonton.getValueAt(i-Emplacement-tmpbis-1, 0);
                     }
                     String Bateau = (String)TablePonton.getValueAt(i, 5);                
-                    if (Bateau == null){
-                        System.out.println("Nickel");
-                        String msg = Ponton;
-                        msg += "-";
-                        msg += Integer.toString(Emplacement); 
-                        msg += "-";
-                        msg += Integer.toString(cote);                    
-                        LabelEmplacement.setText (msg);
+                    if (Bateau == null)
+                    {
+                        String msg = "P" + Ponton + "*" + Integer.toString(Emplacement) + " * " + Integer.toString(cote);                   
+                        Capitainerie.LabelAmarrageChoisir.setText (msg);
                         BoutonSelectionner.setEnabled(true); 
+                        Capitainerie.BoutonEnvoyerChoix.setEnabled(true);
+                        Capitainerie.BoutonLire.setEnabled(false);
+                        Capitainerie.BoutonEnvoyerConfirmation.setEnabled(false);
+                        Capitainerie.BoutonChoisir.setEnabled(false);
                         this.setVisible(false);
                     }
-                    else {
+                    else 
+                    {
+                        System.out.println("6");
                         String msg = "Un bateau y est déjà amarré !!!";
                         LabelEmplacement.setText (msg);
                     }                       
                 }
             } 
         }
-        else{
+        else
+        {
+            System.out.println("Bateau de pêche");
             int existe = 0;
             TableQuai = (DefaultTableModel) this.TableAmarrage.getModel();
             int i = this.TableAmarrage.getSelectedRow(); 
             int tmp = i;
-            if (tmp != -1){
+            if (tmp != -1)
+            {
+                System.out.println("1");
                 i = tmp;
                 for (int j = 0; j < TableQuai.getRowCount(); j++){
                     String idTable = (String)TableQuai.getValueAt(j, 2);
@@ -333,7 +353,9 @@ public class ListeAmarrage extends javax.swing.JFrame {
                         }                        
                     }
                 }
-                if (existe == 1){
+                if (existe == 1)
+                {
+                    System.out.println("2");
                     String msg = "Erreur";
                     LabelEmplacement.setText (msg);
                     Capitainerie.LabelAmarrageChoisir.setText(msg);
@@ -341,19 +363,26 @@ public class ListeAmarrage extends javax.swing.JFrame {
                     this.setVisible(false);
                     this.TableAmarrage.clearSelection();                    
                 }
-                else {
+                else 
+                {
+                    System.out.println("3");
                     int Emplacement = (int)TableQuai.getValueAt(i, 1);
                     String Quai = (String)TableQuai.getValueAt(i-Emplacement, 0);            
                     String Bateau = (String)TableQuai.getValueAt(i, 3);                
-                    if (Bateau == null){
-                        String msg = Quai;
-                        msg += "-";
-                        msg += Integer.toString(Emplacement);  
-                        LabelEmplacement.setText (msg);
-                        BoutonSelectionner.setEnabled(true);  
+                    if (Bateau == null)
+                    {
+                        String msg = "Q" + Quai + "*" + Integer.toString(Emplacement);
+                        Capitainerie.LabelAmarrageChoisir.setText (msg);
+                        BoutonSelectionner.setEnabled(true); 
+                        Capitainerie.BoutonEnvoyerChoix.setEnabled(true);
+                        Capitainerie.BoutonLire.setEnabled(false);
+                        Capitainerie.BoutonEnvoyerConfirmation.setEnabled(false);
+                        Capitainerie.BoutonChoisir.setEnabled(false);
                         this.setVisible(false);
                     }
-                    else {
+                    else 
+                    {
+                        System.out.println("5");
                         String msg = "Un bateau y est déjà amarré !!!";
                         LabelEmplacement.setText (msg);
                     }                    
@@ -365,6 +394,28 @@ public class ListeAmarrage extends javax.swing.JFrame {
     private void BoutonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonQuitterActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_BoutonQuitterActionPerformed
+
+    private void TableAmarrageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableAmarrageMouseClicked
+        String Emplacement = null, NumPontonQuai = null;
+        if (TableAmarrage.getSelectedRow() != -1)
+        {
+            if (TableAmarrage.getValueAt(TableAmarrage.getSelectedRow(), 0) == null)
+            {
+                for (int i = TableAmarrage.getSelectedRow(); i >= 0; i--)
+                {
+                    if (TableAmarrage.getValueAt(i, 0) != null)
+                    {
+                        NumPontonQuai = TableAmarrage.getValueAt(i, 0).toString();
+                        i = -1;
+                    }
+                }
+            }
+            else
+                NumPontonQuai = TableAmarrage.getValueAt(TableAmarrage.getSelectedRow(), 0).toString();
+            Emplacement = TableAmarrage.getColumnName(0) + NumPontonQuai + "*" + TableAmarrage.getValueAt(TableAmarrage.getSelectedRow(), 1).toString();
+            LabelEmplacement.setText(Emplacement);
+        }
+    }//GEN-LAST:event_TableAmarrageMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

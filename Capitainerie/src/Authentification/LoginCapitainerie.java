@@ -122,11 +122,7 @@ public class LoginCapitainerie extends javax.swing.JDialog {
                 if (Sub.findPwd(Login, Password))
                 {
                     System.out.println ("Mot de passe trouvé :-) ");
-                    FenetreCapitainerie.BoutonBateauAmarré.setEnabled(true);
-                    FenetreCapitainerie.BoutonChoisir.setEnabled(true);
-                    FenetreCapitainerie.BoutonEnvoyerConfirmation.setEnabled(true);
                     FenetreCapitainerie.MenuLogout.setEnabled(true);
-                    BoutonEnvoyerChoix.setEnabled(true);
                     FenetreCapitainerie.BoutonLire.setEnabled(true);
                     FenetreCapitainerie.MenuAmarrage.setEnabled(true);
                     FenetreCapitainerie.MenuBateau.setEnabled(true);

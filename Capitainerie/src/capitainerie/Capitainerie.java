@@ -39,7 +39,7 @@ public class Capitainerie extends javax.swing.JFrame {
     public ThreadDate td;
     private final String separateur;
     private final String repertoireCourant;
-    private final DefaultTableModel DTMBateaux;
+    public static DefaultTableModel DTMBateaux;
     
     public static ArrayList<BateauPlaisance> ListeBateauxPlaisances;
     public static ArrayList<BateauPeche> ListeBateauPeches;   
@@ -375,7 +375,7 @@ public class Capitainerie extends javax.swing.JFrame {
         BoutonChoisir = new javax.swing.JButton();
         LabelAmarrageChoisir = new javax.swing.JTextField();
         BoutonEnvoyerChoix = new javax.swing.JButton();
-        FieldEnvoyerChoix = new javax.swing.JTextField();
+        LabelEnvoyerChoix = new javax.swing.JTextField();
         BoutonEnvoyerConfirmation = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -466,7 +466,7 @@ public class Capitainerie extends javax.swing.JFrame {
             }
         });
 
-        FieldEnvoyerChoix.setEnabled(false);
+        LabelEnvoyerChoix.setEnabled(false);
 
         BoutonEnvoyerConfirmation.setText("Envoyer la confirmation");
         BoutonEnvoyerConfirmation.setEnabled(false);
@@ -491,7 +491,6 @@ public class Capitainerie extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        TableBateaux.setEnabled(false);
         TableBateauScroll.setViewportView(TableBateaux);
 
         FieldBateauEnEntree.setText("Bateau(x) en entrée(s)");
@@ -706,7 +705,7 @@ public class Capitainerie extends javax.swing.JFrame {
                                     .addComponent(BoutonLire, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(12, 12, 12)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(FieldEnvoyerChoix)
+                                    .addComponent(LabelEnvoyerChoix)
                                     .addComponent(LabelAmarrageChoisir)
                                     .addComponent(LabelRequete)))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -742,7 +741,7 @@ public class Capitainerie extends javax.swing.JFrame {
                     .addComponent(FieldAmarragesPossibles))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(FieldEnvoyerChoix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelEnvoyerChoix, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BoutonEnvoyerChoix))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1010,14 +1009,30 @@ public class Capitainerie extends javax.swing.JFrame {
     private void BoutonLireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonLireActionPerformed
         String msg = NServer.getMessage();
         LabelRequete.setText(msg);
-        if (!"RIEN".equals(msg)){
-            BoutonChoisir.setEnabled(true);
-        } 
-        if (msg.indexOf("-")>0){
-            BoutonChoisir.setEnabled(false);
-            LabelAmarrageChoisir.setText(msg);
-            BoutonEnvoyerConfirmation.setEnabled(true);
+        if (!"RIEN".equals(msg))
+        {
+            LabelRequete.setText(msg);
+            if (msg.indexOf("*")>0)
+            {
+                String[] separe = msg.split("/");
+                String TypeBateau = separe[0];
+                String Pavillon = separe[1];
+                String NomBateau = separe[2];
+                String LongueurBateau = separe[3];
+                String ImmatBateau = separe[4];
+                String QuaiPonton = separe[5];
+                QuaiPonton = QuaiPonton.replaceAll("\\s", "");
+                BoutonChoisir.setEnabled(false);
+                BoutonEnvoyerConfirmation.setEnabled(true);
+                LabelEnvoyerChoix.setText(NomBateau + " <-- " + QuaiPonton);
+            }
+            else
+            {
+                BoutonChoisir.setEnabled(true);              
+            }
         }
+        else
+            LabelRequete.setText("Pas de message entrant !");
     }//GEN-LAST:event_BoutonLireActionPerformed
 
     private void jCheckBoxRequeteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxRequeteMouseClicked
@@ -1028,22 +1043,25 @@ public class Capitainerie extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxRequeteMouseClicked
 
     private void BoutonEnvoyerConfirmationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonEnvoyerConfirmationActionPerformed
-        String msg = LabelAmarrageChoisir.getText();
+        String msg = LabelEnvoyerChoix.getText();
         NServer.sendMessage(msg);
         BoutonEnvoyerConfirmation.setEnabled(false);
-        String[] separe = msg.split("/");
+        String[] separe = LabelRequete.getText().split("/");
         String type = separe[0];
         String pavillon = separe[1];
         String nom = separe[2];
         String lg = separe[3];
         float longueur = parseFloat(lg);
         String immatriculation = separe[4];
+        immatriculation = immatriculation.replaceAll("\\s", "");
         String id = pavillon + "_" + immatriculation;
         String emplacement = separe[5];
+        emplacement = emplacement.replaceAll("\\s", "");
         
         if ("Plaisance".equals(type)){
-            String[] sep = emplacement.split("-");
-            String e = sep[0];
+            String[] sep = emplacement.split("\\*");
+            String ep = sep[0];
+            String e = ep.substring(1);
             String n = sep[1];
             String c = sep[2];
             int emp = parseInt (e);
@@ -1080,14 +1098,19 @@ public class Capitainerie extends javax.swing.JFrame {
                 fichierLog.ecritLigne ("IO Exception en lecture sur le fichier : " + fichierPonton + " avec comme message : " + ex); 
             }
         }
-        else{
-            String[] sep = emplacement.split("-");
-            String e = sep[0];
+        else
+        {
+            String[] sep = emplacement.split("\\*");
+            String ep = sep[0];
+            String e = ep.substring(1);
             String n = sep[1];
+            System.out.println("e : " + e);
+            System.out.println("n : " + n);
             int emp = parseInt (e);
             int num = parseInt (n);                      
             // Permet la création de la liste quai en la désérialisant
-            try {
+            try 
+            {
                 BateauPeche bpe = new BateauPeche (id, false, "", nom, "inconnu pour l'instant", 0.0f, longueur, pavillon, null, "");
                 Quai q = ListeQuai.get(emp-1);
                 q.supprimerBateau(num);
@@ -1137,18 +1160,18 @@ public class Capitainerie extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton BoutonArrêterServeur;
-    public javax.swing.JButton BoutonBateauAmarré;
-    public javax.swing.JButton BoutonChoisir;
+    public static javax.swing.JButton BoutonBateauAmarré;
+    public static javax.swing.JButton BoutonChoisir;
     public javax.swing.JButton BoutonDemarrerServeur;
     public static javax.swing.JButton BoutonEnvoyerChoix;
-    public javax.swing.JButton BoutonEnvoyerConfirmation;
-    public javax.swing.JButton BoutonLire;
+    public static javax.swing.JButton BoutonEnvoyerConfirmation;
+    public static javax.swing.JButton BoutonLire;
     private javax.swing.JLabel FieldAmarragesPossibles;
     private javax.swing.JLabel FieldBateauEnEntree;
-    private javax.swing.JTextField FieldEnvoyerChoix;
     public static javax.swing.JTextField LabelAmarrageChoisir;
     private javax.swing.JLabel LabelBienvenue;
     public javax.swing.JLabel LabelDate;
+    private javax.swing.JTextField LabelEnvoyerChoix;
     public static javax.swing.JTextField LabelRequete;
     private javax.swing.JMenu MenuAPropos;
     private javax.swing.JMenuItem MenuAide;
