@@ -909,12 +909,14 @@ public class Capitainerie extends javax.swing.JFrame {
     }//GEN-LAST:event_BoutonBateauAmarréActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (TableBateaux.getRowCount() != 0){
+        if (TableBateaux.getRowCount() != 0)
+        {
             String msg;
             msg = "Vous ne pouvez pas fermer ce programme tant qu'il y aura des bateaux en entrée qui attendent d'être enregistré complètement. \nMerci de votre compréhension.";
             JOptionPane.showMessageDialog(this, msg, "Impossible de fermer la capitainerie", JOptionPane.INFORMATION_MESSAGE);
         }
-        else{
+        else
+        {
             File dirPlaisance = new File (repertoireCourant + separateur + "InpresHarbour" + separateur + "Plaisance");
             fichierPlaisance = new File(dirPlaisance + separateur + "Plaisance.data");
             try {

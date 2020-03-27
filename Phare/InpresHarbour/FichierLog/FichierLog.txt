@@ -135,3 +135,21 @@
 [27/03/20 20:54] : Nous avons chargé le fichier properties.
 [27/03/20 20:54] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
 [27/03/20 20:54] : Nous avons chargé le fichier properties.
+[27/03/20 21:46] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 21:46] : Nous avons chargé le fichier properties.
+[27/03/20 21:47] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 21:47] : Nous avons chargé le fichier properties.
+[27/03/20 21:51] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 21:51] : Nous avons chargé le fichier properties.
+[27/03/20 22:01] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 22:01] : Nous avons chargé le fichier properties.
+[27/03/20 22:04] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 22:04] : Nous avons chargé le fichier properties.
+[27/03/20 22:08] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 22:08] : Nous avons chargé le fichier properties.
+[27/03/20 22:13] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 22:13] : Nous avons chargé le fichier properties.
+[27/03/20 22:20] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 22:20] : Nous avons chargé le fichier properties.
+[27/03/20 22:25] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[27/03/20 22:25] : Nous avons chargé le fichier properties.

@@ -15,6 +15,7 @@ import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextField;
 import static capitainerie.InfosBateau.equipage;
+import java.text.SimpleDateFormat;
 
 public class PublishEquipage extends javax.swing.JFrame {
     private final DefaultTableModel DTMEquipage;
@@ -164,9 +165,9 @@ public class PublishEquipage extends javax.swing.JFrame {
 
         jLabel5.setText("Date de naissance :");
 
-        BoxJour.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        BoxJour.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
-        BoxMois.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" }));
+        BoxMois.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
         BoxAnnee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995", "1994", "1993", "1992", "1991", "1990", "1989", "1988", "1987", "1986", "1985", "1984", "1983", "1982", "1981", "1980", "1979", "1978", "1977", "1976", "1975", "1974", "1973", "1972", "1971", "1970", "1969", "1968", "1967", "1966", "1965", "1964", "1963", "1962", "1961", "1960", "1959", "1958", "1957", "1956", "1955", "1954", "1953", "1952", "1951", "1950", "1949", "1948", "1947", "1946", "1945", "1944", "1943", "1942", "1941", "1940" }));
 
@@ -270,14 +271,14 @@ public class PublishEquipage extends javax.swing.JFrame {
                                                 .addGroup(layout.createSequentialGroup()
                                                     .addComponent(BoxJour, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(BoxMois, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(BoxMois, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(BoxAnnee, 0, 58, Short.MAX_VALUE))))
+                                                    .addComponent(BoxAnnee, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                                         .addComponent(BoutonAjouter, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jSeparator4)
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(BoutonValider, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                                             .addComponent(BoutonSupprimer, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(layout.createSequentialGroup()
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -367,10 +368,10 @@ public class PublishEquipage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonAjouterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAjouterActionPerformed
-        String IdentifiantMarin = LabelNationalite + "_" + LabelRegistre; 
+        String IdentifiantMarin = LabelRegistre.getText(); 
         String Nom = LabelNom.getText();
         String Prenom = LabelPrenom.getText();
-        String DateNaissance = BoxJour.getSelectedItem() + " " + BoxMois.getSelectedItem() + " " + BoxAnnee.getSelectedItem();
+        String DateNaissance = BoxJour.getSelectedItem() + "/" + BoxMois.getSelectedItem() + "/" + BoxAnnee.getSelectedItem();
         String NumRegistre = LabelRegistre.getText();
         String Nationalite = LabelNationalite.getText().toUpperCase();
         String Fonction = null;
@@ -393,11 +394,12 @@ public class PublishEquipage extends javax.swing.JFrame {
             Fonction = "Clandestin";
         }
         
-        DateFormat df = DateFormat.getDateInstance(DateFormat.LONG, Locale.FRANCE);
-        df.setLenient(false);
-        Date dateNaissance;
-        try{
-            System.out.println("Date : " + DateNaissance);
+         
+        try
+        {
+            DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
+            df.setLenient(false);
+            Date dateNaissance;
             dateNaissance = df.parse(DateNaissance);
             try {
                 Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, dateNaissance, Fonction);
@@ -405,7 +407,7 @@ public class PublishEquipage extends javax.swing.JFrame {
                 ligne.add(marin.getIdentifiant());                    
                 ligne.add(marin.getNom());
                 ligne.add(marin.getPrenom());
-                ligne.add(marin.getDateNaissance().getDay() + "/" + marin.getDateNaissance().getMonth() + "/" + marin.getDateNaissance().getYear());
+                ligne.add(marin.getDateNaissance().toString());
                 ligne.add(marin.getFonction());
                 Capitainerie.fichierLog.ecritLigne ("Création du marin : " + IdentifiantMarin);
                 DTMEquipage.addRow(ligne);
@@ -497,13 +499,11 @@ public class PublishEquipage extends javax.swing.JFrame {
                 String Identifiant = (String) TableEquipage.getValueAt(i, 0);
                 String Nom = (String) TableEquipage.getValueAt(i, 1);
                 String Prenom = (String) TableEquipage.getValueAt(i, 2);
-                String DateNaissance = (String) TableEquipage.getValueAt(i, 3);
-                DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
-                df.setLenient(false);
-                Date dateNaissance;
-                try{
-                    dateNaissance = df.parse(DateNaissance);                
-                
+                String DateNaissance = TableEquipage.getValueAt(i, 3).toString();
+
+                try
+                {
+                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);               
                     String Fonction = (String) TableEquipage.getValueAt(i, 4);
                     switch (Fonction){
                         case "Capitaine":
