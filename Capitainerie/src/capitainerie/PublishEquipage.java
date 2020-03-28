@@ -19,6 +19,7 @@ import java.text.SimpleDateFormat;
 
 public class PublishEquipage extends javax.swing.JFrame {
     private final DefaultTableModel DTMEquipage;
+    private boolean TestCapi = false;
    
     public PublishEquipage(Equipage equipage) {
         initComponents();
@@ -368,57 +369,74 @@ public class PublishEquipage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonAjouterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAjouterActionPerformed
-        String IdentifiantMarin = LabelRegistre.getText(); 
-        String Nom = LabelNom.getText();
-        String Prenom = LabelPrenom.getText();
-        String DateNaissance = BoxJour.getSelectedItem() + "/" + BoxMois.getSelectedItem() + "/" + BoxAnnee.getSelectedItem();
-        String NumRegistre = LabelRegistre.getText();
-        String Nationalite = LabelNationalite.getText().toUpperCase();
-        String Fonction = null;
-        if (BoxCapitaine.isSelected()){
-            Fonction = "Capitaine";
-        }
-        else if (BoxSecond.isSelected()) {
-            Fonction = "Second";
-        }
-        else if (BoxBosco.isSelected()) {
-            Fonction = "Bosco";
-        }
-        else if (BoxMatelot.isSelected()) {
-            Fonction = "Matelot";
-        }
-        else if (BoxPassager.isSelected()) {
-            Fonction = "Passager";
-        }
-        else {
-            Fonction = "Clandestin";
-        }
-        
-        DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
-        df.setLenient(false);
-        Date dateNaissance;         
-        try
+        for (int i = 0; i < TableEquipage.getRowCount(); i++)
         {
-            dateNaissance = df.parse(DateNaissance);
-            try {
-                Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, dateNaissance, Fonction);
-                Vector ligne = new Vector();
-                ligne.add(marin.getIdentifiant());                    
-                ligne.add(marin.getNom());
-                ligne.add(marin.getPrenom());
-                ligne.add(DateNaissance);
-                ligne.add(marin.getFonction());
-                Capitainerie.fichierLog.ecritLigne ("Création du marin : " + IdentifiantMarin);
-                DTMEquipage.addRow(ligne);
-                this.TableEquipage.setModel(DTMEquipage);              
-            } catch (SailorWithoutIdentificationException ex) {
-                Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
-            }            
-        }catch (ParseException e){
-            String msg;
-            msg = "Erreur : la date est invalide !";
-            JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
-        }
+            if (TableEquipage.getValueAt(i, 3).equals("Capitaine"))
+            {
+                i = TableEquipage.getRowCount();
+                if (TestCapi)
+                {
+                    String msg;
+                    msg = "Vous avez déja ajouté un capitaine !";
+                    JOptionPane.showMessageDialog(this, msg, "Attention !", JOptionPane.INFORMATION_MESSAGE);  
+                }
+                else
+                {
+                    TestCapi = true;
+                    String IdentifiantMarin = LabelRegistre.getText(); 
+                    String Nom = LabelNom.getText();
+                    String Prenom = LabelPrenom.getText();
+                    String DateNaissance = BoxJour.getSelectedItem() + "/" + BoxMois.getSelectedItem() + "/" + BoxAnnee.getSelectedItem();
+                    String NumRegistre = LabelRegistre.getText();
+                    String Nationalite = LabelNationalite.getText().toUpperCase();
+                    String Fonction = null;
+                    if (BoxCapitaine.isSelected()){
+                        Fonction = "Capitaine";
+                    }
+                    else if (BoxSecond.isSelected()) {
+                        Fonction = "Second";
+                    }
+                    else if (BoxBosco.isSelected()) {
+                        Fonction = "Bosco";
+                    }
+                    else if (BoxMatelot.isSelected()) {
+                        Fonction = "Matelot";
+                    }
+                    else if (BoxPassager.isSelected()) {
+                        Fonction = "Passager";
+                    }
+                    else {
+                        Fonction = "Clandestin";
+                    }
+
+                    DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
+                    df.setLenient(false);
+                    Date dateNaissance;         
+                    try
+                    {
+                        dateNaissance = df.parse(DateNaissance);
+                        try {
+                            Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, dateNaissance, Fonction);
+                            Vector ligne = new Vector();
+                            ligne.add(marin.getIdentifiant());                    
+                            ligne.add(marin.getNom());
+                            ligne.add(marin.getPrenom());
+                            ligne.add(DateNaissance);
+                            ligne.add(marin.getFonction());
+                            Capitainerie.fichierLog.ecritLigne ("Création du marin : " + IdentifiantMarin);
+                            DTMEquipage.addRow(ligne);
+                            this.TableEquipage.setModel(DTMEquipage);              
+                        } catch (SailorWithoutIdentificationException ex) {
+                            Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
+                        }            
+                    }catch (ParseException e){
+                        String msg;
+                        msg = "Erreur : la date est invalide !";
+                        JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
+                    }
+                }
+            }
+        } 
     }//GEN-LAST:event_BoutonAjouterActionPerformed
 
     private void BoutonModifierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonModifierActionPerformed

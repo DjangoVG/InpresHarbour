@@ -1037,3 +1037,16 @@
 [28/03/20 12:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
 [28/03/20 12:36] : Enregistrement des bateaux de quai juste avant la fermeture
 [28/03/20 12:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[28/03/20 20:18] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[28/03/20 20:18] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[28/03/20 20:18] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[28/03/20 20:18] : Le fichier Ponton.data a bien été crée
+[28/03/20 20:18] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[28/03/20 20:18] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[28/03/20 20:18] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[28/03/20 20:18] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[28/03/20 20:19] : Le bateau BE_164651 a bien été ajouté temporairement
+[28/03/20 20:27] : Création du marin : 05.06.15-124.02
+[28/03/20 20:27] : Création du marin : 05.06.15-124.07
+[28/03/20 20:27] : Création d'un capitaine 05.06.15-124.02
+[28/03/20 20:27] : Création d'un capitaine 05.06.15-124.07
