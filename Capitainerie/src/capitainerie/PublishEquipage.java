@@ -394,12 +394,11 @@ public class PublishEquipage extends javax.swing.JFrame {
             Fonction = "Clandestin";
         }
         
-         
+        DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
+        df.setLenient(false);
+        Date dateNaissance;         
         try
         {
-            DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
-            df.setLenient(false);
-            Date dateNaissance;
             dateNaissance = df.parse(DateNaissance);
             try {
                 Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, dateNaissance, Fonction);
@@ -407,7 +406,7 @@ public class PublishEquipage extends javax.swing.JFrame {
                 ligne.add(marin.getIdentifiant());                    
                 ligne.add(marin.getNom());
                 ligne.add(marin.getPrenom());
-                ligne.add(marin.getDateNaissance().toString());
+                ligne.add(DateNaissance);
                 ligne.add(marin.getFonction());
                 Capitainerie.fichierLog.ecritLigne ("Création du marin : " + IdentifiantMarin);
                 DTMEquipage.addRow(ligne);
@@ -499,11 +498,13 @@ public class PublishEquipage extends javax.swing.JFrame {
                 String Identifiant = (String) TableEquipage.getValueAt(i, 0);
                 String Nom = (String) TableEquipage.getValueAt(i, 1);
                 String Prenom = (String) TableEquipage.getValueAt(i, 2);
-                String DateNaissance = TableEquipage.getValueAt(i, 3).toString();
-
+                String DateNaissance = (String)TableEquipage.getValueAt(i, 3);
+                DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
+                df.setLenient(false);
+                Date dateNaissance;
                 try
                 {
-                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);               
+                    dateNaissance = df.parse(DateNaissance);            
                     String Fonction = (String) TableEquipage.getValueAt(i, 4);
                     switch (Fonction){
                         case "Capitaine":
@@ -528,7 +529,7 @@ public class PublishEquipage extends javax.swing.JFrame {
         
         for(int i = 0; i < TableEquipage.getRowCount(); i++) {
             try {
-                // On crée l'équipage.
+                // On crée un autre marin pour l'ajouter dans l'équipage
                 String ID = (String) TableEquipage.getValueAt(i, 0);
                 String NOM = (String) TableEquipage.getValueAt(i, 1);
                 String PRENOM = (String) TableEquipage.getValueAt(i, 2);
@@ -536,25 +537,15 @@ public class PublishEquipage extends javax.swing.JFrame {
                 DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
                 df.setLenient(false);
                 Date dateNaissance;
-                try{
+                try
+                {
                     dateNaissance = df.parse(DATEN);                
                     String FONCTION = (String) TableEquipage.getValueAt(i, 4);
-                    if("Capitaine".equals(FONCTION)){
-                        String msgC;
-                        msgC = "Le Capitaine a déja été créé !";
-                        JOptionPane.showMessageDialog(this, msgC, "Attention !", JOptionPane.INFORMATION_MESSAGE, null);
-                    }
-                    else{
-                        if ("Second".equals(FONCTION)){
-                            String msgS;
-                            msgS = "Le Second a déja été créé !";
-                            JOptionPane.showMessageDialog(this, msgS, "Attention !", JOptionPane.INFORMATION_MESSAGE, null);
-                        }
-                        else {
+                    if(!"Capitaine".equals(FONCTION) && !"Second".equals(FONCTION))
+                    {
                         Marin mar = new Marin (ID, NOM, PRENOM, dateNaissance, FONCTION);
                         Capitainerie.fichierLog.ecritLigne ("Création d'un marin : " + ID);
                         equipage.ajouterMarin(mar);
-                        }
                     }
                 } catch (SailorWithoutIdentificationException ex) {
                    Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());

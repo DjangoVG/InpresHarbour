@@ -167,8 +167,6 @@ public class InfosBateau extends javax.swing.JFrame {
 
         jLabel10.setText("Infos. supplémentaires :");
 
-        LabelInfosSupplémentaires.setEnabled(false);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -208,21 +206,22 @@ public class InfosBateau extends javax.swing.JFrame {
                                 .addComponent(LabelTonnage, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator3)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel1)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(BoutonEquipage, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(ListEquipage, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jLabel1)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel9)
                                     .addComponent(jLabel8))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(LabelEnergie, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
-                                    .addComponent(BoxSubmersible, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                .addGap(59, 59, 59)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(BoxSubmersible, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(LabelEnergie)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(BoutonEquipage, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ListEquipage, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel10)
@@ -311,31 +310,39 @@ public class InfosBateau extends javax.swing.JFrame {
             SubmersibleBateau = !"Non".equals(sub);
             EnergieBateau = this.LabelEnergie.getText();
             Supplement = this.LabelInfosSupplémentaires.getText();
-            if ("Plaisance".equals(TypeBateau)){
-                try {
+            if ("Plaisance".equals(TypeBateau))
+            {
+                try
+                {
                     BateauPlaisance bpl = new BateauPlaisance (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
-                    for (int j = 0; j < ListePonton.size(); j++){
+                    for (int j = 0; j < ListePonton.size(); j++)
+                    {
                         Ponton p = ListePonton.get(j);
                         int cap = p.getCapacite ();
                         int tempA;
                         int reste = cap%2;
-                        if (reste != 0){
+                        
+                        if (reste != 0)
                             tempA = (cap/2)+1;
-                        }
-                        else{
+                        else
                             tempA = (cap/2);
-                        }
+                        
                         int k = 0;
                         ArrayList<BateauPlaisance> listA = p.getListeBateauCoté1();
                         ArrayList<BateauPlaisance> listB = p.getListeBateauCoté2();
-                        for (int i=0; i < cap; i++){
-                            if (i < tempA){
-                                if (listA.get(i) != null){
-                                    if (listA.get(i).getIdentifiant().equals(bpl.getIdentifiant())){
-                                        if (Indice == -1){
+                        for (int i=0; i < cap; i++)
+                        {
+                            if (i < tempA)
+                            {
+                                if (listA.get(i) != null)
+                                {
+                                    if (listA.get(i).getIdentifiant().equals(bpl.getIdentifiant()))
+                                    {
+                                        if (Indice == -1)
                                             ListeBateauxPlaisances.add(bpl);
-                                        }
-                                        else {
+                                        
+                                        else 
+                                        {
                                             ListeBateauxPlaisances.remove(Indice);
                                             ListeBateauxPlaisances.add(Indice, bpl);
                                         }
@@ -345,18 +352,25 @@ public class InfosBateau extends javax.swing.JFrame {
                                     }
                                 }
                             }
-                            else {
-                                if (listB.get(k) != null){                            
-                                    if (listB.get(k).getIdentifiant().equals(bpl.getIdentifiant())){
-                                        if (Indice == -1){
+                            else 
+                            {
+                                if (listB.get(k) != null)
+                                {                            
+                                    if (listB.get(k).getIdentifiant().equals(bpl.getIdentifiant()))
+                                    {
+                                        if (Indice == -1)
                                             ListeBateauxPlaisances.add(bpl);
-                                        }
-                                        else {
+                                        else
+                                        {
                                             ListeBateauxPlaisances.remove(Indice);
                                             ListeBateauxPlaisances.add(Indice, bpl);
                                         }
-                                        if (Capitainerie.TableBateaux.getRowCount() >0)                                        
-                                            Capitainerie.TableBateaux.remove(0);                                
+                                        if (Capitainerie.DTMBateaux.getRowCount() >0) 
+                                        {
+                                            System.out.println("J'enleve une ligne");
+                                             Capitainerie.DTMBateaux.removeRow(0);                                           
+                                        }
+
                                         ListePonton.get(j).modifierBateau(bpl, k, 2);
                                     }
                                 }
@@ -372,24 +386,34 @@ public class InfosBateau extends javax.swing.JFrame {
                 }
 
             }
-            else{
-                try {
+            else
+            {
+                try 
+                {
                     BateauPeche bpe = new BateauPeche (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
-                    for (int j = 0; j < ListeQuai.size(); j++){ // Boucle de création des lignes.
+                    for (int j = 0; j < ListeQuai.size(); j++)
+                    { // Boucle de création des lignes.
                         Quai q = ListeQuai.get(j);
                         ArrayList<BateauPeche> list = q.getListeBateau();
-                        for (int i=0; i < q.getCapacite(); i++){ // Boucle de création des colonnes.
+                        for (int i=0; i < q.getCapacite(); i++)
+                        { // Boucle de création des colonnes.
                             if (list.get(i) != null) {
-                                if (list.get(i).getIdentifiant().equals(bpe.getIdentifiant())){
-                                    if (Indice == -1){
+                                if (list.get(i).getIdentifiant().equals(bpe.getIdentifiant()))
+                                {
+                                    if (Indice == -1)
+                                    {
                                         ListeBateauPeches.add(bpe);
                                     }
-                                    else {
+                                    else
+                                    {
                                         ListeBateauPeches.remove(Indice);
                                         ListeBateauPeches.add(Indice, bpe);
                                     }               
-                                    if (Capitainerie.TableBateaux.getRowCount() >0)                                    
-                                        Capitainerie.TableBateaux.remove(0);                                
+                                    if (Capitainerie.DTMBateaux.getRowCount() >0) 
+                                    {
+                                        System.out.println("J'enleve une ligne");
+                                        Capitainerie.DTMBateaux.removeRow(0);                                           
+                                    }                              
                                     list.remove(i);
                                     list.add(i, bpe);
                                 }

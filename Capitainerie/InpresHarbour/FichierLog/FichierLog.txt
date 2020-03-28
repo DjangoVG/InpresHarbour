@@ -962,3 +962,78 @@
 [27/03/20 22:24] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
 [27/03/20 22:25] : Le bateau BE_ugygu a bien été ajouté temporairement
 [27/03/20 22:25] : Création du marin : 615165
+[28/03/20 11:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[28/03/20 11:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[28/03/20 11:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[28/03/20 11:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[28/03/20 11:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[28/03/20 11:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[28/03/20 11:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[28/03/20 11:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[28/03/20 11:35] : Le bateau BE_uguyg a bien été ajouté temporairement
+[28/03/20 11:35] : Création du marin : 15165
+[28/03/20 11:44] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[28/03/20 11:44] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[28/03/20 11:44] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[28/03/20 11:44] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[28/03/20 11:44] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[28/03/20 11:44] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[28/03/20 11:44] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[28/03/20 11:44] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[28/03/20 11:44] : Le bateau BE_615615615 a bien été ajouté temporairement
+[28/03/20 11:45] : Création du marin : 165165651516
+[28/03/20 11:45] : Création du marin : 15665475
+[28/03/20 11:45] : Création d'un capitaine 165165651516
+[28/03/20 11:45] : Création d'un second 15665475
+[28/03/20 11:45] : Le bateau BE_615615615 a bien été enregistré
+[28/03/20 11:45] : Le bateau n'est plus en attente
+[28/03/20 11:52] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[28/03/20 11:52] : Le bateau BE_6561651 a bien été ajouté temporairement
+[28/03/20 11:53] : Création du marin : 6515116515
+[28/03/20 11:53] : Création du marin : 65151165151
+[28/03/20 11:53] : Création du marin : 65151165151
+[28/03/20 11:53] : Création d'un capitaine 6515116515
+[28/03/20 11:53] : Création d'un second 65151165151
+[28/03/20 11:53] : Création d'un marin : 65151165151
+[28/03/20 11:53] : Le bateau BE_6561651 a bien été enregistré
+[28/03/20 11:53] : Le bateau n'est plus en attente
+[28/03/20 12:31] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[28/03/20 12:31] : Le bateau BE_165165615 a bien été ajouté temporairement
+[28/03/20 12:32] : Création du marin : 1651165615
+[28/03/20 12:32] : Création du marin : 1651165647
+[28/03/20 12:32] : Création d'un capitaine 1651165615
+[28/03/20 12:32] : Création d'un second 1651165647
+[28/03/20 12:32] : Le bateau BE_165165615 a bien été enregistré
+[28/03/20 12:32] : Le bateau n'est plus en attente
+[28/03/20 12:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[28/03/20 12:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[28/03/20 12:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[28/03/20 12:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[28/03/20 12:34] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[28/03/20 12:34] : Enregistement des bateaux de pêches juste avant la fermeture.
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[28/03/20 12:34] : Enregistrement des bateaux de ponton juste avant la fermeture
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[28/03/20 12:34] : Enregistrement des bateaux de quai juste avant la fermeture
+[28/03/20 12:34] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[28/03/20 12:34] : C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[28/03/20 12:35] : Le bateau BE_65116551 a bien été ajouté temporairement
+[28/03/20 12:36] : Création du marin : 561615165516
+[28/03/20 12:36] : Création du marin : 561615165516
+[28/03/20 12:36] : Création d'un capitaine 561615165516
+[28/03/20 12:36] : Création d'un second 561615165516
+[28/03/20 12:36] : Le bateau BE_65116551 a bien été enregistré
+[28/03/20 12:36] : Le bateau n'est plus en attente
+[28/03/20 12:36] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[28/03/20 12:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[28/03/20 12:36] : Enregistement des bateaux de pêches juste avant la fermeture.
+[28/03/20 12:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[28/03/20 12:36] : Enregistrement des bateaux de ponton juste avant la fermeture
+[28/03/20 12:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[28/03/20 12:36] : Enregistrement des bateaux de quai juste avant la fermeture
+[28/03/20 12:36] : Le fichier C:\Users\Regis\Bureau\SynologyDrive\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture

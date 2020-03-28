@@ -856,8 +856,6 @@ public class Capitainerie extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuPlaisanceActionPerformed
 
     private void BoutonChoisirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonChoisirActionPerformed
-        BoutonLire.setEnabled(false);
-        BoutonChoisir.setEnabled(false);
         String req = LabelRequete.getText (); 
         String[] separe = req.split("/");
         String TypeBateau = separe[0];     

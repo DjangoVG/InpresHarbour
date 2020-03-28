@@ -5,6 +5,8 @@ import InpresHarbour.BateauPeche;
 import InpresHarbour.BateauPlaisance;
 import InpresHarbour.Ponton;
 import InpresHarbour.Quai;
+import static capitainerie.Capitainerie.BoutonChoisir;
+import static capitainerie.Capitainerie.BoutonLire;
 import java.util.ArrayList;
 import java.util.Vector;
 import javax.swing.JTextField;
@@ -260,6 +262,8 @@ public class ListeAmarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_LabelSupprimerActionPerformed
 
     private void BoutonSelectionnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSelectionnerActionPerformed
+        BoutonLire.setEnabled(false);
+        BoutonChoisir.setEnabled(false);
         System.out.println("Type : " + Type);
         String req = Capitainerie.LabelRequete.getText();
         String[] separe = req.split("/");
@@ -392,6 +396,8 @@ public class ListeAmarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_BoutonSelectionnerActionPerformed
 
     private void BoutonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonQuitterActionPerformed
+        BoutonLire.setEnabled(false);
+        BoutonChoisir.setEnabled(false);
         this.setVisible(false);
     }//GEN-LAST:event_BoutonQuitterActionPerformed
 
