@@ -1,5 +1,4 @@
 package capitainerie;
-
 import FenetresEnOption.*;
 import InpresHarbour.Equipage;
 import InpresHarbour.Marin;
@@ -15,13 +14,14 @@ import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextField;
 import static capitainerie.InfosBateau.equipage;
-import java.text.SimpleDateFormat;
 
-public class PublishEquipage extends javax.swing.JFrame {
+public class PublishEquipage extends javax.swing.JFrame 
+{
     private final DefaultTableModel DTMEquipage;
     private boolean TestCapi = false;
    
-    public PublishEquipage(Equipage equipage) {
+    public PublishEquipage(Equipage equipage) 
+    {
         initComponents();
         
         
@@ -37,17 +37,20 @@ public class PublishEquipage extends javax.swing.JFrame {
         DTMEquipage.addColumn("Fonction");   
         this.TableEquipage.setModel(DTMEquipage);
         
-        if (equipage.getNombreHumains() > 0){
+        if (equipage.getNombreHumains() > 0)
+        {
             Marin Capitaine = equipage.getCapitaine();
             Marin Second = equipage.getSecond();
-            if (Capitaine != null){
+            if (Capitaine != null)
+            {
+                System.out.println("Capitaine : " + Capitaine.getFonction() + " " + Capitaine.getIdentifiant() + " " + Capitaine.getNom());
                 Vector ligne = new Vector();
                 ligne.add(Capitaine.getIdentifiant());                    
                 ligne.add(Capitaine.getNom());
                 ligne.add(Capitaine.getPrenom());
                 ligne.add(Capitaine.getDateNaissance().getDay() + "/" + Capitaine.getDateNaissance().getMonth() + "/" + Capitaine.getDateNaissance().getYear());
                 ligne.add(Capitaine.getFonction());
-                DTMEquipage.addRow(ligne);                
+                DTMEquipage.addRow(ligne);
             }
             if (Second != null){
                 Vector ligne = new Vector();
@@ -369,12 +372,38 @@ public class PublishEquipage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonAjouterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAjouterActionPerformed
-        for (int i = 0; i < TableEquipage.getRowCount(); i++)
+        String IdentifiantMarin = LabelRegistre.getText(); 
+        String Nom = LabelNom.getText();
+        String Prenom = LabelPrenom.getText();
+        String DateNaissance = BoxJour.getSelectedItem() + "/" + BoxMois.getSelectedItem() + "/" + BoxAnnee.getSelectedItem();
+        String NumRegistre = LabelRegistre.getText();
+        String Nationalite = LabelNationalite.getText().toUpperCase();
+        String Fonction = null;
+        if (BoxCapitaine.isSelected()){
+            Fonction = "Capitaine";
+        }
+        else if (BoxSecond.isSelected()) {
+            Fonction = "Second";
+        }
+        else if (BoxBosco.isSelected()) {
+            Fonction = "Bosco";
+        }
+        else if (BoxMatelot.isSelected()) {
+            Fonction = "Matelot";
+        }
+        else if (BoxPassager.isSelected()) {
+            Fonction = "Passager";
+        }
+        else {
+            Fonction = "Clandestin";
+        }
+        
+        
+        if (TableEquipage.getRowCount() > 0)
         {
-            if (TableEquipage.getValueAt(i, 3).equals("Capitaine"))
+            for (int i = 0; i < TableEquipage.getRowCount(); i++)
             {
-                i = TableEquipage.getRowCount();
-                if (TestCapi)
+                if (TableEquipage.getValueAt(i, 3).equals("Capitaine") && Fonction.equals("Capitaine"))
                 {
                     String msg;
                     msg = "Vous avez déja ajouté un capitaine !";
@@ -382,40 +411,14 @@ public class PublishEquipage extends javax.swing.JFrame {
                 }
                 else
                 {
-                    TestCapi = true;
-                    String IdentifiantMarin = LabelRegistre.getText(); 
-                    String Nom = LabelNom.getText();
-                    String Prenom = LabelPrenom.getText();
-                    String DateNaissance = BoxJour.getSelectedItem() + "/" + BoxMois.getSelectedItem() + "/" + BoxAnnee.getSelectedItem();
-                    String NumRegistre = LabelRegistre.getText();
-                    String Nationalite = LabelNationalite.getText().toUpperCase();
-                    String Fonction = null;
-                    if (BoxCapitaine.isSelected()){
-                        Fonction = "Capitaine";
-                    }
-                    else if (BoxSecond.isSelected()) {
-                        Fonction = "Second";
-                    }
-                    else if (BoxBosco.isSelected()) {
-                        Fonction = "Bosco";
-                    }
-                    else if (BoxMatelot.isSelected()) {
-                        Fonction = "Matelot";
-                    }
-                    else if (BoxPassager.isSelected()) {
-                        Fonction = "Passager";
-                    }
-                    else {
-                        Fonction = "Clandestin";
-                    }
-
                     DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
                     df.setLenient(false);
                     Date dateNaissance;         
                     try
                     {
                         dateNaissance = df.parse(DateNaissance);
-                        try {
+                        try 
+                        {
                             Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, dateNaissance, Fonction);
                             Vector ligne = new Vector();
                             ligne.add(marin.getIdentifiant());                    
@@ -425,7 +428,8 @@ public class PublishEquipage extends javax.swing.JFrame {
                             ligne.add(marin.getFonction());
                             Capitainerie.fichierLog.ecritLigne ("Création du marin : " + IdentifiantMarin);
                             DTMEquipage.addRow(ligne);
-                            this.TableEquipage.setModel(DTMEquipage);              
+                            this.TableEquipage.setModel(DTMEquipage);    
+                            break;
                         } catch (SailorWithoutIdentificationException ex) {
                             Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
                         }            
@@ -435,8 +439,36 @@ public class PublishEquipage extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
                     }
                 }
+            }     
+        }
+        else
+        {
+            DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT, Locale.FRANCE);
+            df.setLenient(false);
+            Date dateNaissance;         
+            try
+            {
+                dateNaissance = df.parse(DateNaissance);
+                try {
+                    Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, dateNaissance, Fonction);
+                    Vector ligne = new Vector();
+                    ligne.add(marin.getIdentifiant());                    
+                    ligne.add(marin.getNom());
+                    ligne.add(marin.getPrenom());
+                    ligne.add(DateNaissance);
+                    ligne.add(marin.getFonction());
+                    Capitainerie.fichierLog.ecritLigne ("Création du marin : " + IdentifiantMarin);
+                    DTMEquipage.addRow(ligne);
+                    this.TableEquipage.setModel(DTMEquipage);              
+                } catch (SailorWithoutIdentificationException ex) {
+                    Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
+                }            
+            }catch (ParseException e){
+                String msg;
+                msg = "Erreur : la date est invalide !";
+                JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
             }
-        } 
+        }
     }//GEN-LAST:event_BoutonAjouterActionPerformed
 
     private void BoutonModifierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonModifierActionPerformed
