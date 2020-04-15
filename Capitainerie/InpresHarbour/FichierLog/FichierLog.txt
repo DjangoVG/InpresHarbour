@@ -23,3 +23,30 @@
 [14/04/20 18:31] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
 [14/04/20 18:31] : Enregistrement des bateaux de quai juste avant la fermeture
 [14/04/20 18:31] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[15/04/20 16:22] : ShipWithoutIdentificationException : BE-1236589
+[15/04/20 16:22] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[15/04/20 16:22] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[15/04/20 16:22] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[15/04/20 16:22] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[15/04/20 16:22] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[15/04/20 16:22] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[15/04/20 16:22] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[15/04/20 16:22] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[15/04/20 16:23] : ShipWithoutIdentificationException : BE_be15615615
+[15/04/20 16:23] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[15/04/20 16:23] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[15/04/20 16:23] : Enregistement des bateaux de pêches juste avant la fermeture.
+[15/04/20 16:23] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[15/04/20 16:23] : Enregistrement des bateaux de ponton juste avant la fermeture
+[15/04/20 16:23] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[15/04/20 16:23] : Enregistrement des bateaux de quai juste avant la fermeture
+[15/04/20 16:23] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[15/04/20 16:24] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[15/04/20 16:24] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[15/04/20 16:24] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[15/04/20 16:24] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[15/04/20 16:24] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[15/04/20 16:24] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[15/04/20 16:24] : C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[15/04/20 16:24] : Le fichier C:\Users\Regis\Bureau\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[15/04/20 16:24] : Le bateau BE_16156651 a bien été ajouté temporairement

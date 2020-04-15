@@ -177,3 +177,7 @@
 [14/04/20 18:21] : Nous avons chargé le fichier properties.
 [14/04/20 18:28] : C:\Users\Regis\Bureau\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
 [14/04/20 18:28] : Nous avons chargé le fichier properties.
+[15/04/20 16:22] : C:\Users\Regis\Bureau\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[15/04/20 16:22] : Nous avons chargé le fichier properties.
+[15/04/20 16:24] : C:\Users\Regis\Bureau\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[15/04/20 16:24] : Nous avons chargé le fichier properties.

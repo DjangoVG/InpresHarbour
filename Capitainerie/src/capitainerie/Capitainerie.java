@@ -907,7 +907,7 @@ public class Capitainerie extends javax.swing.JFrame {
     }//GEN-LAST:event_BoutonBateauAmarréActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (TableBateaux.getRowCount() != 0)
+        if (TableBateaux.getRowCount() > 0)
         {
             String msg;
             msg = "Vous ne pouvez pas fermer ce programme tant qu'il y aura des bateaux en entrée qui attendent d'être enregistré complètement. \nMerci de votre compréhension.";
@@ -1015,11 +1015,7 @@ public class Capitainerie extends javax.swing.JFrame {
             if (msg.indexOf("*")>0)
             {
                 String[] separe = msg.split("/");
-                String TypeBateau = separe[0];
-                String Pavillon = separe[1];
                 String NomBateau = separe[2];
-                String LongueurBateau = separe[3];
-                String ImmatBateau = separe[4];
                 String QuaiPonton = separe[5];
                 QuaiPonton = QuaiPonton.replaceAll("\\s", "");
                 BoutonChoisir.setEnabled(false);
@@ -1027,9 +1023,7 @@ public class Capitainerie extends javax.swing.JFrame {
                 LabelEnvoyerChoix.setText(NomBateau + " <-- " + QuaiPonton);
             }
             else
-            {
-                BoutonChoisir.setEnabled(true);              
-            }
+                BoutonChoisir.setEnabled(true);
         }
         else
             LabelRequete.setText("Pas de message entrant !");

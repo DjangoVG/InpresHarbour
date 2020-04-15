@@ -17,8 +17,6 @@ public class Bateau extends MoyenDeTransportSurEau implements AUnIdentifiant, Se
     public Bateau (String id, boolean sub, String e, String n, String port, float ton, float lg, String pav, Equipage equi) throws ShipWithoutIdentificationException{
         super(sub,e);
         identifiant = id;
-        //if((!n.matches("^[a-zA-Z][a-zA-Z-]{1,25}$")) || (!port.matches("^[a-zA-Z][a-zA-Z-]{1,25}$")))
-            //throw new ShipWithoutIdentificationException(id);
         nom = n;
         portAttache = port;
         tonnage = ton;
