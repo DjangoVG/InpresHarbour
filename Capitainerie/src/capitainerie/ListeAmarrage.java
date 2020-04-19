@@ -423,6 +423,9 @@ public class ListeAmarrage extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_TableAmarrageMouseClicked
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonQuitter;

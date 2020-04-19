@@ -88,20 +88,20 @@ public class Capitainerie extends javax.swing.JFrame {
         System.out.println("Création du Ponton/Quai");
         try 
         {
-            Marin Capitaine1 = new Marin ("85.02.01-002.00", "Claes", "Isen", new Date ("08/02/1993"), "Capitaine");
-            Marin Capitaine2 = new Marin ("02.04.21-525.54", "Lourant", "Jacques", new Date ("15/04/1998"), "Capitaine");
-            Marin Capitaine3 = new Marin ("02.98.21-665.35", "Evrard", "Régis", new Date ("23/08/1990"), "Capitaine");
-            Marin Capitaine4 = new Marin ("02.04.21-458.22", "Fiori", "Patrick", new Date ("23/10/1991"), "Capitaine");
-            Marin Second1 = new Marin ("11.45.21-554.65", "Manso Pescador", "Lea", new Date ("26/01/1996"), "Second");
-            Marin Second2 = new Marin ("47.04.98-896.22", "Costas", "Diego", new Date ("04/11/2001"), "Second");
-            Marin Second3 = new Marin ("02.16.21-524.52", "Louam", "Stephane", new Date ("08/11/1993"), "Second");
-            Marin Second4 = new Marin ("11.98.21-854.22", "Dubois", "Hugo", new Date ("23/06/1998"), "Second");
-            Marin Bosco1 = new Marin ("23.45.58-256.55", "Petit", "Benjamin", new Date ("26/02/1994"), "Bosco");
-            Marin Bosco2 = new Marin ("55.04.21-215.22", "Boraita", "Manuel", new Date ("15/04/1994"), "Bosco");
-            Marin Matelot1 = new Marin ("47.58.21-458.31", "Sisou", "Louis", new Date ("01/01/1999"), "Matelot");
-            Marin Matelot2 = new Marin ("85.86.21-221.17", "Winandy", "Alexia", new Date ("05/11/1995"), "Matelot");
-            Marin Passager1 = new Marin ("65.22.21-124.21", "Troisfrere", "Michel", new Date ("23/10/1984"), "Passager");
-            Marin Passager2 = new Marin ("36.04.21-125.22", "Boulout", "Aurelie", new Date ("29/12/1968"), "Passager");
+            Marin Capitaine1 = new Marin ("85.02.01-002.00", "Claes", "Isen", "Belge", new Date ("08/02/1993"), "Capitaine");
+            Marin Capitaine2 = new Marin ("02.04.21-525.54", "Lourant", "Jacques", "Belge", new Date ("15/04/1998"), "Capitaine");
+            Marin Capitaine3 = new Marin ("02.98.21-665.35", "Evrard", "Régis", "Belge",new Date ("23/08/1990"), "Capitaine");
+            Marin Capitaine4 = new Marin ("02.04.21-458.22", "Fiori", "Patrick", "Belge",new Date ("23/10/1991"), "Capitaine");
+            Marin Second1 = new Marin ("11.45.21-554.65", "Manso Pescador", "Lea", "Belge",new Date ("26/01/1996"), "Second");
+            Marin Second2 = new Marin ("47.04.98-896.22", "Costas", "Diego", "Belge",new Date ("04/11/2001"), "Second");
+            Marin Second3 = new Marin ("02.16.21-524.52", "Louam", "Stephane", "Belge",new Date ("08/11/1993"), "Second");
+            Marin Second4 = new Marin ("11.98.21-854.22", "Dubois", "Hugo", "Belge",new Date ("23/06/1998"), "Second");
+            Marin Bosco1 = new Marin ("23.45.58-256.55", "Petit", "Benjamin", "Belge",new Date ("26/02/1994"), "Bosco");
+            Marin Bosco2 = new Marin ("55.04.21-215.22", "Boraita", "Manuel", "Belge",new Date ("15/04/1994"), "Bosco");
+            Marin Matelot1 = new Marin ("47.58.21-458.31", "Sisou", "Louis", "Belge",new Date ("01/01/1999"), "Matelot");
+            Marin Matelot2 = new Marin ("85.86.21-221.17", "Winandy", "Alexia", "Belge",new Date ("05/11/1995"), "Matelot");
+            Marin Passager1 = new Marin ("65.22.21-124.21", "Troisfrere", "Michel", "Belge",new Date ("23/10/1984"), "Passager");
+            Marin Passager2 = new Marin ("36.04.21-125.22", "Boulout", "Aurelie", "Belge",new Date ("29/12/1968"), "Passager");
             
             // -------------
             Equipage Equipage1 = new Equipage (Capitaine1, Second1);

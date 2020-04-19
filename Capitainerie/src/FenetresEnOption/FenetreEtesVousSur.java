@@ -81,6 +81,10 @@ public class FenetreEtesVousSur extends javax.swing.JDialog {
        this.info = false;
     }//GEN-LAST:event_AnnulerActionPerformed
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Annuler;
     private javax.swing.JLabel LabelInfo;

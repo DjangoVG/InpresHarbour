@@ -51,11 +51,6 @@ public class FenetreDate extends javax.swing.JFrame {
         LabelPays.setText("Pays :");
 
         BoxPays.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        BoxPays.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BoxPaysActionPerformed(evt);
-            }
-        });
 
         LabelDate.setText("Formate de la date :");
 
@@ -138,10 +133,10 @@ public class FenetreDate extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_BoutonConfirmerActionPerformed
 
-    private void BoxPaysActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoxPaysActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BoxPaysActionPerformed
-
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonConfirmer;
     private javax.swing.JComboBox BoxFormatDate;

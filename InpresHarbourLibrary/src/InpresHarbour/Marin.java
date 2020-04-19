@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Marin extends Humain implements AUnIdentifiant, Serializable {
     
-    private final String Identifiant; 
+    private String Identifiant; 
     private String Fonction;
     
     public Marin (){
@@ -13,8 +13,8 @@ public class Marin extends Humain implements AUnIdentifiant, Serializable {
         Identifiant = "inconnue";
         Fonction = "inconnue";
     }
-    public Marin (String id, String n, String p, Date dN, String fct) throws SailorWithoutIdentificationException{
-        super(n, p, dN);
+    public Marin (String id, String n, String p, String nationalite, Date dN,  String fct) throws SailorWithoutIdentificationException{
+        super(n, p, nationalite, dN);
         //if((!n.matches("^[a-zA-Z][a-zA-Z]{1,25}$")) || (!p.matches("^[a-zA-Z][a-zA-Z]{1,25}$")))
             //throw new SailorWithoutIdentificationException(id);
         Identifiant = id;
@@ -25,7 +25,10 @@ public class Marin extends Humain implements AUnIdentifiant, Serializable {
     public void setFonction (String fct){ this.Fonction = fct; }
     
     @Override
-    public String getIdentifiant (){return Identifiant;}
+    public String getIdentifiant ()
+    {
+        return Identifiant;
+    }
 
     @Override
     public String toString (){

@@ -178,7 +178,10 @@ public class ListeBateaux extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_BoutonQuittezActionPerformed
 
-
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonQuittez;
     private javax.swing.JLabel LabelBateauPlaisance;

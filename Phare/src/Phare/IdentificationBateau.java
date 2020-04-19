@@ -11,7 +11,8 @@ public class IdentificationBateau extends javax.swing.JFrame {
         String Bateau;
         DLMAttente = new DefaultListModel();
         DLMAttente = (DefaultListModel) Phare.ListeAttente.getModel();
-        Bateau = (String) Phare.ListeAttente.getModel().getElementAt(0);       
+        int i = Phare.ListeAttente.getSelectedIndex();
+        Bateau = (String) Phare.ListeAttente.getModel().getElementAt(i);       
         String[] separe = Bateau.split("/");
         String TypeBateau = separe[0];
         String PavillonBateau = separe[1];
@@ -81,24 +82,6 @@ public class IdentificationBateau extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(87, 87, 87)
-                        .addComponent(LabelTypeBateau))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(72, 72, 72)
-                        .addComponent(LabelPavillonBateau))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel5))
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LabelLongueurBateau)
-                            .addComponent(LabelNomBateau)
-                            .addComponent(LabelImmatBateau)))
                     .addComponent(jSeparator2)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -107,7 +90,21 @@ public class IdentificationBateau extends javax.swing.JFrame {
                                 .addComponent(BoutonConfirmer)
                                 .addGap(18, 18, 18)
                                 .addComponent(BoutonAnnuler)))
-                        .addGap(0, 69, Short.MAX_VALUE)))
+                        .addGap(0, 69, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2))
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LabelTypeBateau)
+                            .addComponent(LabelPavillonBateau)
+                            .addComponent(LabelLongueurBateau)
+                            .addComponent(LabelNomBateau)
+                            .addComponent(LabelImmatBateau))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -179,7 +176,11 @@ public class IdentificationBateau extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_BoutonAnnulerActionPerformed
 
-
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonAnnuler;
     private javax.swing.JButton BoutonConfirmer;

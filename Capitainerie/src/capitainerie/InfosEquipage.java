@@ -9,6 +9,8 @@ import javax.swing.table.DefaultTableModel;
 import static capitainerie.Capitainerie.ListeBateauxPlaisances;
 import static capitainerie.Capitainerie.ListeBateauPeches;
 import java.awt.Color;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 public class InfosEquipage extends javax.swing.JFrame {
     private final DefaultTableModel DTMEquipage;
@@ -21,6 +23,7 @@ public class InfosEquipage extends javax.swing.JFrame {
         DTMEquipage.addColumn("Nom");
         DTMEquipage.addColumn("Prénom");
         DTMEquipage.addColumn("Date de naissance");
+        DTMEquipage.addColumn("Nationalité");
         DTMEquipage.addColumn("Fonction");   
         this.TableEquipage.setModel(DTMEquipage);  
     }
@@ -44,6 +47,11 @@ public class InfosEquipage extends javax.swing.JFrame {
         BoutonQuitter = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
@@ -91,24 +99,24 @@ public class InfosEquipage extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator2)
                     .addComponent(LabelMessage)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(37, 37, 37)
-                        .addComponent(LabelImmatriculation))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(BoutonQuitter))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(LabelPavillon))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jSeparator1)
                             .addComponent(BoutonRechercher)
-                            .addComponent(jScrollPane1)
-                            .addComponent(jSeparator3))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE)
+                            .addComponent(jSeparator3)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(LabelImmatriculation)
+                                    .addComponent(LabelPavillon))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -158,9 +166,13 @@ public class InfosEquipage extends javax.swing.JFrame {
                 Marin cap = equi.getCapitaine();
                 Vector ligne = new Vector();
                 ligne.add(cap.getIdentifiant());
+                System.out.println("Cap : " + cap.getIdentifiant());
                 ligne.add(cap.getNom());
                 ligne.add(cap.getPrenom());
-                ligne.add(cap.getDateNaissance().getDay() + "/" + cap.getDateNaissance().getMonth() + "/" + cap.getDateNaissance().getYear());
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate = dateFormat.format(cap.getDateNaissance());
+                ligne.add(strDate); 
+                ligne.add(cap.getNationalite());
                 ligne.add(cap.getFonction());
                 DTMEquipage.addRow(ligne);
 
@@ -170,7 +182,9 @@ public class InfosEquipage extends javax.swing.JFrame {
                     ligneSec.add(sec.getIdentifiant());
                     ligneSec.add(sec.getNom());
                     ligneSec.add(sec.getPrenom());
-                    ligneSec.add(sec.getDateNaissance().getDay() + "/" + sec.getDateNaissance().getMonth() + "/" + sec.getDateNaissance().getYear());                  
+                    strDate = dateFormat.format(sec.getDateNaissance());
+                    ligneSec.add(strDate);     
+                    ligneSec.add(sec.getNationalite());
                     ligneSec.add(sec.getFonction());
                     DTMEquipage.addRow(ligneSec);  
                 }
@@ -181,7 +195,9 @@ public class InfosEquipage extends javax.swing.JFrame {
                         ligneMarin.add(ElemMar.getIdentifiant());
                         ligneMarin.add(ElemMar.getNom());
                         ligneMarin.add(ElemMar.getPrenom());
-                        ligneMarin.add(ElemMar.getDateNaissance().getDay() + "/" + ElemMar.getDateNaissance().getMonth() + "/" + ElemMar.getDateNaissance().getYear());
+                        strDate = dateFormat.format(ElemMar.getDateNaissance());
+                        ligne.add(strDate);   
+                        ligne.add(ElemMar.getNationalite());
                         ligneMarin.add(ElemMar.getFonction());
                         DTMEquipage.addRow(ligneMarin);
                     }
@@ -192,7 +208,7 @@ public class InfosEquipage extends javax.swing.JFrame {
         for (BateauPeche Elem : ListeBateauPeches){
             String idListe = Elem.getIdentifiant();
             if (idListe.equals(id)){
-                this.LabelMessage.setText ("Le bateau a bien été trouvé dans la liste des bateaux de plaisance. ");
+                this.LabelMessage.setText ("Le bateau a bien été trouvé dans la liste des bateaux de pêche. ");
                 this.LabelMessage.setSelectionColor(Color.green);
                 trouve = true;
                 Equipage equi = Elem.getEquipage();
@@ -201,7 +217,10 @@ public class InfosEquipage extends javax.swing.JFrame {
                 ligne.add(cap.getIdentifiant());
                 ligne.add(cap.getNom());
                 ligne.add(cap.getPrenom());
-                ligne.add(cap.getDateNaissance().getDay() + "/" + cap.getDateNaissance().getMonth() + "/" + cap.getDateNaissance().getYear());
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate = dateFormat.format(cap.getDateNaissance());
+                ligne.add(strDate);  
+                ligne.add(cap.getNationalite());
                 ligne.add(cap.getFonction());
                 DTMEquipage.addRow(ligne);
                 
@@ -210,7 +229,9 @@ public class InfosEquipage extends javax.swing.JFrame {
                 ligneSec.add(sec.getIdentifiant());
                 ligneSec.add(sec.getNom());
                 ligneSec.add(sec.getPrenom());
-                ligneSec.add(sec.getDateNaissance().getDay() + "/" + sec.getDateNaissance().getMonth() + "/" + sec.getDateNaissance().getYear());
+                strDate = dateFormat.format(sec.getDateNaissance());
+                ligneSec.add(strDate);  
+                ligneSec.add(sec.getNationalite());
                 ligneSec.add(sec.getFonction());
                 DTMEquipage.addRow(ligneSec);                 
                 
@@ -220,7 +241,9 @@ public class InfosEquipage extends javax.swing.JFrame {
                         ligneMarin.add(ElemMar.getIdentifiant());
                         ligneMarin.add(ElemMar.getNom());
                         ligneMarin.add(ElemMar.getPrenom());
-                        ligneMarin.add(ElemMar.getDateNaissance().getDay() + "/" + ElemMar.getDateNaissance().getMonth() + "/" + ElemMar.getDateNaissance().getYear());
+                        strDate = dateFormat.format(ElemMar.getDateNaissance());
+                        ligne.add(strDate); 
+                        ligne.add(ElemMar.getNationalite());
                         ligneMarin.add(ElemMar.getFonction());
                         DTMEquipage.addRow(ligneMarin);
                     }
@@ -230,7 +253,7 @@ public class InfosEquipage extends javax.swing.JFrame {
         }
         if (!trouve)
         {
-            this.LabelMessage.setText ("Le bateau " + id + "n'a pas été trouvé.");
+            this.LabelMessage.setText ("Le bateau " + id + " n'a pas été trouvé.");
             this.LabelMessage.setSelectionColor(Color.red);
         }
             
@@ -240,6 +263,10 @@ public class InfosEquipage extends javax.swing.JFrame {
     private void BoutonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonQuitterActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_BoutonQuitterActionPerformed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        this.setVisible(false);
+    }//GEN-LAST:event_formWindowClosing
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

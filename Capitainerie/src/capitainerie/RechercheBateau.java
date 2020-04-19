@@ -224,6 +224,10 @@ public class RechercheBateau extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BoutonRechercherActionPerformed
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonQuitter;
     private javax.swing.JButton BoutonRechercher;

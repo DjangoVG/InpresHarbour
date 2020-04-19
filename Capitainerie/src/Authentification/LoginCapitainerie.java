@@ -138,8 +138,6 @@ public class LoginCapitainerie extends javax.swing.JDialog {
         }
         catch (LoginException e)
         {
-            DialogErreur dia = new DialogErreur(null, true);
-            dia.setVisible(true);
         }
     }//GEN-LAST:event_BoutonConnexionActionPerformed
 

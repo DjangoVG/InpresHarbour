@@ -8,6 +8,8 @@ import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 import static capitainerie.Capitainerie.ListeBateauPeches;
 import static capitainerie.Capitainerie.ListeBateauxPlaisances;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
 
 public class RechercheMarin extends javax.swing.JFrame {
@@ -20,6 +22,7 @@ public class RechercheMarin extends javax.swing.JFrame {
         DTMMarin.addColumn("Nom");
         DTMMarin.addColumn("Prénom");
         DTMMarin.addColumn("Date de naissance");
+        DTMMarin.addColumn("Nationalité");
         DTMMarin.addColumn("Fonction");   
         DTMMarin.addColumn("Id du bateau");  
         this.TableMarin.setModel(DTMMarin);  
@@ -31,8 +34,6 @@ public class RechercheMarin extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel2 = new javax.swing.JLabel();
-        LabelNationalite = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         LabelRegistre = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
@@ -48,8 +49,6 @@ public class RechercheMarin extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
         jLabel1.setText("Rechercher un marin");
-
-        jLabel2.setText("Nationalité du marin :");
 
         jLabel3.setText("Numéro de registre national :");
 
@@ -96,10 +95,6 @@ public class RechercheMarin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(LabelNationalite, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                         .addComponent(LabelRegistre, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -126,12 +121,8 @@ public class RechercheMarin extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(LabelNationalite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(LabelRegistre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelRegistre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -151,7 +142,6 @@ public class RechercheMarin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonResetActionPerformed
-        this.LabelNationalite.setText("");
         this.LabelRegistre.setText("");
     }//GEN-LAST:event_BoutonResetActionPerformed
 
@@ -160,7 +150,9 @@ public class RechercheMarin extends javax.swing.JFrame {
     }//GEN-LAST:event_BoutonQuitterActionPerformed
 
     private void BoutonRechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonRechercherActionPerformed
-        String id = this.LabelNationalite.getText().toUpperCase() + "_" + this.LabelRegistre.getText().toLowerCase();
+        if (this.DTMMarin.getRowCount() > 0)
+            this.DTMMarin.removeRow(0);
+        String id = this.LabelRegistre.getText();
         boolean trouve = false;
         for (BateauPlaisance Elem : ListeBateauxPlaisances){
             Equipage equi = Elem.getEquipage();
@@ -172,7 +164,10 @@ public class RechercheMarin extends javax.swing.JFrame {
                 ligne.add(cap.getIdentifiant());
                 ligne.add(cap.getNom());
                 ligne.add(cap.getPrenom());
-                ligne.add(cap.getDateNaissance().getDay() + "/" + cap.getDateNaissance().getMonth() + "/" + cap.getDateNaissance().getYear());
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate = dateFormat.format(cap.getDateNaissance());
+                ligne.add(strDate);   
+                ligne.add(cap.getNationalite());
                 ligne.add(cap.getFonction());
                 ligne.add(Elem.getIdentifiant());
                 DTMMarin.addRow(ligne); 
@@ -186,7 +181,10 @@ public class RechercheMarin extends javax.swing.JFrame {
                 ligne.add(sec.getIdentifiant());
                 ligne.add(sec.getNom());
                 ligne.add(sec.getPrenom());
-                ligne.add(sec.getDateNaissance().getDay() + "/" + sec.getDateNaissance().getMonth() + "/" + sec.getDateNaissance().getYear());
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate = dateFormat.format(sec.getDateNaissance());
+                ligne.add(strDate);
+                ligne.add(sec.getNationalite());
                 ligne.add(sec.getFonction());
                 ligne.add(Elem.getIdentifiant());
                 DTMMarin.addRow(ligne); 
@@ -201,7 +199,10 @@ public class RechercheMarin extends javax.swing.JFrame {
                         ligne.add(ElemMar.getIdentifiant());
                         ligne.add(ElemMar.getNom());
                         ligne.add(ElemMar.getPrenom());
-                        ligne.add(ElemMar.getDateNaissance().getDay() + "/" + ElemMar.getDateNaissance().getMonth() + "/" + ElemMar.getDateNaissance().getYear());
+                        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                        String strDate = dateFormat.format(ElemMar.getDateNaissance());
+                        ligne.add(strDate);
+                        ligne.add(ElemMar.getNationalite());
                         ligne.add(ElemMar.getFonction());
                         ligne.add(Elem.getIdentifiant());
                         DTMMarin.addRow(ligne); 
@@ -213,6 +214,7 @@ public class RechercheMarin extends javax.swing.JFrame {
         for (BateauPeche Elem : ListeBateauPeches){
             Equipage equi = Elem.getEquipage();
             String idCap = equi.getCapitaine().getIdentifiant();
+            System.out.println("ID : " + idCap);
             if (idCap.equals(id))
             {
                 trouve = true;
@@ -221,7 +223,10 @@ public class RechercheMarin extends javax.swing.JFrame {
                 ligne.add(cap.getIdentifiant());
                 ligne.add(cap.getNom());
                 ligne.add(cap.getPrenom());
-                ligne.add(cap.getDateNaissance().getDay() + "/" + cap.getDateNaissance().getMonth() + "/" + cap.getDateNaissance().getYear());
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate = dateFormat.format(cap.getDateNaissance());
+                ligne.add(strDate);
+                ligne.add(cap.getNationalite());
                 ligne.add(cap.getFonction());
                 ligne.add(Elem.getIdentifiant());
                 DTMMarin.addRow(ligne); 
@@ -236,7 +241,10 @@ public class RechercheMarin extends javax.swing.JFrame {
                 ligne.add(sec.getIdentifiant());
                 ligne.add(sec.getNom());
                 ligne.add(sec.getPrenom());
-                ligne.add(sec.getDateNaissance().getDay() + "/" + sec.getDateNaissance().getMonth() + "/" + sec.getDateNaissance().getYear());
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate = dateFormat.format(sec.getDateNaissance());
+                ligne.add(strDate);
+                ligne.add(sec.getNationalite());
                 ligne.add(sec.getFonction());
                 ligne.add(Elem.getIdentifiant());
                 DTMMarin.addRow(ligne); 
@@ -252,7 +260,11 @@ public class RechercheMarin extends javax.swing.JFrame {
                         ligne.add(ElemMar.getIdentifiant());
                         ligne.add(ElemMar.getNom());
                         ligne.add(ElemMar.getPrenom());
-                        ligne.add(ElemMar.getDateNaissance().getDay() + "/" + ElemMar.getDateNaissance().getMonth() + "/" + ElemMar.getDateNaissance().getYear());
+                        
+                        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                        String strDate = dateFormat.format(ElemMar.getDateNaissance());
+                        ligne.add(strDate);
+                        ligne.add(ElemMar.getNationalite());
                         ligne.add(ElemMar.getFonction());
                         ligne.add(Elem.getIdentifiant());
                         DTMMarin.addRow(ligne); 
@@ -269,15 +281,17 @@ public class RechercheMarin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BoutonRechercherActionPerformed
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonQuitter;
     private javax.swing.JButton BoutonRechercher;
     private javax.swing.JButton BoutonReset;
-    private javax.swing.JTextField LabelNationalite;
     private javax.swing.JTextField LabelRegistre;
     private javax.swing.JTable TableMarin;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;

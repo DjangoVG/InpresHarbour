@@ -441,6 +441,10 @@ public class InfosBateau extends javax.swing.JFrame {
         }         
     }//GEN-LAST:event_BoutonOkActionPerformed
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonAnnuler;
     private javax.swing.JButton BoutonEquipage;

@@ -181,3 +181,51 @@
 [15/04/20 16:22] : Nous avons chargé le fichier properties.
 [15/04/20 16:24] : C:\Users\Regis\Bureau\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
 [15/04/20 16:24] : Nous avons chargé le fichier properties.
+[18/04/20 16:58] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[18/04/20 16:58] : Nous avons chargé le fichier properties.
+[18/04/20 17:00] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[18/04/20 17:00] : Nous avons chargé le fichier properties.
+[18/04/20 17:02] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[18/04/20 17:02] : Nous avons chargé le fichier properties.
+[19/04/20 14:59] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 14:59] : Nous avons chargé le fichier properties.
+[19/04/20 15:06] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:06] : Nous avons chargé le fichier properties.
+[19/04/20 15:08] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:08] : Nous avons chargé le fichier properties.
+[19/04/20 15:17] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:17] : Nous avons chargé le fichier properties.
+[19/04/20 15:22] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:22] : Nous avons chargé le fichier properties.
+[19/04/20 15:25] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:25] : Nous avons chargé le fichier properties.
+[19/04/20 15:29] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:29] : Nous avons chargé le fichier properties.
+[19/04/20 15:38] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:38] : Nous avons chargé le fichier properties.
+[19/04/20 15:40] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:40] : Nous avons chargé le fichier properties.
+[19/04/20 15:43] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:43] : Nous avons chargé le fichier properties.
+[19/04/20 15:48] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:48] : Nous avons chargé le fichier properties.
+[19/04/20 15:52] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:52] : Nous avons chargé le fichier properties.
+[19/04/20 15:54] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 15:54] : Nous avons chargé le fichier properties.
+[19/04/20 16:02] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 16:02] : Nous avons chargé le fichier properties.
+[19/04/20 16:02] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 16:02] : Nous avons chargé le fichier properties.
+[19/04/20 16:11] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 16:11] : Nous avons chargé le fichier properties.
+[19/04/20 16:17] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 16:17] : Nous avons chargé le fichier properties.
+[19/04/20 16:37] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 16:37] : Nous avons chargé le fichier properties.
+[19/04/20 17:04] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 17:04] : Nous avons chargé le fichier properties.
+[19/04/20 17:10] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 17:10] : Nous avons chargé le fichier properties.
+[19/04/20 17:19] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[19/04/20 17:19] : Nous avons chargé le fichier properties.

@@ -67,6 +67,10 @@ public class FenetreLog extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_BoutonQuitterActionPerformed
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
+        this.setVisible(false);
+    }    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonQuitter;
     private javax.swing.JTextArea TextLog;

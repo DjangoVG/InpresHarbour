@@ -7,16 +7,19 @@ public class Humain implements Serializable {
     protected String Nom;
     protected String Prenom;
     protected Date DateNaissance;
+    protected String Nationalite;
     
     public Humain (){
         Nom = null;
         Prenom = null;
         DateNaissance = null;
+        Nationalite = null;
     }
-    public Humain (String n, String p, Date dN){
+    public Humain (String n, String p, String Nationalite, Date dN){
         Nom = n;
         Prenom = p;
         DateNaissance = dN;
+        this.Nationalite = Nationalite;
     }
     
     public String getNom (){ return Nom; }
@@ -27,6 +30,9 @@ public class Humain implements Serializable {
     
     public Date getDateNaissance (){ return DateNaissance; }
     public void setDateNaissance (Date DateNaissance){ this.DateNaissance = DateNaissance; }
+    
+    public String getNationalite (){ return Nationalite; }
+    public void setNationalite (String Nationalite){ this.Nationalite = Nationalite; }
     
     @Override
     public String toString (){
