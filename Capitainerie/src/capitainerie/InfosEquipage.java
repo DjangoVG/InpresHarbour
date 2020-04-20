@@ -35,7 +35,7 @@ public class InfosEquipage extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
-        LabelPavillon = new javax.swing.JTextField();
+        LabelPort = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         LabelImmatriculation = new javax.swing.JTextField();
         LabelMessage = new javax.swing.JTextField();
@@ -57,7 +57,7 @@ public class InfosEquipage extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
         jLabel1.setText("Affichage de toutes les informations sur l'équipage");
 
-        jLabel2.setText("Pavillon :");
+        jLabel2.setText("Port d'attache :");
 
         jLabel3.setText("Immatriculation :");
 
@@ -116,7 +116,7 @@ public class InfosEquipage extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(LabelImmatriculation)
-                                    .addComponent(LabelPavillon))))
+                                    .addComponent(LabelPort))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -130,7 +130,7 @@ public class InfosEquipage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(LabelPavillon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelPort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -154,7 +154,7 @@ public class InfosEquipage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonRechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonRechercherActionPerformed
-        String id = this.LabelPavillon.getText().toUpperCase() + "_" + this.LabelImmatriculation.getText().toLowerCase();
+        String id = this.LabelImmatriculation.getText().toLowerCase() + this.LabelPort.getText().toUpperCase();
         boolean trouve = false;
         for (BateauPlaisance Elem : ListeBateauxPlaisances){
             String idListe = Elem.getIdentifiant();
@@ -274,7 +274,7 @@ public class InfosEquipage extends javax.swing.JFrame {
     private javax.swing.JButton BoutonRechercher;
     private javax.swing.JTextField LabelImmatriculation;
     private javax.swing.JTextField LabelMessage;
-    private javax.swing.JTextField LabelPavillon;
+    private javax.swing.JTextField LabelPort;
     private javax.swing.JTable TableEquipage;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

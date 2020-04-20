@@ -377,8 +377,9 @@ public class Phare extends javax.swing.JFrame {
             LabelBateauEntreRade.setText("Le bateau est déjà amarré");
             BoutonSuivant.setEnabled(true);
         }
-        else{        
-            dlmAttente.removeElementAt(0);
+        else{     
+            String Element = ListeAttente.getSelectedValue();
+            dlmAttente.removeElement(Element);
             ListeAttente.setModel(dlmAttente);
             LabelReponseCapit.setText (rep);
             BoutonSuivant.setEnabled(false);

@@ -6,7 +6,7 @@ public class Quai extends Amarrage implements AUnIdentifiant, Serializable{
     private String Identifiant;
     private int NbrBateaux;
     private int Capacite;
-    public ArrayList<BateauPeche> listeBateau;
+    public ArrayList<MoyenDeTransportSurEau> listeBateau;
     
     // Constructeur.
     public Quai (){
@@ -36,11 +36,11 @@ public class Quai extends Amarrage implements AUnIdentifiant, Serializable{
     public int getNbrBateau(){ return NbrBateaux; }
     public void setNbrBateau(int nbrBat){ this.NbrBateaux = nbrBat; }
     
-    public ArrayList<BateauPeche> getListeBateau (){ return listeBateau; }
-    public void setListeBateau (ArrayList<BateauPeche> list){ this.listeBateau = list; }   
+    public ArrayList<MoyenDeTransportSurEau> getListeBateau (){ return listeBateau; }
+    public void setListeBateau (ArrayList<MoyenDeTransportSurEau> list){ this.listeBateau = list; }   
     
     // Autres fonctions.    
-    public void ajouterBateau (BateauPeche bpe, int emp){
+    public void ajouterBateau (MoyenDeTransportSurEau bpe, int emp){
         int nbr = getNbrBateau();
         System.out.println ("Ajout du numéro : " + emp);
         listeBateau.add(emp, bpe);
@@ -57,6 +57,6 @@ public class Quai extends Amarrage implements AUnIdentifiant, Serializable{
 
     @Override
     public String toString (){
-        return "Quai " + "\nCapacité du quai (" + Capacite + ")" + "\nListe des bateaux de pêche: " + listeBateau.toString();
+        return "Quai " + "\nCapacité du quai (" + Capacite + ")" + "\nListe des bateaux : " + listeBateau.toString();
     }   
 }

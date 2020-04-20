@@ -8,12 +8,12 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
     private int NbrBateaux;
     private int CapacitePonton;
     private int emplacement;
-    private ArrayList<BateauPlaisance> ListeBateauCoté1;
-    private ArrayList<BateauPlaisance> ListeBateauCoté2;    
+    private ArrayList<MoyenDeTransportSurEau> ListeBateauCoté1;
+    private ArrayList<MoyenDeTransportSurEau> ListeBateauCoté2;    
     
     // Constructeur.
     public Ponton (){
-        Identifiant = "inconnu";
+        Identifiant = "INCONNU";
         NbrBateaux = 0;
         CapacitePonton = 0;
         ListeBateauCoté1 = new ArrayList<> ();
@@ -57,19 +57,21 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
     public int getNbrBateau(){ return NbrBateaux; }
     public void setNbrBateau(int nbrBat){ this.NbrBateaux = nbrBat; }  
     
-    public ArrayList<BateauPlaisance> getListeBateauCoté1 (){ return ListeBateauCoté1; }
-    public void setListeBateauCoté1 (ArrayList<BateauPlaisance> list){ this.ListeBateauCoté1 = list; }   
+    public ArrayList<MoyenDeTransportSurEau> getListeBateauCoté1 (){ return ListeBateauCoté1; }
+    public void setListeBateauCoté1 (ArrayList<MoyenDeTransportSurEau> list){ this.ListeBateauCoté1 = list; }   
 
-    public ArrayList<BateauPlaisance> getListeBateauCoté2 (){ return ListeBateauCoté2; }
-    public void setListeBateauCoté2 (ArrayList<BateauPlaisance> list){ this.ListeBateauCoté2 = list; }       
+    public ArrayList<MoyenDeTransportSurEau> getListeBateauCoté2 (){ return ListeBateauCoté2; }
+    public void setListeBateauCoté2 (ArrayList<MoyenDeTransportSurEau> list){ this.ListeBateauCoté2 = list; }       
     
-    public void ajouterBateau (BateauPlaisance bpl, int Emplacement, int Cote){
+    public void ajouterBateau (MoyenDeTransportSurEau bpl, int Emplacement, int Cote){
         int NbrBateaux = getNbrBateau();
-        if (Cote == 1){
+        if (Cote == 1)
+        {
             ListeBateauCoté1.add(Emplacement, bpl);
             System.out.println ("Ajouté cote A : " + Emplacement);
         }
-        if (Cote == 2){  
+        if (Cote == 2)
+        {  
             ListeBateauCoté2.add(Emplacement, bpl);
             System.out.println ("Ajouté cote b : " + Emplacement );      
         }
@@ -77,7 +79,7 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
         setNbrBateau(NbrBateaux);
     }  
     
-    public void modifierBateau (BateauPlaisance bpl, int emp, int cote){
+    public void modifierBateau (MoyenDeTransportSurEau bpl, int emp, int cote){
         int nbr = getNbrBateau();
         if (cote == 1){
             ListeBateauCoté1.remove(emp);
@@ -95,7 +97,7 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
         
     @Override
     public String toString (){
-        return "Ponton " + "\nCapacité du ponton (" + CapacitePonton + ")" + "\nListe des bateaux de plaisance côté A : " 
-                + ListeBateauCoté1.toString() + "\nListe des bateaux de plaisance côté B : " + ListeBateauCoté2.toString();
+        return "Ponton " + "\nCapacité du ponton (" + CapacitePonton + ")" + "\nListe des bateaux côté A : " 
+                + ListeBateauCoté1.toString() + "\nListe des bateaux côté B : " + ListeBateauCoté2.toString();
     }
 }

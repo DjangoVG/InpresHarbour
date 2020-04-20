@@ -1,140 +1,195 @@
 package capitainerie;
-import static capitainerie.Capitainerie.ListePonton;
-import static capitainerie.Capitainerie.ListeQuai;
 import InpresHarbour.BateauPeche;
 import InpresHarbour.BateauPlaisance;
+import InpresHarbour.MoyenDeTransportSurEau;
 import InpresHarbour.Ponton;
 import InpresHarbour.Quai;
 import static capitainerie.Capitainerie.BoutonChoisir;
 import static capitainerie.Capitainerie.BoutonLire;
 import java.util.ArrayList;
 import java.util.Vector;
-import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class ListeAmarrage extends javax.swing.JFrame {
     private DefaultTableModel TableQuai;
     private DefaultTableModel TablePonton;
-    private final String Type;
     
     @SuppressWarnings("UnnecessaryBoxing")
-    public ListeAmarrage(ArrayList<Ponton> ListePonton, ArrayList<Quai> ListeQuai, String t) {
+    public ListeAmarrage(ArrayList<Ponton> ListePonton, ArrayList<Quai> ListeQuai) 
+    {
         initComponents();
         
-        for (int i =0; i < ListePonton.size(); i++)
+        TablePonton = new DefaultTableModel ();
+        TablePonton.addColumn("Ponton");
+        TablePonton.addColumn("Emplacement");
+        TablePonton.addColumn("Côté 1");
+        TablePonton.addColumn("Côté 2");
+        TablePonton.addColumn ("Identifiant bateau");
+        TablePonton.addColumn("Nom");
+        TablePonton.addColumn("Port d'attache");
+        // Création du tableauPonton
+        for (int j = 0; j < ListePonton.size(); j++)
         {
-            System.out.println(ListePonton.get(i));
-        }
-        Type = t;
-        if ("Plaisance".equals(Type))
-        {
-            TablePonton = new DefaultTableModel ();
-            TablePonton.addColumn("Ponton");
-            TablePonton.addColumn("Emplacement");
-            TablePonton.addColumn("Côté 1");
-            TablePonton.addColumn("Côté 2");
-            TablePonton.addColumn ("Identifiant bateau");
-            TablePonton.addColumn("Nom");
-            TablePonton.addColumn("Port d'attache");
-            // Création du tableauPonton
-            for (int j = 0; j < ListePonton.size(); j++){
-                Ponton p = ListePonton.get(j);
-                int cap = p.getCapacite ();
-                int tempA;
-                int reste = cap%2;
-                if (reste != 0){
-                    tempA = (cap/2)+1;
-                }
-                else{
-                    tempA = (cap/2);
-                }
-                int k = 0;
-                ArrayList<BateauPlaisance> listA = p.getListeBateauCoté1();
-                ArrayList<BateauPlaisance> listB = p.getListeBateauCoté2();
-                for (int i=0; i < cap; i++)
-                {
-                    @SuppressWarnings("UseOfObsoleteCollectionType")
-                    Vector ligne = new Vector();
-                    if (i < tempA){
-                        if (i == 0)
-                            ligne.add(p.getIdentifiant());
-                        else
-                            ligne.add(null);
-                        ligne.add(i);
-                        ligne.add("****");
-                        if (listA.get(i) == null){
-                            ligne.add(null);
-                            ligne.add(null);
-                            ligne.add(null);
-                            ligne.add(null);
-                        }
-                        else{
-                            ligne.add(null);
-                            ligne.add (listA.get(i).getIdentifiant());
-                            ligne.add (listA.get(i).getNom());
-                            ligne.add(listA.get(i).getPortAttache());
-                        }
-                    }
-                    else {
-                        ligne.add(null);
-                        ligne.add(k);
-                        ligne.add(null);
-                        ligne.add("****");
-                        if (listB.get(k) == null){
-                            ligne.add(null);
-                            ligne.add(null);
-                            ligne.add(null);
-                        }
-                        else{
-                            ligne.add (listB.get(k).getIdentifiant());
-                            ligne.add(listB.get(k).getNom());
-                            ligne.add(listB.get(k).getPortAttache());
-                        }
-                        k++;
-                    }
-                    TablePonton.addRow(ligne);
-                }
+            Ponton p = ListePonton.get(j);
+            int cap = p.getCapacite ();
+            int tempA;
+            int reste = cap%2;
+            if (reste != 0){
+                tempA = (cap/2)+1;
             }
-            this.TableAmarrage.setModel(TablePonton);
-        }
-        else 
-        {
-            TableQuai = new DefaultTableModel();
-            TableQuai.addColumn("Quai");
-            TableQuai.addColumn("Emplacement");
-            TableQuai.addColumn ("Identifiant bateau");
-            TableQuai.addColumn("Nom");
-            TableQuai.addColumn("Port d'attache");        
-
-            // Création du tableauQuai
-            for (int j = 0; j < ListeQuai.size(); j++)
+            else{
+                tempA = (cap/2);
+            }
+            int k = 0;
+            ArrayList<MoyenDeTransportSurEau> listA = p.getListeBateauCoté1();
+            ArrayList<MoyenDeTransportSurEau> listB = p.getListeBateauCoté2();
+            for (int i=0; i < cap; i++)
             {
-                Quai q = ListeQuai.get(j);
-                ArrayList<BateauPeche> list = q.getListeBateau();
-                for (int i=0; i < q.getCapacite(); i++)
-                {
-                    @SuppressWarnings("UseOfObsoleteCollectionType")
-                    Vector ligne = new Vector();
+                @SuppressWarnings("UseOfObsoleteCollectionType")
+                Vector ligne = new Vector();
+                if (i < tempA){
                     if (i == 0)
-                        ligne.add(q.getIdentifiant());
+                        ligne.add(p.getIdentifiant());
                     else
                         ligne.add(null);
                     ligne.add(i);
-                    if (list.get(i) == null) {
+                    ligne.add("****");
+                    if (listA.get(i) == null){
                         ligne.add(null);
                         ligne.add(null);
-                        ligne.add (null);
+                        ligne.add(null);
+                        ligne.add(null);
                     }
-                    else {
-                        ligne.add (list.get(i).getIdentifiant());
-                        ligne.add(list.get(i).getNom());
-                        ligne.add(list.get(i).getPortAttache());
+                    else
+                    {
+                        if (listA.get(i) instanceof BateauPlaisance)
+                        {
+                            BateauPlaisance bateau = (BateauPlaisance)listA.get(i);
+                            try
+                            {
+                                ligne.add(null);
+                                ligne.add (bateau.getIdentifiant());
+                                ligne.add (bateau.getNom());
+                                ligne.add(bateau.getPortAttache());                                
+                            }
+                            catch (NullPointerException e) {}
+
+                        }
+                        else
+                        {
+                            BateauPeche bateau = (BateauPeche)listA.get(i);
+                            try
+                            {
+                                ligne.add(null);
+                                ligne.add (bateau.getIdentifiant());
+                                ligne.add (bateau.getNom());
+                                ligne.add(bateau.getPortAttache());                                
+                            }
+                            catch (NullPointerException e) {}
+                        }
                     }
-                    TableQuai.addRow(ligne);
                 }
+                else
+                {
+                    ligne.add(null);
+                    ligne.add(k);
+                    ligne.add(null);
+                    ligne.add("****");
+                    if (listB.get(k) == null)
+                    {
+                        ligne.add(null);
+                        ligne.add(null);
+                        ligne.add(null);
+                    }
+                    else
+                    {
+                        if (listB.get(k) instanceof BateauPlaisance)
+                        {
+                            BateauPlaisance bateau = (BateauPlaisance)listB.get(k);
+                            try
+                            {
+                                ligne.add(null);
+                                ligne.add (bateau.getIdentifiant());
+                                ligne.add (bateau.getNom());
+                                ligne.add(bateau.getPortAttache());                                
+                            }
+                            catch (NullPointerException e) {}
+                        }
+                        else
+                        {
+                            BateauPeche bateau = (BateauPeche)listB.get(k);
+                            try
+                            {
+                                ligne.add (bateau.getIdentifiant());
+                                ligne.add (bateau.getNom());
+                                ligne.add(bateau.getPortAttache());                                
+                            }
+                            catch (NullPointerException e) {}
+                        }
+                    }
+                    k++;
+                }
+                TablePonton.addRow(ligne);
             }
-            this.TableAmarrage.setModel(TableQuai);
         }
+        this.TableAmarragePonton.setModel(TablePonton);
+
+        TableQuai = new DefaultTableModel();
+        TableQuai.addColumn("Quai");
+        TableQuai.addColumn("Emplacement");
+        TableQuai.addColumn ("Identifiant bateau");
+        TableQuai.addColumn("Nom");
+        TableQuai.addColumn("Port d'attache");        
+
+        // Création du tableauQuai
+        for (int j = 0; j < ListeQuai.size(); j++)
+        {
+            Quai q = ListeQuai.get(j);
+            ArrayList<MoyenDeTransportSurEau> list = q.getListeBateau();
+            for (int i=0; i < q.getCapacite(); i++)
+            {
+                @SuppressWarnings("UseOfObsoleteCollectionType")
+                Vector ligne = new Vector();
+                if (i == 0)
+                    ligne.add(q.getIdentifiant());
+                else
+                    ligne.add(null);
+                ligne.add(i);
+                if (list.get(i) == null) {
+                    ligne.add(null);
+                    ligne.add(null);
+                    ligne.add (null);
+                }
+                else 
+                {
+                    if (list.get(i) instanceof BateauPlaisance)
+                        {
+                            BateauPlaisance bateau = (BateauPlaisance)list.get(i);
+                            try
+                            {
+                                ligne.add (bateau.getIdentifiant());
+                                ligne.add (bateau.getNom());
+                                ligne.add(bateau.getPortAttache());                                
+                            }
+                            catch (NullPointerException e) {}
+
+                        }
+                        else
+                        {
+                            BateauPeche bateau = (BateauPeche)list.get(i);
+                            try
+                            {
+                                ligne.add (bateau.getIdentifiant());
+                                ligne.add (bateau.getNom());
+                                ligne.add(bateau.getPortAttache());                                
+                            }
+                            catch (NullPointerException e) {}
+                        }
+                }
+                TableQuai.addRow(ligne);
+            }
+        }
+        this.TableAmarrageQuai.setModel(TableQuai);
     }
 
     @SuppressWarnings("unchecked")
@@ -144,7 +199,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TableAmarrage = new javax.swing.JTable();
+        TableAmarrageQuai = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         LabelEmplacement = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
@@ -152,6 +207,8 @@ public class ListeAmarrage extends javax.swing.JFrame {
         BoutonSelectionner = new javax.swing.JButton();
         LabelSupprimer = new javax.swing.JButton();
         BoutonQuitter = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        TableAmarragePonton = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -159,7 +216,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
         jLabel1.setText("Liste des bateaux amarrés");
 
-        TableAmarrage.setModel(new javax.swing.table.DefaultTableModel(
+        TableAmarrageQuai.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -170,12 +227,12 @@ public class ListeAmarrage extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        TableAmarrage.addMouseListener(new java.awt.event.MouseAdapter() {
+        TableAmarrageQuai.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TableAmarrageMouseClicked(evt);
+                TableAmarrageQuaiMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(TableAmarrage);
+        jScrollPane1.setViewportView(TableAmarrageQuai);
 
         jLabel2.setText("Emplacement :");
 
@@ -202,6 +259,24 @@ public class ListeAmarrage extends javax.swing.JFrame {
             }
         });
 
+        TableAmarragePonton.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        TableAmarragePonton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TableAmarragePontonMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(TableAmarragePonton);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -210,7 +285,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator1)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1071, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -226,7 +301,8 @@ public class ListeAmarrage extends javax.swing.JFrame {
                                 .addComponent(LabelSupprimer)
                                 .addGap(18, 18, 18)
                                 .addComponent(BoutonQuitter)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1071, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -237,21 +313,23 @@ public class ListeAmarrage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(LabelEmplacement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelEmplacement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(4, 4, 4)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BoutonSelectionner)
                     .addComponent(LabelSupprimer)
                     .addComponent(BoutonQuitter))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -264,134 +342,62 @@ public class ListeAmarrage extends javax.swing.JFrame {
     private void BoutonSelectionnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSelectionnerActionPerformed
         BoutonLire.setEnabled(false);
         BoutonChoisir.setEnabled(false);
-        System.out.println("Type : " + Type);
         String req = Capitainerie.LabelRequete.getText();
         String[] separe = req.split("/");
         String bat = separe[2];
         String pav = separe[1];
         String im = separe[4];
-        String id = pav + "_" + im;
        
-        if ("Plaisance".equals(Type))
-        {  
-            System.out.println("Bateau de plaisance !");
-            int existe = 0;
-            TablePonton = (DefaultTableModel) this.TableAmarrage.getModel();
-            int i = this.TableAmarrage.getSelectedRow(); 
-            int tmp = i;
-            if (tmp != -1)
+        if (TableAmarragePonton.getSelectedRow() != -1 && TableAmarrageQuai.getSelectedRow() != -1)
+        {
+            System.out.println("Vous avez sélectionner dans les deux tableaux !");
+            TableAmarragePonton.clearSelection();
+            TableAmarrageQuai.clearSelection();
+        }
+        else if (TableAmarragePonton.getSelectedRow() == -1 && TableAmarrageQuai.getSelectedRow() == -1)
+        {
+            System.out.println("Vous n'avez rien sélectionné !");
+        }
+        else if (TableAmarragePonton.getSelectedRow() != -1)
+        {    
+            String Bateau = (String)TablePonton.getValueAt(TableAmarragePonton.getSelectedRow(), 5);                
+            if (Bateau == null)
+            {        
+                String msg = LabelEmplacement.getText();
+                Capitainerie.LabelAmarrageChoisir.setText (msg);
+                BoutonSelectionner.setEnabled(true); 
+                Capitainerie.BoutonEnvoyerChoix.setEnabled(true);
+                Capitainerie.BoutonLire.setEnabled(false);
+                Capitainerie.BoutonEnvoyerConfirmation.setEnabled(false);
+                Capitainerie.BoutonChoisir.setEnabled(false);
+                this.setVisible(false);
+            }
+            else 
             {
-                i = tmp;
-                // On vérifie que l'id n'est pas déjà dans le tableau.
-                for (int j = 0; j < TablePonton.getRowCount(); j++){
-                    String idTable = (String)TablePonton.getValueAt(j, 4);
-                    if (idTable != null){
-                        if (idTable.equals(id)){
-                            existe = 1;
-                        }
-                    }
-                }
-                if (existe == 1)
-                {
-                    String msg = "Vous avez déja choisi cet emplacement !";
-                    LabelEmplacement.setText (msg);
-                    Capitainerie.LabelAmarrageChoisir.setText(msg);
-                    Capitainerie.BoutonEnvoyerChoix.setEnabled (true);                    
-                    this.setVisible(false);
-                    this.TableAmarrage.clearSelection();                    
-                }
-                else
-                {
-                    int Emplacement = (int)TablePonton.getValueAt(i, 1);
-                    int cote;
-                    String Ponton;
-                    if ((String)TablePonton.getValueAt(i, 2) != null)
-                    {
-                        cote = 1;
-                        Ponton = (String)TablePonton.getValueAt(i-Emplacement, 0);
-                    }
-                    else
-                    {
-                        cote = 2;
-                        // Un peu de chipotage pour récupérer le ponton.
-                        int tmpbis = (int) TablePonton.getValueAt(i-Emplacement-1, 1);
-                        Ponton = (String)TablePonton.getValueAt(i-Emplacement-tmpbis-1, 0);
-                    }
-                    String Bateau = (String)TablePonton.getValueAt(i, 5);                
-                    if (Bateau == null)
-                    {
-                        String msg = "P" + Ponton + "*" + Integer.toString(Emplacement) + " * " + Integer.toString(cote);                   
-                        Capitainerie.LabelAmarrageChoisir.setText (msg);
-                        BoutonSelectionner.setEnabled(true); 
-                        Capitainerie.BoutonEnvoyerChoix.setEnabled(true);
-                        Capitainerie.BoutonLire.setEnabled(false);
-                        Capitainerie.BoutonEnvoyerConfirmation.setEnabled(false);
-                        Capitainerie.BoutonChoisir.setEnabled(false);
-                        this.setVisible(false);
-                    }
-                    else 
-                    {
-                        System.out.println("6");
-                        String msg = "Un bateau y est déjà amarré !!!";
-                        LabelEmplacement.setText (msg);
-                    }                       
-                }
-            } 
+                String msg = "Un bateau y est déjà amarré !!!";
+                LabelEmplacement.setText (msg);
+            }
         }
         else
         {
-            System.out.println("Bateau de pêche");
-            int existe = 0;
-            TableQuai = (DefaultTableModel) this.TableAmarrage.getModel();
-            int i = this.TableAmarrage.getSelectedRow(); 
-            int tmp = i;
-            if (tmp != -1)
+            System.out.println("J'ai sélectionné un Quai !");
+            String Bateau = (String)TableQuai.getValueAt(TableAmarrageQuai.getSelectedRow(), 2);                
+            if (Bateau == null)
+            {        
+                String msg = LabelEmplacement.getText();
+                Capitainerie.LabelAmarrageChoisir.setText (msg);
+                BoutonSelectionner.setEnabled(true); 
+                Capitainerie.BoutonEnvoyerChoix.setEnabled(true);
+                Capitainerie.BoutonLire.setEnabled(false);
+                Capitainerie.BoutonEnvoyerConfirmation.setEnabled(false);
+                Capitainerie.BoutonChoisir.setEnabled(false);
+                this.setVisible(false);
+            }
+            else 
             {
-                System.out.println("1");
-                i = tmp;
-                for (int j = 0; j < TableQuai.getRowCount(); j++){
-                    String idTable = (String)TableQuai.getValueAt(j, 2);
-                    if (idTable != null){
-                        if (idTable.equals(id)){
-                            existe = 1;
-                        }                        
-                    }
-                }
-                if (existe == 1)
-                {
-                    System.out.println("2");
-                    String msg = "Erreur";
-                    LabelEmplacement.setText (msg);
-                    Capitainerie.LabelAmarrageChoisir.setText(msg);
-                    Capitainerie.BoutonEnvoyerChoix.setEnabled (true);                    
-                    this.setVisible(false);
-                    this.TableAmarrage.clearSelection();                    
-                }
-                else 
-                {
-                    System.out.println("3");
-                    int Emplacement = (int)TableQuai.getValueAt(i, 1);
-                    String Quai = (String)TableQuai.getValueAt(i-Emplacement, 0);            
-                    String Bateau = (String)TableQuai.getValueAt(i, 3);                
-                    if (Bateau == null)
-                    {
-                        String msg = "Q" + Quai + "*" + Integer.toString(Emplacement);
-                        Capitainerie.LabelAmarrageChoisir.setText (msg);
-                        BoutonSelectionner.setEnabled(true); 
-                        Capitainerie.BoutonEnvoyerChoix.setEnabled(true);
-                        Capitainerie.BoutonLire.setEnabled(false);
-                        Capitainerie.BoutonEnvoyerConfirmation.setEnabled(false);
-                        Capitainerie.BoutonChoisir.setEnabled(false);
-                        this.setVisible(false);
-                    }
-                    else 
-                    {
-                        System.out.println("5");
-                        String msg = "Un bateau y est déjà amarré !!!";
-                        LabelEmplacement.setText (msg);
-                    }                    
-                }                
-            }            
+                String msg = "Un bateau y est déjà amarré !!!";
+                LabelEmplacement.setText (msg);
+            }
         }
     }//GEN-LAST:event_BoutonSelectionnerActionPerformed
 
@@ -401,41 +407,66 @@ public class ListeAmarrage extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_BoutonQuitterActionPerformed
 
-    private void TableAmarrageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableAmarrageMouseClicked
+    private void TableAmarrageQuaiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableAmarrageQuaiMouseClicked
         String Emplacement = null, NumPontonQuai = null;
-        if (TableAmarrage.getSelectedRow() != -1)
+        if (TableAmarrageQuai.getSelectedRow() != -1)
         {
-            if (TableAmarrage.getValueAt(TableAmarrage.getSelectedRow(), 0) == null)
+            if (TableAmarrageQuai.getValueAt(TableAmarrageQuai.getSelectedRow(), 0) == null)
             {
-                for (int i = TableAmarrage.getSelectedRow(); i >= 0; i--)
+                for (int i = TableAmarrageQuai.getSelectedRow(); i >= 0; i--)
                 {
-                    if (TableAmarrage.getValueAt(i, 0) != null)
+                    if (TableAmarrageQuai.getValueAt(i, 0) != null)
                     {
-                        NumPontonQuai = TableAmarrage.getValueAt(i, 0).toString();
+                        NumPontonQuai = TableAmarrageQuai.getValueAt(i, 0).toString();
                         i = -1;
                     }
                 }
             }
             else
-                NumPontonQuai = TableAmarrage.getValueAt(TableAmarrage.getSelectedRow(), 0).toString();
-            Emplacement = TableAmarrage.getColumnName(0) + NumPontonQuai + "*" + TableAmarrage.getValueAt(TableAmarrage.getSelectedRow(), 1).toString();
+                NumPontonQuai = TableAmarrageQuai.getValueAt(TableAmarrageQuai.getSelectedRow(), 0).toString();
+            Emplacement = "Q" + NumPontonQuai + "*" + TableAmarrageQuai.getValueAt(TableAmarrageQuai.getSelectedRow(), 1).toString();
             LabelEmplacement.setText(Emplacement);
         }
-    }//GEN-LAST:event_TableAmarrageMouseClicked
+    }//GEN-LAST:event_TableAmarrageQuaiMouseClicked
 
-    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
-        this.setVisible(false);
-    }    
+    private void TableAmarragePontonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableAmarragePontonMouseClicked
+        String Emplacement = null, NumPontonQuai = null;
+        if (TableAmarragePonton.getSelectedRow() != -1)
+        {
+            if (TableAmarragePonton.getValueAt(TableAmarragePonton.getSelectedRow(), 0) == null)
+            {
+                for (int i = TableAmarragePonton.getSelectedRow(); i >= 0; i--)
+                {
+                    if (TableAmarragePonton.getValueAt(i, 0) != null)
+                    {
+                        NumPontonQuai = TableAmarragePonton.getValueAt(i, 0).toString();
+                        i = -1;
+                    }
+                }
+            }
+            else
+                NumPontonQuai = TableAmarragePonton.getValueAt(TableAmarragePonton.getSelectedRow(), 0).toString();
+            
+            if (TableAmarragePonton.getValueAt(TableAmarragePonton.getSelectedRow(), 2) == "****")
+                Emplacement = "P" + NumPontonQuai + "*" + TableAmarragePonton.getValueAt(TableAmarragePonton.getSelectedRow(), 1).toString() + "*2";
+            else
+                Emplacement = "P" + NumPontonQuai + "*" + TableAmarragePonton.getValueAt(TableAmarragePonton.getSelectedRow(), 1).toString() + "*1";
+            LabelEmplacement.setText(Emplacement);
+        }
+    }//GEN-LAST:event_TableAmarragePontonMouseClicked
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonQuitter;
     private javax.swing.JButton BoutonSelectionner;
     private javax.swing.JTextField LabelEmplacement;
     private javax.swing.JButton LabelSupprimer;
-    private javax.swing.JTable TableAmarrage;
+    private javax.swing.JTable TableAmarragePonton;
+    private javax.swing.JTable TableAmarrageQuai;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;

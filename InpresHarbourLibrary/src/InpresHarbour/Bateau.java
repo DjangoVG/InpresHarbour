@@ -48,12 +48,12 @@ public class Bateau extends MoyenDeTransportSurEau implements AUnIdentifiant, Se
     public void setEquipage (Equipage equi){ this.pEquipage = equi; }
 
     @Override
-    public String getIdentifiant (){ return identifiant; }
+    public String getIdentifiant (){ return identifiant.toUpperCase(); }
 
     @Override
     public String toString (){
         return "Bateau : Energie (" + super.Energie + "), Est submersible (" + super.estSubmersible + "), Identifiant (" 
-                + identifiant + "), Nom (" + nom + "), Port d'attache (" + portAttache + "), Tonnage (" + tonnage + "t), Longueur ("
+                + getIdentifiant() + "), Nom (" + nom + "), Port d'attache (" + portAttache + "), Tonnage (" + tonnage + "t), Longueur ("
                 + longueur + "m), Pavillon (" + pavillon + pEquipage.toString();
     }
 

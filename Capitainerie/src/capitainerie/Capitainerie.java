@@ -53,6 +53,8 @@ public class Capitainerie extends javax.swing.JFrame {
     private File fichierPeche;
     private File fichierQuai;
     private File fichierPonton;
+    private int cote;
+    private String c;
     
     public Capitainerie() {
         initComponents();
@@ -118,10 +120,10 @@ public class Capitainerie extends javax.swing.JFrame {
             Equipage4.ajouterMarin(Matelot2); 
             Equipage4.ajouterMarin(Passager2);
             // -------------
-            BateauPlaisance BateauPlaisance1 = new BateauPlaisance ("BE-1236589", false, "Voile", "Marie basse", "Anvers", 1.5f, 4.5f, "BE", Equipage1, "Option Metallique");
-            BateauPlaisance BateauPlaisance2 = new BateauPlaisance ("BE-1425874", false, "Voile", "Marie Hurlante", "Nantes", 1.5f, 4.5f, "BE", Equipage2, "Voiles supplémentaires"); 
-            BateauPeche BateauPeche1 = new BateauPeche ("BE-1457455", false, "Diesel", "Boutounon", "Roubaix", 1.5f, 10.5f, "BE", Equipage3, "Chalutier");
-            BateauPeche BateauPeche2 = new BateauPeche ("BE-2147856", false, "Nucléaire", "Black Pearl", "St-Jacques", 1.5f, 10.5f, "FR", Equipage4, "Thonnier");   
+            BateauPlaisance BateauPlaisance1 = new BateauPlaisance ("1236589ANVERS", false, "Voile", "Marie basse", "Anvers", 1.5f, 4.5f, "BE", Equipage1, "Option Metallique");
+            BateauPlaisance BateauPlaisance2 = new BateauPlaisance ("1425874NANTES", false, "Voile", "Marie Hurlante", "Nantes", 1.5f, 4.5f, "BE", Equipage2, "Voiles supplémentaires"); 
+            BateauPeche BateauPeche1 = new BateauPeche ("1457455ROUBAIX", false, "Diesel", "Boutounon", "Roubaix", 1.5f, 10.5f, "BE", Equipage3, "Chalutier");
+            BateauPeche BateauPeche2 = new BateauPeche ("2147856ST-JACQUES", false, "Nucléaire", "Black Pearl", "St-Jacques", 1.5f, 10.5f, "FR", Equipage4, "Thonnier");   
             //--------------
             ListeBateauxPlaisances.add(BateauPlaisance1);
             ListeBateauxPlaisances.add(BateauPlaisance2);
@@ -141,6 +143,10 @@ public class Capitainerie extends javax.swing.JFrame {
             Quai Quai5 = new Quai ("5", 4);
             Quai Quai6 = new Quai ("6", 4);
             //--------------
+            Ponton1.ajouterBateau(BateauPlaisance1, 1, 1);
+            Ponton1.ajouterBateau(BateauPeche2, 1, 2);
+            Quai1.ajouterBateau(BateauPeche1, 0);
+            Quai3.ajouterBateau(BateauPlaisance2, 2);
             ListePonton.add(Ponton1);
             ListePonton.add(Ponton2);
             ListePonton.add(Ponton3);
@@ -154,9 +160,7 @@ public class Capitainerie extends javax.swing.JFrame {
             ListeQuai.add(Quai5);
             ListeQuai.add(Quai6);
             //--------------
-            Ponton1.ajouterBateau(BateauPlaisance1, 0, 1);
-            Ponton1.ajouterBateau(BateauPlaisance2, 1, 2);
-            Quai1.ajouterBateau(BateauPeche1, 0);
+            
 
         } catch (SailorWithoutIdentificationException ex) {
             fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
@@ -783,9 +787,8 @@ public class Capitainerie extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuNewUserActionPerformed
 
     private void MenuPecheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPecheActionPerformed
-        String TypeBateau = "Peche";
         java.awt.EventQueue.invokeLater(() -> {
-            new ListeAmarrage(ListePonton, ListeQuai, TypeBateau).setVisible(true);
+            new ListeAmarrage(ListePonton, ListeQuai).setVisible(true);
         });
     }//GEN-LAST:event_MenuPecheActionPerformed
 
@@ -859,9 +862,8 @@ public class Capitainerie extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuRechercheMarinActionPerformed
 
     private void MenuPlaisanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPlaisanceActionPerformed
-        String TypeBateau = "Plaisance";
         java.awt.EventQueue.invokeLater(() -> {
-            new ListeAmarrage(ListePonton, ListeQuai, TypeBateau).setVisible(true);
+            new ListeAmarrage(ListePonton, ListeQuai).setVisible(true);
         });
     }//GEN-LAST:event_MenuPlaisanceActionPerformed
 
@@ -870,7 +872,7 @@ public class Capitainerie extends javax.swing.JFrame {
         String[] separe = req.split("/");
         String TypeBateau = separe[0];     
         java.awt.EventQueue.invokeLater(() -> {
-            new ListeAmarrage(ListePonton, ListeQuai, TypeBateau).setVisible(true);
+            new ListeAmarrage(ListePonton, ListeQuai).setVisible(true);
         });
     }//GEN-LAST:event_BoutonChoisirActionPerformed
 
@@ -1061,91 +1063,169 @@ public class Capitainerie extends javax.swing.JFrame {
         float longueur = parseFloat(lg);
         String immatriculation = separe[4];
         immatriculation = immatriculation.replaceAll("\\s", "");
-        String id = pavillon + "_" + immatriculation;
+        String id = immatriculation;
         String emplacement = separe[5];
         emplacement = emplacement.replaceAll("\\s", "");
         
-        if ("Plaisance".equals(type)){
-            String[] sep = emplacement.split("\\*");
-            String ep = sep[0];
-            String e = ep.substring(1);
-            String n = sep[1];
-            String c = sep[2];
-            int emp = parseInt (e);
-            int num = parseInt (n);  
-            int cote = parseInt (c);
-            try {                
-                BateauPlaisance bpl = new BateauPlaisance (id, false, "", nom, "inconnu pour l'instant", 0.0f, longueur, pavillon, null, "");
-                Ponton p = ListePonton.get(emp-1);
-                p.modifierBateau(bpl, num, cote);
-                Vector ligne = new Vector ();                        
-                ligne.add (id);
-                ligne.add (nom);
-                ligne.add (longueur);
-                ligne.add (pavillon);
-                ligne.add (emplacement);
-                ligne.add (type);
-                fichierLog.ecritLigne ("Le bateau " + id + " a bien été ajouter temporairement");
-                DTMBateaux.addRow(ligne);
-                this.TableBateaux.setModel (DTMBateaux);
-                BoutonBateauAmarré.setEnabled(true);                
+        String[] sep = emplacement.split("\\*");
+        String ep = sep[0];
+        String e = ep.substring(1); // Numéro du Ponton/Quai
+        String n = sep[1]; //Emplacement du Quai/Ponton 
+        int NumeroQuaiPonton = parseInt (e);
+        int EmplacementQuaiPonton = parseInt (n); 
+        System.out.println("PONTON/QUAI : " + NumeroQuaiPonton);
+        System.out.println("EMPLACEMENT : " + EmplacementQuaiPonton);
+        try
+        {
+            c = sep[2]; //Coté 1 ou 2
+            cote = parseInt (c);   
+            System.out.println("COTE : " + cote);
+        }
+        catch(Exception eee)
+        {
+            c = null;
+        }
+ 
+        
+        if (type.equalsIgnoreCase("Plaisance"))
+        {
+            try
+            {
+                BateauPlaisance bpl = new BateauPlaisance (id, false, "", nom, "INCONNU", 0.0f, longueur, pavillon, null, "");
+                if (c != null)
+                {
+                    System.out.println("Confirmation ajout ponton");
+
+                    Ponton p = ListePonton.get(NumeroQuaiPonton-1);
+                    p.modifierBateau(bpl, EmplacementQuaiPonton, cote);
+                    Vector ligne = new Vector ();                        
+                    ligne.add (id);
+                    ligne.add (nom);
+                    ligne.add (longueur);
+                    ligne.add (pavillon);
+                    ligne.add (emplacement);
+                    ligne.add (type);
+                    fichierLog.ecritLigne ("Le bateau " + id + " a bien été ajouter temporairement");
+                    DTMBateaux.addRow(ligne);
+                    this.TableBateaux.setModel (DTMBateaux);
+                    BoutonBateauAmarré.setEnabled(true);
+
+                    try {
+                        FileOutputStream fos = new FileOutputStream(fichierPonton);
+                        ObjectOutputStream oos = new ObjectOutputStream(fos);                
+                        oos.writeObject(ListePonton);
+                        oos.close();
+                        fos.close();                
+                    } catch (FileNotFoundException ex) {
+                        fichierLog.ecritLigne ("Fichier " + fichierPonton + "non trouvé en lecture avec comme message : " + ex);
+                    } catch (IOException ex) {
+                        fichierLog.ecritLigne ("IO Exception en lecture sur le fichier : " + fichierPonton + " avec comme message : " + ex); 
+                    }
+                }
+                else
+                {
+                    System.out.println("Confirmation ajout quai");
+                    Quai q = ListeQuai.get(NumeroQuaiPonton-1);
+                    q.supprimerBateau(EmplacementQuaiPonton);
+                    q.ajouterBateau(bpl, EmplacementQuaiPonton);
+                    Vector ligne = new Vector ();                        
+                    ligne.add (id);
+                    ligne.add (nom);
+                    ligne.add (longueur);
+                    ligne.add (pavillon);
+                    ligne.add (emplacement);
+                    ligne.add (type);
+                    fichierLog.ecritLigne ("Le bateau " + id + " a bien été ajouté temporairement");
+                    DTMBateaux.addRow(ligne);
+                    this.TableBateaux.setModel (DTMBateaux); 
+                    BoutonBateauAmarré.setEnabled(true);
+
+                    try {
+                        FileOutputStream fos = new FileOutputStream(fichierQuai);
+                        ObjectOutputStream oos = new ObjectOutputStream(fos);                
+                        oos.writeObject(ListeQuai);
+                        oos.close();
+                        fos.close();                
+                    } catch (FileNotFoundException ex) {
+                        fichierLog.ecritLigne ("Fichier " + fichierQuai + "non trouvé en lecture avec comme message : " + ex);
+                    } catch (IOException ex) {
+                        fichierLog.ecritLigne ("IO Exception en lecture sur le fichier : " + fichierQuai + " avec comme message : " + ex); 
+                    } 
+                }
             } catch (ShipWithoutIdentificationException ex) {
                 fichierLog.ecritLigne ("ShipWithoutIdentificationException : " + ex.getMessage());
-            }
-
-            try {
-                FileOutputStream fos = new FileOutputStream(fichierPonton);
-                ObjectOutputStream oos = new ObjectOutputStream(fos);                
-                oos.writeObject(ListePonton);
-                oos.close();
-                fos.close();                
-            } catch (FileNotFoundException ex) {
-                fichierLog.ecritLigne ("Fichier " + fichierPonton + "non trouvé en lecture avec comme message : " + ex);
-            } catch (IOException ex) {
-                fichierLog.ecritLigne ("IO Exception en lecture sur le fichier : " + fichierPonton + " avec comme message : " + ex); 
             }
         }
         else
-        {
-            String[] sep = emplacement.split("\\*");
-            String ep = sep[0];
-            String e = ep.substring(1);
-            String n = sep[1];
-            System.out.println("e : " + e);
-            System.out.println("n : " + n);
-            int emp = parseInt (e);
-            int num = parseInt (n);                      
-            // Permet la création de la liste quai en la désérialisant
-            try 
+        {    
+            
+            try
             {
-                BateauPeche bpe = new BateauPeche (id, false, "", nom, "inconnu pour l'instant", 0.0f, longueur, pavillon, null, "");
-                Quai q = ListeQuai.get(emp-1);
-                q.supprimerBateau(num);
-                q.ajouterBateau(bpe, num);
-                Vector ligne = new Vector ();                        
-                ligne.add (id);
-                ligne.add (nom);
-                ligne.add (longueur);
-                ligne.add (pavillon);
-                ligne.add (emplacement);
-                ligne.add (type);
-                fichierLog.ecritLigne ("Le bateau " + id + " a bien été ajouté temporairement");
-                DTMBateaux.addRow(ligne);
-                this.TableBateaux.setModel (DTMBateaux); 
-                BoutonBateauAmarré.setEnabled(true);                
+                BateauPeche bpl = new BateauPeche (id, false, "", nom, "INCONNU", 0.0f, longueur, pavillon, null, "");
+                if (c != null)
+                {
+                    Ponton p = ListePonton.get(NumeroQuaiPonton-1);
+                    System.out.println("Bateau du ponton : " + p.getNbrBateau());
+                    System.out.println("Emplacement : " + EmplacementQuaiPonton);
+                    System.out.println("Cote : " + cote);
+                    p.ajouterBateau(bpl, EmplacementQuaiPonton, cote);
+                    System.out.println("Bateau du ponton apres : " + p.getNbrBateau());
+                    Vector ligne = new Vector ();                        
+                    ligne.add (id);
+                    ligne.add (nom);
+                    ligne.add (longueur);
+                    ligne.add (pavillon);
+                    ligne.add (emplacement);
+                    ligne.add (type);
+                    fichierLog.ecritLigne ("Le bateau " + id + " a bien été ajouter temporairement");
+                    DTMBateaux.addRow(ligne);
+                    this.TableBateaux.setModel(DTMBateaux);
+                    BoutonBateauAmarré.setEnabled(true);
+
+                    try {
+                        FileOutputStream fos = new FileOutputStream(fichierPonton);
+                        ObjectOutputStream oos = new ObjectOutputStream(fos);                
+                        oos.writeObject(ListePonton);
+                        oos.close();
+                        fos.close();                
+                    } catch (FileNotFoundException ex) {
+                        fichierLog.ecritLigne ("Fichier " + fichierPonton + "non trouvé en lecture avec comme message : " + ex);
+                    } catch (IOException ex) {
+                        fichierLog.ecritLigne ("IO Exception en lecture sur le fichier : " + fichierPonton + " avec comme message : " + ex); 
+                    }
+                }
+                else // je suis un QUAI
+                {
+                    System.out.println("Confirmation ajout quai");
+                    Quai q = ListeQuai.get(NumeroQuaiPonton-1);
+                    q.supprimerBateau(EmplacementQuaiPonton);
+                    q.ajouterBateau(bpl, EmplacementQuaiPonton);
+                    Vector ligne = new Vector ();                        
+                    ligne.add (id);
+                    ligne.add (nom);
+                    ligne.add (longueur);
+                    ligne.add (pavillon);
+                    ligne.add (emplacement);
+                    ligne.add (type);
+                    fichierLog.ecritLigne ("Le bateau " + id + " a bien été ajouté temporairement");
+                    DTMBateaux.addRow(ligne);
+                    this.TableBateaux.setModel (DTMBateaux); 
+                    BoutonBateauAmarré.setEnabled(true);
+
+                    try {
+                        FileOutputStream fos = new FileOutputStream(fichierQuai);
+                        ObjectOutputStream oos = new ObjectOutputStream(fos);                
+                        oos.writeObject(ListeQuai);
+                        oos.close();
+                        fos.close();                
+                    } catch (FileNotFoundException ex) {
+                        fichierLog.ecritLigne ("Fichier " + fichierQuai + "non trouvé en lecture avec comme message : " + ex);
+                    } catch (IOException ex) {
+                        fichierLog.ecritLigne ("IO Exception en lecture sur le fichier : " + fichierQuai + " avec comme message : " + ex); 
+                    } 
+                }
             } catch (ShipWithoutIdentificationException ex) {
                 fichierLog.ecritLigne ("ShipWithoutIdentificationException : " + ex.getMessage());
-            }
-            try {
-                FileOutputStream fos = new FileOutputStream(fichierQuai);
-                ObjectOutputStream oos = new ObjectOutputStream(fos);                
-                oos.writeObject(ListeQuai);
-                oos.close();
-                fos.close();                
-            } catch (FileNotFoundException ex) {
-                fichierLog.ecritLigne ("Fichier " + fichierQuai + "non trouvé en lecture avec comme message : " + ex);
-            } catch (IOException ex) {
-                fichierLog.ecritLigne ("IO Exception en lecture sur le fichier : " + fichierQuai + " avec comme message : " + ex); 
             }                    
         }        
     }//GEN-LAST:event_BoutonEnvoyerConfirmationActionPerformed

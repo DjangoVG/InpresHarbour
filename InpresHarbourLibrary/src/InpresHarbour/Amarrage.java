@@ -1,7 +1,7 @@
 package InpresHarbour;
 
 public abstract class Amarrage implements AUnIdentifiant{
-    protected int NbrPlacesDispos;
+    protected String Identifiant;
     
-    public int getCapacite() { return NbrPlacesDispos; }
+    public abstract int getCapacite();
 }

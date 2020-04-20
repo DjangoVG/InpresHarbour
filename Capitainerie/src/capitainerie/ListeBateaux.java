@@ -55,7 +55,9 @@ public class ListeBateaux extends javax.swing.JFrame {
         TablePeche.addColumn("Longueur");
         TablePeche.addColumn("Pavillon");
         TablePeche.addColumn("Type");
-        for (BateauPeche Elem : pecheList){
+        
+        for (BateauPeche Elem : pecheList)
+        {
             Vector ligne = new Vector();
             ligne.add(Elem.getIdentifiant());
             boolean tmp = Elem.getEstSubmersible();
