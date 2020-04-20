@@ -642,7 +642,7 @@ public class InfosBateau extends javax.swing.JFrame {
             } catch (ShipWithoutIdentificationException ex) {
                 Capitainerie.fichierLog.ecritLigne ("ShipWithoutIdentificationException : " + ex.getMessage());
             }
-            
+            Capitainerie.BoutonLire.setEnabled(true);
             Capitainerie.TableBateaux.setModel(DTMBateaux);
             if (TableBateaux.getRowCount() != 0)
                 Capitainerie.BoutonBateauAmarré.setEnabled(true);  

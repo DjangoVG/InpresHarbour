@@ -30,6 +30,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
         // Création du tableauPonton
         for (int j = 0; j < ListePonton.size(); j++)
         {
+            System.out.println("1");
             Ponton p = ListePonton.get(j);
             int cap = p.getCapacite ();
             int tempA;
@@ -108,7 +109,6 @@ public class ListeAmarrage extends javax.swing.JFrame {
                             BateauPlaisance bateau = (BateauPlaisance)listB.get(k);
                             try
                             {
-                                ligne.add(null);
                                 ligne.add (bateau.getIdentifiant());
                                 ligne.add (bateau.getNom());
                                 ligne.add(bateau.getPortAttache());                                
@@ -117,6 +117,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
                         }
                         else
                         {
+                            System.out.println("7");
                             BateauPeche bateau = (BateauPeche)listB.get(k);
                             try
                             {

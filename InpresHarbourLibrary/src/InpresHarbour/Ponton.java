@@ -65,12 +65,12 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
     
     public void ajouterBateau (MoyenDeTransportSurEau bpl, int Emplacement, int Cote){
         int NbrBateaux = getNbrBateau();
-        if (Cote == 1)
+        if (Cote == 2)
         {
             ListeBateauCoté1.add(Emplacement, bpl);
             System.out.println ("Ajouté cote A : " + Emplacement);
         }
-        if (Cote == 2)
+        if (Cote == 1)
         {  
             ListeBateauCoté2.add(Emplacement, bpl);
             System.out.println ("Ajouté cote b : " + Emplacement );      
@@ -81,12 +81,12 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
     
     public void modifierBateau (MoyenDeTransportSurEau bpl, int emp, int cote){
         int nbr = getNbrBateau();
-        if (cote == 1){
+        if (cote == 2){
             ListeBateauCoté1.remove(emp);
             ListeBateauCoté1.add(emp, bpl);
             System.out.println ("Ajouté cote A : " + emp);
         }
-        if (cote == 2){        
+        if (cote == 1){        
             ListeBateauCoté2.remove(emp);
             ListeBateauCoté2.add(emp, bpl);
             System.out.println ("Ajouté cote b : " + emp);   

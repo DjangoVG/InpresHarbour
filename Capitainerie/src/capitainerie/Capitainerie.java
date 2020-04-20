@@ -1168,7 +1168,7 @@ public class Capitainerie extends javax.swing.JFrame {
                     System.out.println("Bateau du ponton : " + p.getNbrBateau());
                     System.out.println("Emplacement : " + EmplacementQuaiPonton);
                     System.out.println("Cote : " + cote);
-                    p.ajouterBateau(bpl, EmplacementQuaiPonton, cote);
+                    p.modifierBateau(bpl, EmplacementQuaiPonton, cote);
                     System.out.println("Bateau du ponton apres : " + p.getNbrBateau());
                     Vector ligne = new Vector ();                        
                     ligne.add (id);
