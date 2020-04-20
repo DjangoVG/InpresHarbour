@@ -778,3 +778,162 @@
 [19/04/20 17:25] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
 [19/04/20 17:25] : Enregistrement des bateaux de quai juste avant la fermeture
 [19/04/20 17:25] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:20] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:20] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:20] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:20] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:20] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:20] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:20] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:20] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:30] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:30] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:30] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:30] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:32] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:32] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:32] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:32] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:32] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:32] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:32] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:32] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:33] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:33] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:33] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:33] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:33] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:33] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:33] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:33] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:33] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:33] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:34] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:34] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:35] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:35] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:35] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:36] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:36] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:36] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:36] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:39] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:39] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:39] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:39] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:39] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:39] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:39] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:39] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:40] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[20/04/20 15:40] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[20/04/20 15:40] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[20/04/20 15:40] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[20/04/20 15:40] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[20/04/20 15:40] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[20/04/20 15:40] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[20/04/20 15:40] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[20/04/20 15:42] : Le bateau BE_123123 a bien été ajouté temporairement
+[20/04/20 15:42] : Création du marin : 155151155151
+[20/04/20 15:42] : Création du marin : 155151155151
+[20/04/20 15:42] : Création d'un capitaine 155151155151
+[20/04/20 15:42] : Création d'un second 155151155151
+[20/04/20 15:42] : Le bateau BE_123123 a bien été enregistré
+[20/04/20 15:42] : Le bateau n'est plus en attente
+[20/04/20 15:43] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[20/04/20 15:43] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:43] : Enregistement des bateaux de pêches juste avant la fermeture.
+[20/04/20 15:43] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:43] : Enregistrement des bateaux de ponton juste avant la fermeture
+[20/04/20 15:43] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[20/04/20 15:43] : Enregistrement des bateaux de quai juste avant la fermeture
+[20/04/20 15:43] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture

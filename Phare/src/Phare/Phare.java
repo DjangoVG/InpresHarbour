@@ -1,4 +1,6 @@
 package Phare;
+import Authentification.LoginPhare;
+import FenetresEnOption.*;
 import Outils.FichierLog;
 import java.beans.*;
 import PhareBeans.*;
@@ -112,6 +114,16 @@ public class Phare extends javax.swing.JFrame {
         jSeparator5 = new javax.swing.JSeparator();
         BoutonEntreeRade = new javax.swing.JButton();
         LabelBateauEntreRade = new javax.swing.JTextField();
+        MenuBarCapitainerie = new javax.swing.JMenuBar();
+        MenuUtilisateur = new javax.swing.JMenu();
+        MenuLogin = new javax.swing.JMenuItem();
+        MenuLogout = new javax.swing.JMenuItem();
+        MenuNewUser = new javax.swing.JMenuItem();
+        MenuParametres = new javax.swing.JMenu();
+        MenuFichierLOG = new javax.swing.JMenuItem();
+        MenuAPropos = new javax.swing.JMenu();
+        MenuAuteur = new javax.swing.JMenuItem();
+        MenuAide = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -120,6 +132,7 @@ public class Phare extends javax.swing.JFrame {
         jLabel1.setText("Bienvenue sur le panel du Phare");
 
         BoutonDemarrerServeur.setText("Se connecter au serveur");
+        BoutonDemarrerServeur.setEnabled(false);
         BoutonDemarrerServeur.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BoutonDemarrerServeurActionPerformed(evt);
@@ -174,6 +187,71 @@ public class Phare extends javax.swing.JFrame {
         });
 
         LabelBateauEntreRade.setEnabled(false);
+
+        MenuUtilisateur.setText("Utilisateurs");
+
+        MenuLogin.setText("Se connecter");
+        MenuLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuLoginActionPerformed(evt);
+            }
+        });
+        MenuUtilisateur.add(MenuLogin);
+
+        MenuLogout.setText("Se déconnecter");
+        MenuLogout.setEnabled(false);
+        MenuLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuLogoutActionPerformed(evt);
+            }
+        });
+        MenuUtilisateur.add(MenuLogout);
+
+        MenuNewUser.setText("Ajouter un nouvel utilisateur");
+        MenuNewUser.setEnabled(false);
+        MenuNewUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuNewUserActionPerformed(evt);
+            }
+        });
+        MenuUtilisateur.add(MenuNewUser);
+
+        MenuBarCapitainerie.add(MenuUtilisateur);
+
+        MenuParametres.setText("Paramètres");
+        MenuParametres.setEnabled(false);
+
+        MenuFichierLOG.setText("Fichier log");
+        MenuFichierLOG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuFichierLOGActionPerformed(evt);
+            }
+        });
+        MenuParametres.add(MenuFichierLOG);
+
+        MenuBarCapitainerie.add(MenuParametres);
+
+        MenuAPropos.setText("A propos");
+
+        MenuAuteur.setText("Auteur");
+        MenuAuteur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuAuteurActionPerformed(evt);
+            }
+        });
+        MenuAPropos.add(MenuAuteur);
+
+        MenuAide.setText("Aide");
+        MenuAide.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuAideActionPerformed(evt);
+            }
+        });
+        MenuAPropos.add(MenuAide);
+
+        MenuBarCapitainerie.add(MenuAPropos);
+
+        setJMenuBar(MenuBarCapitainerie);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -309,6 +387,59 @@ public class Phare extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BoutonAutorisationEntreeActionPerformed
 
+    private void MenuLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuLoginActionPerformed
+        LoginPhare LogPhare;
+        LogPhare = new LoginPhare(this, true);
+        LogPhare.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent e) {
+                System.exit(0);
+            }
+        });
+        LogPhare.setVisible(true);
+    }//GEN-LAST:event_MenuLoginActionPerformed
+
+    private void MenuLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuLogoutActionPerformed
+        MenuParametres.setEnabled(false);
+        BoutonDemarrerServeur.setEnabled(false);
+        BoutonSuivant.setEnabled(false);
+        MenuLogout.setEnabled(false);
+        BoutonEntreeRade.setEnabled(false);
+        BoutonAutorisationEntree.setEnabled(false);
+        MenuLogin.setEnabled(true);
+        MenuNewUser.setEnabled(false);
+    }//GEN-LAST:event_MenuLogoutActionPerformed
+
+    private void MenuNewUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuNewUserActionPerformed
+        LoginPhare LogPhare;
+        LogPhare = new LoginPhare(this, true);
+        LogPhare.BoutonConnexion.setText("Ajouter");
+        LogPhare.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent e) {
+                System.exit(0);
+            }
+        });
+        LogPhare.setVisible(true);
+    }//GEN-LAST:event_MenuNewUserActionPerformed
+
+    private void MenuFichierLOGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuFichierLOGActionPerformed
+        String sLog = fichierLog.litFichier();
+        java.awt.EventQueue.invokeLater(() -> {
+            new FenetreLog(sLog).setVisible(true);
+        });
+    }//GEN-LAST:event_MenuFichierLOGActionPerformed
+
+    private void MenuAuteurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuAuteurActionPerformed
+        FenetreAuteur fen = new FenetreAuteur();
+        fen.setVisible(true);
+    }//GEN-LAST:event_MenuAuteurActionPerformed
+
+    private void MenuAideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuAideActionPerformed
+        FenetreAide fen = new FenetreAide();
+        fen.setVisible(true);
+    }//GEN-LAST:event_MenuAideActionPerformed
+
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         try { 
@@ -335,6 +466,16 @@ public class Phare extends javax.swing.JFrame {
     public static javax.swing.JTextField LabelBateauIdentifie;
     private javax.swing.JTextField LabelReponseCapit;
     public static javax.swing.JList<String> ListeAttente;
+    private javax.swing.JMenu MenuAPropos;
+    private javax.swing.JMenuItem MenuAide;
+    private javax.swing.JMenuItem MenuAuteur;
+    private javax.swing.JMenuBar MenuBarCapitainerie;
+    public javax.swing.JMenuItem MenuFichierLOG;
+    public javax.swing.JMenuItem MenuLogin;
+    public javax.swing.JMenuItem MenuLogout;
+    public javax.swing.JMenuItem MenuNewUser;
+    private javax.swing.JMenu MenuParametres;
+    private javax.swing.JMenu MenuUtilisateur;
     public javax.swing.JProgressBar ProgressDemarrage;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

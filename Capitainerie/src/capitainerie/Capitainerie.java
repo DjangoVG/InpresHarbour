@@ -1,5 +1,6 @@
 package capitainerie;
 import Authentification.LoginCapitainerie;
+import Authentification.VerificateurUsersPasswordHash;
 import FenetresEnOption.*;
 import InpresHarbour.BateauPeche;
 import InpresHarbour.BateauPlaisance;
@@ -769,7 +770,16 @@ public class Capitainerie extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void MenuNewUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuNewUserActionPerformed
-        // TODO add your handling code here:
+        LoginCapitainerie LogCapit;
+        LogCapit = new LoginCapitainerie(this, true);
+        LogCapit.BoutonConnexion.setText("Ajouter");
+        LogCapit.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent e) {
+                System.exit(0);
+            }
+        });
+        LogCapit.setVisible(true);
     }//GEN-LAST:event_MenuNewUserActionPerformed
 
     private void MenuPecheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPecheActionPerformed
@@ -1004,6 +1014,9 @@ public class Capitainerie extends javax.swing.JFrame {
         MenuAmarrage.setEnabled(false);
         MenuBateau.setEnabled(false);
         MenuPersonnel.setEnabled(false);
+        MenuLogin.setEnabled(true);
+        MenuNewUser.setEnabled(false);
+        BoutonDemarrerServeur.setEnabled(false);
     }//GEN-LAST:event_MenuLogoutActionPerformed
 
     private void BoutonLireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonLireActionPerformed
@@ -1180,7 +1193,7 @@ public class Capitainerie extends javax.swing.JFrame {
     private javax.swing.JMenuItem MenuListeBateau;
     public javax.swing.JMenuItem MenuLogin;
     public javax.swing.JMenuItem MenuLogout;
-    private javax.swing.JMenuItem MenuNewUser;
+    public javax.swing.JMenuItem MenuNewUser;
     private javax.swing.JMenu MenuParametres;
     private javax.swing.JMenuItem MenuPeche;
     public javax.swing.JMenu MenuPersonnel;

@@ -1,7 +1,5 @@
 package Authentification;
-import javax.swing.UIManager;
 import capitainerie.Capitainerie;
-import static capitainerie.Capitainerie.*;
 
 public class LoginCapitainerie extends javax.swing.JDialog {
 
@@ -112,37 +110,52 @@ public class LoginCapitainerie extends javax.swing.JDialog {
         Login = FieldLogin.getText();
         Password = FieldPassword.getText();
         
-        try
+        if (this.BoutonConnexion.getText().equalsIgnoreCase("Se connecter"))
         {
-            this.Sub = new VerificateurUsersPasswordHash (Login);
+            try
+            {
+                this.Sub = new VerificateurUsersPasswordHash (Login);
+                if (!Sub.isValid(Password, Login))
+                    throw new LoginException();
+                else
+                {
+                    if (Sub.findPwd(Login, Password))
+                    {
+                        System.out.println ("Mot de passe trouvé");
+                        FenetreCapitainerie.MenuLogout.setEnabled(true);
+                        FenetreCapitainerie.BoutonLire.setEnabled(true);
+                        FenetreCapitainerie.MenuAmarrage.setEnabled(true);
+                        FenetreCapitainerie.MenuBateau.setEnabled(true);
+                        FenetreCapitainerie.MenuPersonnel.setEnabled(true);
+                        FenetreCapitainerie.MenuFichierLOG.setEnabled(true);
+                        FenetreCapitainerie.MenuLogin.setEnabled(false);
+                        FenetreCapitainerie.BoutonDemarrerServeur.setEnabled(true);
+                        FenetreCapitainerie.MenuNewUser.setEnabled(true);
+                        this.setVisible(false);
+                    }        
+                    else
+                        throw new LoginException();
+                }    
+            }
+            catch (LoginException e)
+            {
+            }   
+        }
+        else
+        {
+            this.Sub = new VerificateurUsersPasswordHash (Login); 
             if (!Sub.isValid(Password, Login))
-                throw new LoginException();
+                System.out.println ("Mot de passe et/ou login non valide !!!");
             else
             {
-                if (Sub.findPwd(Login, Password))
-                {
-                    System.out.println ("Mot de passe trouvé :-) ");
-                    FenetreCapitainerie.MenuLogout.setEnabled(true);
-                    FenetreCapitainerie.BoutonLire.setEnabled(true);
-                    FenetreCapitainerie.MenuAmarrage.setEnabled(true);
-                    FenetreCapitainerie.MenuBateau.setEnabled(true);
-                    FenetreCapitainerie.MenuPersonnel.setEnabled(true);
-                    FenetreCapitainerie.MenuFichierLOG.setEnabled(true);
-                    FenetreCapitainerie.MenuLogin.setEnabled(false);
-                    FenetreCapitainerie.BoutonDemarrerServeur.setEnabled(true);
-                    this.setVisible(false);
-                }        
-                else
-                    throw new LoginException();
-            }    
-        }
-        catch (LoginException e)
-        {
+                Sub.ajouterLogin (Login, Password); 
+                this.setVisible(false);
+            }
         }
     }//GEN-LAST:event_BoutonConnexionActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BoutonConnexion;
+    public javax.swing.JButton BoutonConnexion;
     private javax.swing.JButton BoutonReset;
     private javax.swing.JTextField FieldLogin;
     private javax.swing.JPasswordField FieldPassword;
