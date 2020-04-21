@@ -15,20 +15,23 @@ public class VerificateurUsersPasswordHash extends VerificateurMotDePasse {
     private String separateur;
     private File fichier;
     
-    public VerificateurUsersPasswordHash (String log){
+    public VerificateurUsersPasswordHash (String log, String password){
         super ();
-        hash = new HashMap<>();
-        repertoire = System.getProperty("user.dir");
-        separateur = System.getProperty("file.separator");
+        hash = new HashMap<>(); 
+        repertoire = System.getProperty("user.dir"); // Je récupère les propiétés System (Portabilité)
+        separateur = System.getProperty("file.separator"); // Je récupère les propiétés System (Portabilité)
         File dir = new File (repertoire + separateur + "Capitainerie" + separateur + "Users");
-        boolean dirExist = dir.exists();
-        if (!dirExist){
-            try {
-                hash.put(log, "1234");
+        boolean dirExist = dir.exists(); // Je vérifie si un repertoire USER existe
+        if (!dirExist)
+        {
+            try 
+            {
+                hash.put(log, password); // Si il n'existe pas, je crée le dossier + fichier "Nomutilisateur.data" avec son login et un mdp 1234
                 System.out.println ("Aucun User existe : création du sous dossier avec un admin.");
                 dir.mkdirs();
                 fichier = new File (dir + separateur + "Users" + log + ".data");
-                try (FileOutputStream fos = new FileOutputStream (fichier); ObjectOutputStream oos = new ObjectOutputStream (fos)) {
+                try (FileOutputStream fos = new FileOutputStream (fichier); ObjectOutputStream oos = new ObjectOutputStream (fos)) 
+                {
                     oos.writeObject(hash);
                     oos.flush();
                 }
@@ -40,12 +43,15 @@ public class VerificateurUsersPasswordHash extends VerificateurMotDePasse {
                 System.out.println ("IOException Users"+fichier+" lors de l'écriture dans le constructeur Dialogin");
             }            
         }
-        else {
-            try {
+        else // Si un fichier USER existe
+        {
+            try 
+            {
                 System.out.println ("Au moins le User admin existe déjà, lecture du fichier correspondant au User encodé.");
-                fichier = new File (dir + separateur + "Users" + log + ".data");
-                try (FileInputStream fis = new FileInputStream (fichier); ObjectInputStream ois = new ObjectInputStream (fis)) {
-                    this.hash = (HashMap) ois.readObject();
+                fichier = new File (dir + separateur + "Users" + log + ".data"); // Je crée un fichier correspondant a celui du log
+                try (FileInputStream fis = new FileInputStream (fichier); ObjectInputStream ois = new ObjectInputStream (fis)) 
+                {
+                    this.hash = (HashMap) ois.readObject(); // je récupere dans ce fichier le hasmap
                 }
             }
             catch (FileNotFoundException ex) {
@@ -60,7 +66,6 @@ public class VerificateurUsersPasswordHash extends VerificateurMotDePasse {
         }
     }
     
-    // Get et Set.
     public String getRepertoire (){ return repertoire; }
     public void setRepertoire (String r){ repertoire = r; }    
     
@@ -72,11 +77,11 @@ public class VerificateurUsersPasswordHash extends VerificateurMotDePasse {
     
     @Override
     public boolean findPwd(String log, String pwd) {
-        System.out.println("Login = " + log + "| Password : " + pwd);
-        return hash.containsKey(log) && hash.containsValue(pwd);            
+        return hash.containsKey(log) && hash.containsValue(pwd);    // Je cherche dans la hashmap la valeur correspondant à la clé LOG        
     }
     
-    public void ajouterLogin (String log, String pwd){
+    public void ajouterLogin (String log, String pwd) // Création simple d'un login
+    {
         hash.put(log, pwd);
         try {
             try (FileOutputStream fos = new FileOutputStream (fichier); ObjectOutputStream oos = new ObjectOutputStream (fos)) {

@@ -114,7 +114,7 @@ public class LoginPhare extends javax.swing.JDialog {
         {
             try
             {
-                this.Sub = new VerificateurUsersPasswordHash (Login);
+                this.Sub = new VerificateurUsersPasswordHash (Login, Password);
                 if (!Sub.isValid(Password, Login))
                     throw new LoginException();
                 else
@@ -140,7 +140,7 @@ public class LoginPhare extends javax.swing.JDialog {
         }
         else
         {
-            this.Sub = new VerificateurUsersPasswordHash (Login); 
+            this.Sub = new VerificateurUsersPasswordHash (Login, Password); 
             if (!Sub.isValid(Password, Login))
                 System.out.println ("Mot de passe et/ou login non valide !!!");
             else

@@ -2,7 +2,7 @@ package Authentification;
 
 public class ValidationLogin {
 
-     public boolean isValid (String Password, String log)
+    public boolean isValid (String Password, String log)
     {
         if (log.length() <= 1){
             System.out.println("Le login doit faire plus de 2 caracteres !");

@@ -2314,3 +2314,47 @@
 [21/04/20 15:39] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
 [21/04/20 15:39] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
 [21/04/20 15:39] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[21/04/20 16:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[21/04/20 16:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[21/04/20 16:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[21/04/20 16:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[21/04/20 16:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[21/04/20 16:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[21/04/20 16:30] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[21/04/20 16:30] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[21/04/20 16:42] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[21/04/20 16:42] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[21/04/20 16:42] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[21/04/20 16:42] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[21/04/20 16:42] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[21/04/20 16:42] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[21/04/20 16:42] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[21/04/20 16:42] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[21/04/20 16:43] : Le bateau dzqqzd a bien été ajouté temporairement
+[21/04/20 16:50] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[21/04/20 16:50] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[21/04/20 16:50] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[21/04/20 16:50] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[21/04/20 16:50] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[21/04/20 16:50] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[21/04/20 16:50] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[21/04/20 16:50] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[21/04/20 16:51] : Le bateau zqdqdz a bien été ajouté temporairement
+[21/04/20 16:55] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[21/04/20 16:55] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[21/04/20 16:55] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[21/04/20 16:55] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[21/04/20 16:55] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[21/04/20 16:55] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[21/04/20 16:55] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[21/04/20 16:55] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[21/04/20 16:55] : Le bateau zdq a bien été ajouté temporairement
+[21/04/20 16:58] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[21/04/20 16:58] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[21/04/20 16:58] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[21/04/20 16:58] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[21/04/20 16:58] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[21/04/20 16:58] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[21/04/20 16:58] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[21/04/20 16:58] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[21/04/20 16:58] : Le bateau dzqdqz a bien été ajouté temporairement

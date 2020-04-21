@@ -25,6 +25,11 @@ public class LoginCapitainerie extends javax.swing.JDialog {
         BoutonReset = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BateauPlaisanceLogin.jpg"))); // NOI18N
 
@@ -114,7 +119,7 @@ public class LoginCapitainerie extends javax.swing.JDialog {
         {
             try
             {
-                this.Sub = new VerificateurUsersPasswordHash (Login);
+                this.Sub = new VerificateurUsersPasswordHash (Login, Password);
                 if (!Sub.isValid(Password, Login))
                     throw new LoginException();
                 else
@@ -143,7 +148,7 @@ public class LoginCapitainerie extends javax.swing.JDialog {
         }
         else
         {
-            this.Sub = new VerificateurUsersPasswordHash (Login); 
+            this.Sub = new VerificateurUsersPasswordHash (Login, Password); 
             if (!Sub.isValid(Password, Login))
                 System.out.println ("Mot de passe et/ou login non valide !!!");
             else
@@ -153,6 +158,10 @@ public class LoginCapitainerie extends javax.swing.JDialog {
             }
         }
     }//GEN-LAST:event_BoutonConnexionActionPerformed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        this.setVisible(false);
+    }//GEN-LAST:event_formWindowClosing
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton BoutonConnexion;

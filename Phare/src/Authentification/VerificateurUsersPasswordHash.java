@@ -15,7 +15,7 @@ public class VerificateurUsersPasswordHash extends VerificateurMotDePasse {
     private String separateur;
     private File fichier;
     
-    public VerificateurUsersPasswordHash (String log){
+    public VerificateurUsersPasswordHash (String log, String Password){
         super ();
         hash = new HashMap<>();
         repertoire = System.getProperty("user.dir");
@@ -24,7 +24,7 @@ public class VerificateurUsersPasswordHash extends VerificateurMotDePasse {
         boolean dirExist = dir.exists();
         if (!dirExist){
             try {
-                hash.put(log, "1234");
+                hash.put(log, password);
                 System.out.println ("Aucun User existe : création du sous dossier avec un admin.");
                 dir.mkdirs();
                 fichier = new File (dir + separateur + "Users" + log + ".data");
