@@ -1,6 +1,5 @@
 package capitainerie;
 import Authentification.LoginCapitainerie;
-import Authentification.VerificateurUsersPasswordHash;
 import FenetresEnOption.*;
 import InpresHarbour.BateauPeche;
 import InpresHarbour.BateauPlaisance;
@@ -26,12 +25,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Vector;
-import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 
 public class Capitainerie extends javax.swing.JFrame {

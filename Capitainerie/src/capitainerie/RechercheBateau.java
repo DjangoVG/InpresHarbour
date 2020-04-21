@@ -32,7 +32,7 @@ public class RechercheBateau extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
-        LabelPavillon = new javax.swing.JTextField();
+        LabelPort = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         LabelImmatriculation = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
@@ -49,7 +49,7 @@ public class RechercheBateau extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
         jLabel1.setText("Rechercher un bateau");
 
-        jLabel2.setText("Pavillon :");
+        jLabel2.setText("Port d'attache :");
 
         jLabel3.setText("Numéro d'immatriculation :");
 
@@ -98,7 +98,7 @@ public class RechercheBateau extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(LabelPavillon, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(LabelPort, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
@@ -127,7 +127,7 @@ public class RechercheBateau extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(LabelPavillon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelPort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -152,7 +152,7 @@ public class RechercheBateau extends javax.swing.JFrame {
 
     private void BoutonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonResetActionPerformed
         this.LabelImmatriculation.setText("");
-        this.LabelPavillon.setText("");
+        this.LabelPort.setText("");
     }//GEN-LAST:event_BoutonResetActionPerformed
 
     private void BoutonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonQuitterActionPerformed
@@ -160,10 +160,11 @@ public class RechercheBateau extends javax.swing.JFrame {
     }//GEN-LAST:event_BoutonQuitterActionPerformed
 
     private void BoutonRechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonRechercherActionPerformed
-        String id = this.LabelPavillon.getText().toUpperCase() + "_" + this.LabelImmatriculation.getText().toLowerCase();
+        String id = this.LabelImmatriculation.getText().toLowerCase() + this.LabelPort.getText().toUpperCase();
         boolean trouve = false;
         
-        for (BateauPlaisance Elem : ListeBateauxPlaisances){
+        for (BateauPlaisance Elem : ListeBateauxPlaisances)
+        {
             String idListe = Elem.getIdentifiant();
             if (idListe.equals(id))
             {
@@ -191,7 +192,8 @@ public class RechercheBateau extends javax.swing.JFrame {
             }            
         }      
         
-        for (BateauPeche Elem : ListeBateauPeches){
+        for (BateauPeche Elem : ListeBateauPeches)
+        {
             String idListe = Elem.getIdentifiant();
             if (idListe.equals(id))
             {
@@ -233,7 +235,7 @@ public class RechercheBateau extends javax.swing.JFrame {
     private javax.swing.JButton BoutonRechercher;
     private javax.swing.JButton BoutonReset;
     private javax.swing.JTextField LabelImmatriculation;
-    private javax.swing.JTextField LabelPavillon;
+    private javax.swing.JTextField LabelPort;
     private javax.swing.JTable TableBateau;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

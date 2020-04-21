@@ -13,7 +13,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 public class InfosEquipage extends javax.swing.JFrame {
-    private final DefaultTableModel DTMEquipage;
+    private DefaultTableModel DTMEquipage;
 
     public InfosEquipage(ArrayList<BateauPlaisance> ListeBateauPlaisances, ArrayList<BateauPeche> ListeBateauPeche) {
         initComponents();
@@ -154,6 +154,11 @@ public class InfosEquipage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonRechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonRechercherActionPerformed
+        for (int i = 0; i < DTMEquipage.getRowCount(); i++)
+        {
+            DTMEquipage.removeRow(i);
+        }
+        
         String id = this.LabelImmatriculation.getText().toLowerCase() + this.LabelPort.getText().toUpperCase();
         boolean trouve = false;
         for (BateauPlaisance Elem : ListeBateauxPlaisances){
@@ -196,8 +201,8 @@ public class InfosEquipage extends javax.swing.JFrame {
                         ligneMarin.add(ElemMar.getNom());
                         ligneMarin.add(ElemMar.getPrenom());
                         strDate = dateFormat.format(ElemMar.getDateNaissance());
-                        ligne.add(strDate);   
-                        ligne.add(ElemMar.getNationalite());
+                        ligneMarin.add(strDate);   
+                        ligneMarin.add(ElemMar.getNationalite());
                         ligneMarin.add(ElemMar.getFonction());
                         DTMEquipage.addRow(ligneMarin);
                     }
@@ -242,8 +247,8 @@ public class InfosEquipage extends javax.swing.JFrame {
                         ligneMarin.add(ElemMar.getNom());
                         ligneMarin.add(ElemMar.getPrenom());
                         strDate = dateFormat.format(ElemMar.getDateNaissance());
-                        ligne.add(strDate); 
-                        ligne.add(ElemMar.getNationalite());
+                        ligneMarin.add(strDate); 
+                        ligneMarin.add(ElemMar.getNationalite());
                         ligneMarin.add(ElemMar.getFonction());
                         DTMEquipage.addRow(ligneMarin);
                     }
