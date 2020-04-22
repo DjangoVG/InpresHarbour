@@ -300,366 +300,368 @@ public class InfosBateau extends javax.swing.JFrame {
     }//GEN-LAST:event_BoutonEquipageActionPerformed
 
     private void BoutonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonOkActionPerformed
-        for (int i=0; i < equipage.getNombreHumains(); i++)
+        if (equipage.getNombreHumains() != 0)
         {
-            System.out.println("Marin " + i);
-            System.out.println(equipage.getListeMarin().get(i));
-        }
-        
-        
-        try
-        {
-            TonnageBateau = parseFloat (LabelTonnage.getText());
-            PortAttacheBateau = LabelPort.getText();
-            String sub = (String) BoxSubmersible.getSelectedItem();
-            SubmersibleBateau = !"Non".equals(sub);
-            EnergieBateau = this.LabelEnergie.getText();
-            Supplement = this.LabelInfosSupplémentaires.getText();
-            
-            String EmplacementBateau = this.LabelEmplacement.getText();
-            String[] EmplacementMoyenDeTransport = EmplacementBateau.split("\\*");
-            System.out.println("Ponton/Quai : [" + EmplacementMoyenDeTransport[0] + "]");
-            System.out.println("Emplacement : [" + EmplacementMoyenDeTransport[1] + "]");
             try
             {
-                System.out.println("Coté : [" + EmplacementMoyenDeTransport[2] + "]");   
-            }
-            catch (ArrayIndexOutOfBoundsException e)
-            {}
-            
-            
-            try  
-            {
-                if ("Plaisance".equals(TypeBateau))
+                TonnageBateau = parseFloat (LabelTonnage.getText());
+                PortAttacheBateau = LabelPort.getText();
+                String sub = (String) BoxSubmersible.getSelectedItem();
+                SubmersibleBateau = !"Non".equals(sub);
+                EnergieBateau = this.LabelEnergie.getText();
+                Supplement = this.LabelInfosSupplémentaires.getText();
+
+                String EmplacementBateau = this.LabelEmplacement.getText();
+                String[] EmplacementMoyenDeTransport = EmplacementBateau.split("\\*");
+                System.out.println("Ponton/Quai : [" + EmplacementMoyenDeTransport[0] + "]");
+                System.out.println("Emplacement : [" + EmplacementMoyenDeTransport[1] + "]");
+                try
                 {
-                    System.out.println("Je suis un bateau de plaisance");
-                    IdentifiantBateau += PortAttacheBateau;
-                    bateauPlaisance = new BateauPlaisance (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
-                    if (EmplacementMoyenDeTransport[0].contains("Q"))
+                    System.out.println("Coté : [" + EmplacementMoyenDeTransport[2] + "]");   
+                }
+                catch (ArrayIndexOutOfBoundsException e)
+                {}
+
+
+                try  
+                {
+                    if ("Plaisance".equals(TypeBateau))
                     {
-                        System.out.println("Je suis un QUAI");
-                        Quai quai = ListeQuai.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
-                        System.out.println("Quai recupere : " + EmplacementMoyenDeTransport[0].substring(1));
-
-                        quai.supprimerBateau(Integer.parseInt(EmplacementMoyenDeTransport[1]));
-                        quai.ajouterBateau(bateauPlaisance, Integer.parseInt(EmplacementMoyenDeTransport[1]));
-
-                        for (int j = 0; j < ListeQuai.size(); j++)
+                        System.out.println("Je suis un bateau de plaisance");
+                        IdentifiantBateau += PortAttacheBateau;
+                        bateauPlaisance = new BateauPlaisance (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
+                        if (EmplacementMoyenDeTransport[0].contains("Q"))
                         {
-                            Quai q = ListeQuai.get(j);
-                            ArrayList<MoyenDeTransportSurEau> list = q.getListeBateau();
-                            for (int i=0; i < q.getCapacite(); i++)
+                            System.out.println("Je suis un QUAI");
+                            Quai quai = ListeQuai.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
+                            System.out.println("Quai recupere : " + EmplacementMoyenDeTransport[0].substring(1));
+
+                            quai.supprimerBateau(Integer.parseInt(EmplacementMoyenDeTransport[1]));
+                            quai.ajouterBateau(bateauPlaisance, Integer.parseInt(EmplacementMoyenDeTransport[1]));
+
+                            for (int j = 0; j < ListeQuai.size(); j++)
                             {
-                                if (list.get(i) != null) 
+                                Quai q = ListeQuai.get(j);
+                                ArrayList<MoyenDeTransportSurEau> list = q.getListeBateau();
+                                for (int i=0; i < q.getCapacite(); i++)
                                 {
-                                    if (list.get(i) instanceof BateauPlaisance)
+                                    if (list.get(i) != null) 
                                     {
-                                        BateauPlaisance bp = (BateauPlaisance)list.get(i);
-                                        if (bateauPlaisance.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
-                                        {       
-                                            for (int jp = 0 ; jp < ListeBateauxPlaisances.size(); jp++)
-                                            {
-                                                if (ListeBateauxPlaisances.get(jp).getIdentifiant().equalsIgnoreCase(bateauPlaisance.getIdentifiant()))
+                                        if (list.get(i) instanceof BateauPlaisance)
+                                        {
+                                            BateauPlaisance bp = (BateauPlaisance)list.get(i);
+                                            if (bateauPlaisance.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
+                                            {       
+                                                for (int jp = 0 ; jp < ListeBateauxPlaisances.size(); jp++)
                                                 {
-                                                    System.out.println("J'ajoute un bateau dans la liste");
-                                                    ListeBateauxPlaisances.remove(jp);
-                                                    ListeBateauxPlaisances.add(jp, bateauPlaisance);
-                                                }
-                                                else if (jp == ListeBateauxPlaisances.size()-1)
+                                                    if (ListeBateauxPlaisances.get(jp).getIdentifiant().equalsIgnoreCase(bateauPlaisance.getIdentifiant()))
+                                                    {
+                                                        System.out.println("J'ajoute un bateau dans la liste");
+                                                        ListeBateauxPlaisances.remove(jp);
+                                                        ListeBateauxPlaisances.add(jp, bateauPlaisance);
+                                                    }
+                                                    else if (jp == ListeBateauxPlaisances.size()-1)
+                                                    {
+                                                        ListeBateauxPlaisances.add(bateauPlaisance); 
+                                                    }   
+                                                } 
+
+                                                if (Capitainerie.TableBateaux.getRowCount() >0) 
                                                 {
-                                                    ListeBateauxPlaisances.add(bateauPlaisance); 
-                                                }   
-                                            } 
-                                            
-                                            if (Capitainerie.TableBateaux.getRowCount() >0) 
-                                            {
-                                                System.out.println("J'enleve une ligne");
-                                                Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
-                                            }                               
-                                            list.remove(i);
-                                            list.add(i, bateauPlaisance);
+                                                    System.out.println("J'enleve une ligne");
+                                                    Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
+                                                }                               
+                                                list.remove(i);
+                                                list.add(i, bateauPlaisance);
+                                            }
                                         }
                                     }
                                 }
                             }
+                        }  
+                        else
+                        {
+                            System.out.println("Je suis un PONTON");
+                            Ponton ponton = ListePonton.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
+
+                            System.out.println("J'AJOUTE LE BATEAU");
+                            ponton.modifierBateau(bateauPlaisance, Integer.parseInt(EmplacementMoyenDeTransport[1])-1, Integer.parseInt(EmplacementMoyenDeTransport[2]));
+                            System.out.println("J'AI AJOUTE LE BATEAU");
+                            for (int j = 0; j < ListePonton.size(); j++)
+                            {
+                                Ponton p = ListePonton.get(j);
+                                int cap = p.getCapacite ();
+                                int tempA;
+                                int reste = cap%2;
+
+                                if (reste != 0)
+                                    tempA = (cap/2)+1;
+                                else
+                                    tempA = (cap/2);
+
+                                int k = 0;
+                                ArrayList<MoyenDeTransportSurEau> listA = p.getListeBateauCoté1();
+                                ArrayList<MoyenDeTransportSurEau> listB = p.getListeBateauCoté2();
+                                for (int i=0; i < cap; i++)
+                                {
+                                    if (i < tempA)
+                                    {
+                                        if (listA.get(i) != null)
+                                        {
+                                            if (listA.get(i) instanceof BateauPlaisance)
+                                            {
+                                                BateauPlaisance bp = (BateauPlaisance)listA.get(i);
+                                                if (bateauPlaisance.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
+                                                {
+
+                                                    for (int jp = 0 ; jp < ListeBateauxPlaisances.size(); jp++)
+                                                    {
+                                                        if (ListeBateauxPlaisances.get(jp).getIdentifiant().equalsIgnoreCase(bateauPlaisance.getIdentifiant()))
+                                                        {
+                                                            System.out.println("J'ajoute un bateau dans la liste");
+                                                            ListeBateauxPlaisances.remove(jp);
+                                                            ListeBateauxPlaisances.add(jp, bateauPlaisance);
+                                                        }
+                                                        else if (jp == ListeBateauxPlaisances.size()-1)
+                                                        {
+                                                            ListeBateauxPlaisances.add(bateauPlaisance); 
+                                                        }   
+                                                    } 
+
+
+                                                    if (Capitainerie.TableBateaux.getRowCount() >0) 
+                                                    {
+                                                        System.out.println("J'enleve une ligne");
+                                                        Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
+                                                    }                               
+                                                    listA.remove(i);
+                                                    listA.add(i, bateauPlaisance);
+                                                    ListePonton.get(j).modifierBateau(bateauPlaisance, i, 1);
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                    else 
+                                    {
+                                        if (listB.get(k) != null)
+                                        {
+                                            if (listB.get(k) instanceof BateauPlaisance)
+                                            {
+                                                BateauPlaisance bp = (BateauPlaisance)listB.get(k);
+                                                if (bateauPlaisance.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
+                                                {
+                                                    for (int jp = 0 ; jp < ListeBateauxPlaisances.size(); jp++)
+                                                    {
+                                                        if (ListeBateauxPlaisances.get(jp).getIdentifiant().equalsIgnoreCase(bateauPlaisance.getIdentifiant()))
+                                                        {
+                                                            System.out.println("J'ajoute un bateau dans la liste");
+                                                            ListeBateauxPlaisances.remove(jp);
+                                                            ListeBateauxPlaisances.add(jp, bateauPlaisance);
+                                                        }
+                                                        else if (jp == ListeBateauxPlaisances.size()-1)
+                                                        {
+                                                            ListeBateauxPlaisances.add(bateauPlaisance); 
+                                                        }   
+                                                    } 
+
+                                                    if (Capitainerie.TableBateaux.getRowCount() >0) 
+                                                    {
+                                                        System.out.println("J'enleve une ligne");
+                                                        Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
+                                                    }                               
+                                                    listB.remove(k);
+                                                    listB.add(k, bateauPlaisance);
+                                                    ListePonton.get(j).modifierBateau(bateauPlaisance, k, 2);
+                                                }
+
+                                            }
+                                        }
+                                        k++;
+                                    }
+                                }
+                            } 
                         }
-                    }  
+                    }
                     else
                     {
-                        System.out.println("Je suis un PONTON");
-                        Ponton ponton = ListePonton.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
-
-                        System.out.println("J'AJOUTE LE BATEAU");
-                        ponton.modifierBateau(bateauPlaisance, Integer.parseInt(EmplacementMoyenDeTransport[1])-1, Integer.parseInt(EmplacementMoyenDeTransport[2]));
-                        System.out.println("J'AI AJOUTE LE BATEAU");
-                        for (int j = 0; j < ListePonton.size(); j++)
+                        System.out.println("Je suis un bateau de Peche");
+                        IdentifiantBateau += PortAttacheBateau;
+                        bateauPeche = new BateauPeche (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
+                        if (EmplacementMoyenDeTransport[0].contains("Q"))
                         {
-                            Ponton p = ListePonton.get(j);
-                            int cap = p.getCapacite ();
-                            int tempA;
-                            int reste = cap%2;
+                            System.out.println("Je suis un QUAI");
+                            Quai quai = ListeQuai.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
+                            quai.supprimerBateau(Integer.parseInt(EmplacementMoyenDeTransport[1]));
+                            quai.ajouterBateau(bateauPeche, Integer.parseInt(EmplacementMoyenDeTransport[1]));
 
-                            if (reste != 0)
-                                tempA = (cap/2)+1;
-                            else
-                                tempA = (cap/2);
-
-                            int k = 0;
-                            ArrayList<MoyenDeTransportSurEau> listA = p.getListeBateauCoté1();
-                            ArrayList<MoyenDeTransportSurEau> listB = p.getListeBateauCoté2();
-                            for (int i=0; i < cap; i++)
+                            for (int j = 0; j < ListeQuai.size(); j++)
                             {
-                                if (i < tempA)
+                                Quai q = ListeQuai.get(j);
+                                ArrayList<MoyenDeTransportSurEau> list = q.getListeBateau();
+                                for (int i=0; i < q.getCapacite(); i++)
                                 {
-                                    if (listA.get(i) != null)
+                                    if (list.get(i) != null) 
                                     {
-                                        if (listA.get(i) instanceof BateauPlaisance)
+                                        if (list.get(i) instanceof BateauPeche)
                                         {
-                                            BateauPlaisance bp = (BateauPlaisance)listA.get(i);
-                                            if (bateauPlaisance.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
+                                            BateauPeche bp = (BateauPeche)list.get(i);
+                                            if (bateauPeche.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
                                             {
-
-                                                for (int jp = 0 ; jp < ListeBateauxPlaisances.size(); jp++)
+                                                for (int jp = 0 ; jp < ListeBateauPeches.size(); jp++)
                                                 {
-                                                    if (ListeBateauxPlaisances.get(jp).getIdentifiant().equalsIgnoreCase(bateauPlaisance.getIdentifiant()))
+                                                    if (ListeBateauPeches.get(jp).getIdentifiant().equalsIgnoreCase(bateauPeche.getIdentifiant()))
                                                     {
                                                         System.out.println("J'ajoute un bateau dans la liste");
-                                                        ListeBateauxPlaisances.remove(jp);
-                                                        ListeBateauxPlaisances.add(jp, bateauPlaisance);
+                                                        ListeBateauPeches.remove(jp);
+                                                        ListeBateauPeches.add(jp, bateauPeche);
                                                     }
-                                                    else if (jp == ListeBateauxPlaisances.size()-1)
+                                                    else if (jp == ListeBateauPeches.size()-1)
                                                     {
-                                                        ListeBateauxPlaisances.add(bateauPlaisance); 
+                                                        ListeBateauPeches.add(bateauPeche); 
                                                     }   
-                                                } 
-                                                 
-
+                                                }
                                                 if (Capitainerie.TableBateaux.getRowCount() >0) 
                                                 {
                                                     System.out.println("J'enleve une ligne");
                                                     Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
                                                 }                               
-                                                listA.remove(i);
-                                                listA.add(i, bateauPlaisance);
-                                                ListePonton.get(j).modifierBateau(bateauPlaisance, i, 1);
+                                                list.remove(i);
+                                                list.add(i, bateauPeche);
                                             }
-                                            
                                         }
                                     }
-                                }
-                                else 
-                                {
-                                    if (listB.get(k) != null)
-                                    {
-                                        if (listB.get(k) instanceof BateauPlaisance)
-                                        {
-                                            BateauPlaisance bp = (BateauPlaisance)listB.get(k);
-                                            if (bateauPlaisance.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
-                                            {
-                                                for (int jp = 0 ; jp < ListeBateauxPlaisances.size(); jp++)
-                                                {
-                                                    if (ListeBateauxPlaisances.get(jp).getIdentifiant().equalsIgnoreCase(bateauPlaisance.getIdentifiant()))
-                                                    {
-                                                        System.out.println("J'ajoute un bateau dans la liste");
-                                                        ListeBateauxPlaisances.remove(jp);
-                                                        ListeBateauxPlaisances.add(jp, bateauPlaisance);
-                                                    }
-                                                    else if (jp == ListeBateauxPlaisances.size()-1)
-                                                    {
-                                                        ListeBateauxPlaisances.add(bateauPlaisance); 
-                                                    }   
-                                                } 
-
-                                                if (Capitainerie.TableBateaux.getRowCount() >0) 
-                                                {
-                                                    System.out.println("J'enleve une ligne");
-                                                    Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
-                                                }                               
-                                                listB.remove(k);
-                                                listB.add(k, bateauPlaisance);
-                                                ListePonton.get(j).modifierBateau(bateauPlaisance, k, 2);
-                                            }
-                                            
-                                        }
-                                    }
-                                    k++;
                                 }
                             }
-                        } 
+                        }  
+                        else
+                        {
+                            System.out.println("Je suis un PONTON");
+                            Ponton ponton = ListePonton.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
+
+                            System.out.println("J'AJOUTE LE BATEAU");
+                            ponton.modifierBateau(bateauPeche, Integer.parseInt(EmplacementMoyenDeTransport[1]), Integer.parseInt(EmplacementMoyenDeTransport[2]));
+                            System.out.println("J'AI AJOUTE LE BATEAU");
+
+                            for (int j = 0; j < ListePonton.size(); j++)
+                            {
+                                Ponton p = ListePonton.get(j);
+                                int cap = p.getCapacite ();
+                                int tempA;
+                                int reste = cap%2;
+
+                                if (reste != 0)
+                                    tempA = (cap/2)+1;
+                                else
+                                    tempA = (cap/2);
+
+                                int k = 0;
+                                ArrayList<MoyenDeTransportSurEau> listA = p.getListeBateauCoté1();
+                                ArrayList<MoyenDeTransportSurEau> listB = p.getListeBateauCoté2();
+                                for (int i=0; i < cap; i++)
+                                {
+                                    if (i < tempA)
+                                    {
+                                        if (listA.get(i) != null)
+                                        {
+                                            if (listA.get(i) instanceof BateauPeche)
+                                            {
+                                                BateauPeche bp = (BateauPeche)listA.get(i);
+                                                if (bateauPeche.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
+                                                {
+                                                    for (int jp = 0 ; jp < ListeBateauPeches.size(); jp++)
+                                                    {
+                                                        if (ListeBateauPeches.get(jp).getIdentifiant().equalsIgnoreCase(bateauPeche.getIdentifiant()))
+                                                        {
+                                                            System.out.println("J'ajoute un bateau dans la liste");
+                                                            ListeBateauPeches.remove(jp);
+                                                            ListeBateauPeches.add(jp, bateauPeche);
+                                                        }
+                                                        else if (jp == ListeBateauPeches.size()-1)
+                                                        {
+                                                            ListeBateauPeches.add(bateauPeche); 
+                                                        }   
+                                                    }
+
+                                                    if (Capitainerie.TableBateaux.getRowCount() >0) 
+                                                    {
+                                                        System.out.println("J'enleve une ligne");
+                                                        Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
+                                                    }                               
+                                                    listA.remove(i);
+                                                    listA.add(i, bateauPeche);
+                                                    ListePonton.get(j).modifierBateau(bateauPeche, Integer.parseInt(EmplacementMoyenDeTransport[1]), 1);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    else 
+                                    {
+                                        if (listB.get(k) != null)
+                                        {
+                                            if (listB.get(k) instanceof BateauPeche)
+                                            {
+                                                BateauPeche bp = (BateauPeche)listB.get(k);
+                                                if (bateauPeche.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
+                                                {
+                                                    for (int jp = 0 ; jp < ListeBateauPeches.size(); jp++)
+                                                    {
+                                                        if (ListeBateauPeches.get(jp).getIdentifiant().equalsIgnoreCase(bateauPeche.getIdentifiant()))
+                                                        {
+                                                            System.out.println("J'ajoute un bateau dans la liste");
+                                                            ListeBateauPeches.remove(jp);
+                                                            ListeBateauPeches.add(jp, bateauPeche);
+                                                        }
+                                                        else if (jp == ListeBateauPeches.size()-1)
+                                                        {
+                                                            ListeBateauPeches.add(bateauPeche); 
+                                                        }   
+                                                    }
+
+                                                    if (Capitainerie.TableBateaux.getRowCount() >0) 
+                                                    {
+                                                        System.out.println("J'enleve une ligne");
+                                                        Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
+                                                    }                               
+                                                    listB.remove(k);
+                                                    listB.add(k, bateauPeche);
+                                                    ListePonton.get(j).modifierBateau(bateauPeche, k, 2);
+                                                }
+                                            }
+                                        }
+                                        k++;
+                                    }
+                                }
+                            } 
+                        }
                     }
+                } catch (ShipWithoutIdentificationException ex) {
+                    Capitainerie.fichierLog.ecritLigne ("ShipWithoutIdentificationException : " + ex.getMessage());
                 }
+                Capitainerie.BoutonLire.setEnabled(true);
+                Capitainerie.TableBateaux.setModel(DTMBateaux);
+                if (TableBateaux.getRowCount() != 0)
+                    Capitainerie.BoutonBateauAmarré.setEnabled(true);  
                 else
-                {
-                    System.out.println("Je suis un bateau de Peche");
-                    IdentifiantBateau += PortAttacheBateau;
-                    bateauPeche = new BateauPeche (IdentifiantBateau, SubmersibleBateau, EnergieBateau, NomBateau, PortAttacheBateau, TonnageBateau, LongueurBateau, PavillonBateau, equipage, Supplement);
-                    if (EmplacementMoyenDeTransport[0].contains("Q"))
-                    {
-                        System.out.println("Je suis un QUAI");
-                        Quai quai = ListeQuai.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
-                        quai.supprimerBateau(Integer.parseInt(EmplacementMoyenDeTransport[1]));
-                        quai.ajouterBateau(bateauPeche, Integer.parseInt(EmplacementMoyenDeTransport[1]));
+                    Capitainerie.BoutonBateauAmarré.setEnabled(false);
+                Capitainerie.fichierLog.ecritLigne ("Le bateau " + IdentifiantBateau + " a bien été enregistré");
+                Capitainerie.fichierLog.ecritLigne ("Le bateau n'est plus en attente");      
+                Capitainerie.BoutonLire.setEnabled(true);
+                setVisible (false);            
 
-                        for (int j = 0; j < ListeQuai.size(); j++)
-                        {
-                            Quai q = ListeQuai.get(j);
-                            ArrayList<MoyenDeTransportSurEau> list = q.getListeBateau();
-                            for (int i=0; i < q.getCapacite(); i++)
-                            {
-                                if (list.get(i) != null) 
-                                {
-                                    if (list.get(i) instanceof BateauPeche)
-                                    {
-                                        BateauPeche bp = (BateauPeche)list.get(i);
-                                        if (bateauPeche.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
-                                        {
-                                            for (int jp = 0 ; jp < ListeBateauPeches.size(); jp++)
-                                            {
-                                                if (ListeBateauPeches.get(jp).getIdentifiant().equalsIgnoreCase(bateauPeche.getIdentifiant()))
-                                                {
-                                                    System.out.println("J'ajoute un bateau dans la liste");
-                                                    ListeBateauPeches.remove(jp);
-                                                    ListeBateauPeches.add(jp, bateauPeche);
-                                                }
-                                                else if (jp == ListeBateauPeches.size()-1)
-                                                {
-                                                    ListeBateauPeches.add(bateauPeche); 
-                                                }   
-                                            }
-                                            if (Capitainerie.TableBateaux.getRowCount() >0) 
-                                            {
-                                                System.out.println("J'enleve une ligne");
-                                                Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
-                                            }                               
-                                            list.remove(i);
-                                            list.add(i, bateauPeche);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }  
-                    else
-                    {
-                        System.out.println("Je suis un PONTON");
-                        Ponton ponton = ListePonton.get(Integer.parseInt(EmplacementMoyenDeTransport[0].substring(1))-1);
-
-                        System.out.println("J'AJOUTE LE BATEAU");
-                        ponton.modifierBateau(bateauPeche, Integer.parseInt(EmplacementMoyenDeTransport[1]), Integer.parseInt(EmplacementMoyenDeTransport[2]));
-                        System.out.println("J'AI AJOUTE LE BATEAU");
-                        
-                        for (int j = 0; j < ListePonton.size(); j++)
-                        {
-                            Ponton p = ListePonton.get(j);
-                            int cap = p.getCapacite ();
-                            int tempA;
-                            int reste = cap%2;
-
-                            if (reste != 0)
-                                tempA = (cap/2)+1;
-                            else
-                                tempA = (cap/2);
-
-                            int k = 0;
-                            ArrayList<MoyenDeTransportSurEau> listA = p.getListeBateauCoté1();
-                            ArrayList<MoyenDeTransportSurEau> listB = p.getListeBateauCoté2();
-                            for (int i=0; i < cap; i++)
-                            {
-                                if (i < tempA)
-                                {
-                                    if (listA.get(i) != null)
-                                    {
-                                        if (listA.get(i) instanceof BateauPeche)
-                                        {
-                                            BateauPeche bp = (BateauPeche)listA.get(i);
-                                            if (bateauPeche.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
-                                            {
-                                                for (int jp = 0 ; jp < ListeBateauPeches.size(); jp++)
-                                                {
-                                                    if (ListeBateauPeches.get(jp).getIdentifiant().equalsIgnoreCase(bateauPeche.getIdentifiant()))
-                                                    {
-                                                        System.out.println("J'ajoute un bateau dans la liste");
-                                                        ListeBateauPeches.remove(jp);
-                                                        ListeBateauPeches.add(jp, bateauPeche);
-                                                    }
-                                                    else if (jp == ListeBateauPeches.size()-1)
-                                                    {
-                                                        ListeBateauPeches.add(bateauPeche); 
-                                                    }   
-                                                }
-
-                                                if (Capitainerie.TableBateaux.getRowCount() >0) 
-                                                {
-                                                    System.out.println("J'enleve une ligne");
-                                                    Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
-                                                }                               
-                                                listA.remove(i);
-                                                listA.add(i, bateauPeche);
-                                                ListePonton.get(j).modifierBateau(bateauPeche, Integer.parseInt(EmplacementMoyenDeTransport[1]), 1);
-                                            }
-                                        }
-                                    }
-                                }
-                                else 
-                                {
-                                    if (listB.get(k) != null)
-                                    {
-                                        if (listB.get(k) instanceof BateauPeche)
-                                        {
-                                            BateauPeche bp = (BateauPeche)listB.get(k);
-                                            if (bateauPeche.getIdentifiant().equalsIgnoreCase(bp.getIdentifiant()))
-                                            {
-                                                for (int jp = 0 ; jp < ListeBateauPeches.size(); jp++)
-                                                {
-                                                    if (ListeBateauPeches.get(jp).getIdentifiant().equalsIgnoreCase(bateauPeche.getIdentifiant()))
-                                                    {
-                                                        System.out.println("J'ajoute un bateau dans la liste");
-                                                        ListeBateauPeches.remove(jp);
-                                                        ListeBateauPeches.add(jp, bateauPeche);
-                                                    }
-                                                    else if (jp == ListeBateauPeches.size()-1)
-                                                    {
-                                                        ListeBateauPeches.add(bateauPeche); 
-                                                    }   
-                                                }
-
-                                                if (Capitainerie.TableBateaux.getRowCount() >0) 
-                                                {
-                                                    System.out.println("J'enleve une ligne");
-                                                    Capitainerie.DTMBateaux.removeRow(Capitainerie.TableBateaux.getSelectedRow());
-                                                }                               
-                                                listB.remove(k);
-                                                listB.add(k, bateauPeche);
-                                                ListePonton.get(j).modifierBateau(bateauPeche, k, 2);
-                                            }
-                                        }
-                                    }
-                                    k++;
-                                }
-                            }
-                        } 
-                    }
-                }
-            } catch (ShipWithoutIdentificationException ex) {
-                Capitainerie.fichierLog.ecritLigne ("ShipWithoutIdentificationException : " + ex.getMessage());
             }
-            Capitainerie.BoutonLire.setEnabled(true);
-            Capitainerie.TableBateaux.setModel(DTMBateaux);
-            if (TableBateaux.getRowCount() != 0)
-                Capitainerie.BoutonBateauAmarré.setEnabled(true);  
-            else
-                Capitainerie.BoutonBateauAmarré.setEnabled(false);
-            Capitainerie.fichierLog.ecritLigne ("Le bateau " + IdentifiantBateau + " a bien été enregistré");
-            Capitainerie.fichierLog.ecritLigne ("Le bateau n'est plus en attente");      
-            Capitainerie.BoutonLire.setEnabled(true);
-            setVisible (false);            
-            
+            catch (NumberFormatException e){
+                String msg;
+                msg = "Erreur : le tonnage doit être sur le format chiffre ! ";
+                JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
+            }    
         }
-        catch (NumberFormatException e){
+        else
+        {
             String msg;
-            msg = "Erreur : le tonnage doit être sur le format chiffre ! ";
-            JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
-        }    
+            msg = "Le bateau ne peut pas être un bateau Fantôme !";
+            JOptionPane.showMessageDialog(this, msg, "Equipage vide !", JOptionPane.WARNING_MESSAGE);  
+        }   
     }//GEN-LAST:event_BoutonOkActionPerformed
 
     

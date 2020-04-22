@@ -485,8 +485,7 @@ public class PublishEquipage extends javax.swing.JFrame
                 String msg;
                 msg = "Vous devez ajouter un capitaine comme premier membre d'équipage !";
                 JOptionPane.showMessageDialog(this, msg, "Attention !", JOptionPane.WARNING_MESSAGE);  
-            }
-            
+            } 
         }
     }//GEN-LAST:event_BoutonAjouterActionPerformed
 
