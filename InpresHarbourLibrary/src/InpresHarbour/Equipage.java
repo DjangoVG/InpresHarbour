@@ -13,7 +13,7 @@ public class Equipage implements Serializable {
     public Equipage (){
         NombreHumains = 0;
         capitaine = new Marin ();
-        second = new Marin ();
+        second = new Marin();
         listeMarin = new ArrayList<> ();
     }
     public Equipage (Marin cap, Marin sec){
@@ -44,6 +44,10 @@ public class Equipage implements Serializable {
     
     // Autres fonctions.
    public void ajouterMarin (Marin m){
+       if (m.getFonction().equalsIgnoreCase("Capitaine"))
+           this.setCapitaine(m);
+       if (m.getFonction().equalsIgnoreCase("Second"))
+           this.setSecond(m);
         int nbrHumains = getNombreHumains();
         ArrayList<Marin> liste = getListeMarin ();
         liste.add(m);

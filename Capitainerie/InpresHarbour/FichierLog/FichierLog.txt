@@ -2551,3 +2551,147 @@
 [22/04/20 16:23] : Création du marin : zqdqdz
 [22/04/20 16:23] : Création du marin : zqdqdzqzd
 [22/04/20 16:23] : Création du marin : zqdqdzqzddqz
+[22/04/20 16:52] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[22/04/20 16:52] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[22/04/20 16:52] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[22/04/20 16:52] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[22/04/20 16:52] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[22/04/20 16:52] : Enregistement des bateaux de pêches juste avant la fermeture.
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[22/04/20 16:52] : Enregistrement des bateaux de ponton juste avant la fermeture
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[22/04/20 16:52] : Enregistrement des bateaux de quai juste avant la fermeture
+[22/04/20 16:52] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[22/04/20 16:53] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[22/04/20 16:53] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[22/04/20 16:53] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[22/04/20 16:53] : Le fichier Ponton.data a bien été crée
+[22/04/20 16:53] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[22/04/20 16:53] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[22/04/20 16:53] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[22/04/20 16:53] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[22/04/20 16:53] : Le bateau 123456 a bien été ajouté temporairement
+[22/04/20 16:54] : Création du capitaine : 159159159
+[22/04/20 16:54] : Création du marin : 158158158
+[22/04/20 16:54] : Création du marin : 157157157
+[22/04/20 16:54] : Création d'un capitaine : 159159159
+[22/04/20 16:54] : Création d'un marin : 158158158
+[22/04/20 16:54] : Création d'un marin : 157157157
+[22/04/20 16:54] : Le bateau 123456Londres a bien été enregistré
+[22/04/20 16:54] : Le bateau n'est plus en attente
+[22/04/20 17:01] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[22/04/20 17:01] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[22/04/20 17:01] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[22/04/20 17:01] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[22/04/20 17:01] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[22/04/20 17:01] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[22/04/20 17:01] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[22/04/20 17:01] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[22/04/20 17:02] : Le bateau 123 a bien été ajouté temporairement
+[22/04/20 17:02] : Création du capitaine : 156156156
+[22/04/20 17:03] : Création du marin : 155155155
+[22/04/20 17:03] : Création d'un capitaine : 156156156
+[22/04/20 17:03] : Création d'un marin : 155155155
+[22/04/20 17:03] : Le bateau 123Liege a bien été enregistré
+[22/04/20 17:03] : Le bateau n'est plus en attente
+[22/04/20 17:04] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[22/04/20 17:04] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[22/04/20 17:04] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[22/04/20 17:04] : Le fichier Ponton.data a bien été crée
+[22/04/20 17:04] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[22/04/20 17:04] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[22/04/20 17:04] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[22/04/20 17:04] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[22/04/20 17:05] : Le bateau 123456 a bien été ajouté temporairement
+[22/04/20 17:05] : Création du capitaine : 159159159
+[22/04/20 17:05] : Création du marin : 155155155
+[22/04/20 17:05] : Création d'un capitaine : 159159159
+[22/04/20 17:05] : Création d'un marin : 155155155
+[22/04/20 17:05] : Le bateau 123456Liege a bien été enregistré
+[22/04/20 17:05] : Le bateau n'est plus en attente
+[22/04/20 17:12] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[22/04/20 17:12] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[22/04/20 17:12] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[22/04/20 17:12] : Le fichier Ponton.data a bien été crée
+[22/04/20 17:12] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[22/04/20 17:12] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[22/04/20 17:12] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[22/04/20 17:12] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[22/04/20 17:20] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[22/04/20 17:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[22/04/20 17:20] : Enregistement des bateaux de pêches juste avant la fermeture.
+[22/04/20 17:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[22/04/20 17:20] : Enregistrement des bateaux de ponton juste avant la fermeture
+[22/04/20 17:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[22/04/20 17:20] : Enregistrement des bateaux de quai juste avant la fermeture
+[22/04/20 17:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[22/04/20 17:20] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[22/04/20 17:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[22/04/20 17:20] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[22/04/20 17:20] : Le fichier Ponton.data a bien été crée
+[22/04/20 17:20] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[22/04/20 17:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[22/04/20 17:20] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[22/04/20 17:20] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[22/04/20 17:21] : Le bateau 123456 a bien été ajouté temporairement
+[22/04/20 17:21] : Création du capitaine : 159159159
+[22/04/20 17:21] : Création du marin : 158158158
+[22/04/20 17:22] : Création du marin : 155155155
+[22/04/20 17:23] : Création du marin : 155155155df
+[22/04/20 17:29] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[22/04/20 17:29] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[22/04/20 17:29] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[22/04/20 17:29] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[22/04/20 17:29] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[22/04/20 17:29] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[22/04/20 17:29] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[22/04/20 17:29] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[22/04/20 17:29] : Le bateau 123456 a bien été ajouter temporairement
+[22/04/20 17:30] : Création du capitaine : 156156156
+[22/04/20 17:30] : Création du marin : 155155155
+[22/04/20 17:30] : Création du marin : 154154154
+[22/04/20 17:31] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[22/04/20 17:31] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[22/04/20 17:31] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[22/04/20 17:31] : Le fichier Ponton.data a bien été crée
+[22/04/20 17:31] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[22/04/20 17:31] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[22/04/20 17:31] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[22/04/20 17:31] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[22/04/20 17:32] : Le bateau 123456 a bien été ajouté temporairement
+[22/04/20 17:32] : Création du capitaine : 159159159
+[22/04/20 17:32] : Création du marin : 155155155
+[22/04/20 17:32] : Création du marin : 152152152
+[22/04/20 17:32] : Modification du marin : 152152152
+[22/04/20 17:32] : Création d'un capitaine : 159159159
+[22/04/20 17:32] : Création d'un marin : 155155155
+[22/04/20 17:35] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[22/04/20 17:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[22/04/20 17:35] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[22/04/20 17:35] : Le fichier Ponton.data a bien été crée
+[22/04/20 17:35] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[22/04/20 17:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[22/04/20 17:35] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[22/04/20 17:35] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[22/04/20 17:35] : Le bateau 123456 a bien été ajouté temporairement
+[22/04/20 17:35] : Création du capitaine : 159159159
+[22/04/20 17:35] : Création du marin : 155155155
+[22/04/20 17:35] : Création du marin : 152152152
+[22/04/20 17:36] : Création d'un capitaine : 159159159
+[22/04/20 17:36] : Création d'un second : 155155155
+[22/04/20 17:36] : Création d'un marin : 152152152
+[22/04/20 17:36] : Le bateau 123456Londres a bien été enregistré
+[22/04/20 17:36] : Le bateau n'est plus en attente
+[22/04/20 17:36] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[22/04/20 17:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[22/04/20 17:36] : Enregistement des bateaux de pêches juste avant la fermeture.
+[22/04/20 17:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[22/04/20 17:36] : Enregistrement des bateaux de ponton juste avant la fermeture
+[22/04/20 17:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[22/04/20 17:36] : Enregistrement des bateaux de quai juste avant la fermeture
+[22/04/20 17:36] : Le fichier C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture

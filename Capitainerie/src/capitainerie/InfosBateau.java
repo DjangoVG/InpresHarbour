@@ -33,14 +33,12 @@ public class InfosBateau extends javax.swing.JFrame {
     private final DefaultComboBoxModel DCMSubmersible;
     private String EnergieBateau;
     private String Supplement;
-    private int Indice;
     private BateauPlaisance bateauPlaisance = null;
     private BateauPeche bateauPeche = null;
     
     public InfosBateau(ArrayList<BateauPlaisance> ListeBateauPlaisance, ArrayList<BateauPeche> ListeBateauPeche, ArrayList<Ponton> ListePonton, ArrayList<Quai> ListeQuai) {
         initComponents();
         
-        Indice = -1;
         equipage = new Equipage ();
         IdentifiantBateau = (String) Capitainerie.TableBateaux.getValueAt(0, 0);
         NomBateau = (String) Capitainerie.TableBateaux.getValueAt(0, 1);
@@ -78,35 +76,6 @@ public class InfosBateau extends javax.swing.JFrame {
         }
         else {
             this.Labelinfos.setText("Type : ");
-        }
-        
-        // ------------------------------------------------------
-        
-        for (BateauPlaisance Elem : ListeBateauPlaisance){
-            String idListe = Elem.getIdentifiant();
-            if (idListe.equals(IdentifiantBateau)){
-                Indice = ListeBateauPlaisance.indexOf(Elem);
-                LabelEmplacement.setText(Elem.getPortAttache());
-                float ton = Elem.getTonnage();
-                String t = Float.toString(ton);
-                LabelTonnage.setText (t);
-                LabelEnergie.setText(Elem.getEnergie());
-                LabelInfosSupplémentaires.setText (Elem.getPermis());
-                equipage = Elem.getEquipage();
-            }            
-        }        
-        for (BateauPeche Elem : ListeBateauPeche){
-            String idListe = Elem.getIdentifiant();
-            if (idListe.equals(IdentifiantBateau)){
-                Indice = ListeBateauPeche.indexOf(Elem);
-                LabelEmplacement.setText(Elem.getPortAttache());
-                float ton = Elem.getTonnage();
-                String t = Float.toString(ton);
-                LabelTonnage.setText (t);
-                LabelEnergie.setText(Elem.getEnergie());
-                LabelInfosSupplémentaires.setText (Elem.getType());
-                equipage = Elem.getEquipage();
-            }                 
         }
     }
     
@@ -331,6 +300,13 @@ public class InfosBateau extends javax.swing.JFrame {
     }//GEN-LAST:event_BoutonEquipageActionPerformed
 
     private void BoutonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonOkActionPerformed
+        for (int i=0; i < equipage.getNombreHumains(); i++)
+        {
+            System.out.println("Marin " + i);
+            System.out.println(equipage.getListeMarin().get(i));
+        }
+        
+        
         try
         {
             TonnageBateau = parseFloat (LabelTonnage.getText());

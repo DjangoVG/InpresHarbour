@@ -154,7 +154,7 @@ public class InfosEquipage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonRechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonRechercherActionPerformed
-        for (int i = 0; i < DTMEquipage.getRowCount(); i++)
+        for (int i = 0; i < TableEquipage.getRowCount(); i++)
         {
             DTMEquipage.removeRow(i);
         }
@@ -171,7 +171,7 @@ public class InfosEquipage extends javax.swing.JFrame {
                 Marin cap = equi.getCapitaine();
                 Vector ligne = new Vector();
                 ligne.add(cap.getIdentifiant());
-                System.out.println("Cap : " + cap.getIdentifiant());
+                System.out.println("Capitaine : " + cap.getIdentifiant());
                 ligne.add(cap.getNom());
                 ligne.add(cap.getPrenom());
                 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
@@ -180,9 +180,63 @@ public class InfosEquipage extends javax.swing.JFrame {
                 ligne.add(cap.getNationalite());
                 ligne.add(cap.getFonction());
                 DTMEquipage.addRow(ligne);
-
+                
                 if (equi.getSecond() != null){
                     Marin sec = equi.getSecond();
+                    Vector ligneSec = new Vector();
+                    ligneSec.add(sec.getIdentifiant());
+                    System.out.println("Second : " + sec.getIdentifiant());
+                    ligneSec.add(sec.getNom());
+                    ligneSec.add(sec.getPrenom());
+                    strDate = dateFormat.format(sec.getDateNaissance());
+                    ligneSec.add(strDate);     
+                    ligneSec.add(sec.getNationalite());
+                    ligneSec.add(sec.getFonction());
+                    DTMEquipage.addRow(ligneSec);  
+                }
+                
+                if (equi.getListeMarin() != null){
+                    for (Marin ElemMar : equi.getListeMarin()){
+                        if (!ElemMar.getFonction().equalsIgnoreCase("Capitaine") && !ElemMar.getFonction().equalsIgnoreCase("Second"))
+                        {
+                            Vector ligneMarin = new Vector ();
+                            ligneMarin.add(ElemMar.getIdentifiant());
+                            ligneMarin.add(ElemMar.getNom());
+                            ligneMarin.add(ElemMar.getPrenom());
+                            strDate = dateFormat.format(ElemMar.getDateNaissance());
+                            ligneMarin.add(strDate);   
+                            ligneMarin.add(ElemMar.getNationalite());
+                            ligneMarin.add(ElemMar.getFonction());
+                            DTMEquipage.addRow(ligneMarin);   
+                        }
+                    }
+                }
+                this.TableEquipage.setModel(DTMEquipage);
+            }
+        }        
+        for (BateauPeche Elem : ListeBateauPeches){
+            String idListe = Elem.getIdentifiant();
+            if (idListe.equals(id)){
+                this.LabelMessage.setText ("Le bateau a bien été trouvé dans la liste des bateaux de pêches. ");
+                this.LabelMessage.setSelectionColor(Color.green);
+                trouve = true;
+                Equipage equi = Elem.getEquipage();
+                Marin cap = equi.getCapitaine();
+                System.out.println("Capitaine : " + cap.getIdentifiant());
+                Vector ligne = new Vector();
+                ligne.add(cap.getIdentifiant());
+                ligne.add(cap.getNom());
+                ligne.add(cap.getPrenom());
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate = dateFormat.format(cap.getDateNaissance());
+                ligne.add(strDate); 
+                ligne.add(cap.getNationalite());
+                ligne.add(cap.getFonction());
+                DTMEquipage.addRow(ligne);
+                
+                if (equi.getSecond() != null){
+                    Marin sec = equi.getSecond();
+                    System.out.println("Second : " + sec.getIdentifiant());
                     Vector ligneSec = new Vector();
                     ligneSec.add(sec.getIdentifiant());
                     ligneSec.add(sec.getNom());
@@ -196,61 +250,18 @@ public class InfosEquipage extends javax.swing.JFrame {
                 
                 if (equi.getListeMarin() != null){
                     for (Marin ElemMar : equi.getListeMarin()){
-                        Vector ligneMarin = new Vector ();
-                        ligneMarin.add(ElemMar.getIdentifiant());
-                        ligneMarin.add(ElemMar.getNom());
-                        ligneMarin.add(ElemMar.getPrenom());
-                        strDate = dateFormat.format(ElemMar.getDateNaissance());
-                        ligneMarin.add(strDate);   
-                        ligneMarin.add(ElemMar.getNationalite());
-                        ligneMarin.add(ElemMar.getFonction());
-                        DTMEquipage.addRow(ligneMarin);
-                    }
-                }
-                this.TableEquipage.setModel(DTMEquipage);
-            }
-        }        
-        for (BateauPeche Elem : ListeBateauPeches){
-            String idListe = Elem.getIdentifiant();
-            if (idListe.equals(id)){
-                this.LabelMessage.setText ("Le bateau a bien été trouvé dans la liste des bateaux de pêche. ");
-                this.LabelMessage.setSelectionColor(Color.green);
-                trouve = true;
-                Equipage equi = Elem.getEquipage();
-                Marin cap = equi.getCapitaine();
-                Vector ligne = new Vector();
-                ligne.add(cap.getIdentifiant());
-                ligne.add(cap.getNom());
-                ligne.add(cap.getPrenom());
-                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-                String strDate = dateFormat.format(cap.getDateNaissance());
-                ligne.add(strDate);  
-                ligne.add(cap.getNationalite());
-                ligne.add(cap.getFonction());
-                DTMEquipage.addRow(ligne);
-                
-                Marin sec = equi.getSecond();
-                Vector ligneSec = new Vector();
-                ligneSec.add(sec.getIdentifiant());
-                ligneSec.add(sec.getNom());
-                ligneSec.add(sec.getPrenom());
-                strDate = dateFormat.format(sec.getDateNaissance());
-                ligneSec.add(strDate);  
-                ligneSec.add(sec.getNationalite());
-                ligneSec.add(sec.getFonction());
-                DTMEquipage.addRow(ligneSec);                 
-                
-                if (equi.getListeMarin() != null){
-                    for (Marin ElemMar : equi.getListeMarin()){
-                        Vector ligneMarin = new Vector ();
-                        ligneMarin.add(ElemMar.getIdentifiant());
-                        ligneMarin.add(ElemMar.getNom());
-                        ligneMarin.add(ElemMar.getPrenom());
-                        strDate = dateFormat.format(ElemMar.getDateNaissance());
-                        ligneMarin.add(strDate); 
-                        ligneMarin.add(ElemMar.getNationalite());
-                        ligneMarin.add(ElemMar.getFonction());
-                        DTMEquipage.addRow(ligneMarin);
+                        if (!ElemMar.getFonction().equalsIgnoreCase("Capitaine") && !ElemMar.getFonction().equalsIgnoreCase("Second"))
+                        {
+                            Vector ligneMarin = new Vector ();
+                            ligneMarin.add(ElemMar.getIdentifiant());
+                            ligneMarin.add(ElemMar.getNom());
+                            ligneMarin.add(ElemMar.getPrenom());
+                            strDate = dateFormat.format(ElemMar.getDateNaissance());
+                            ligneMarin.add(strDate);   
+                            ligneMarin.add(ElemMar.getNationalite());
+                            ligneMarin.add(ElemMar.getFonction());
+                            DTMEquipage.addRow(ligneMarin);   
+                        }
                     }
                 }
                 this.TableEquipage.setModel(DTMEquipage);
