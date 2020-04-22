@@ -24,9 +24,12 @@ public class PublishEquipage extends javax.swing.JFrame
         
         
         String NomBateau = InfosBateau.LabelNomBateau.getText();
-        NomBateau += " (" + InfosBateau.LabelPort.getText() + ")";
-        LabelBateau.setText(NomBateau);
+        if (InfosBateau.LabelPort.getText().equalsIgnoreCase(("")))
+            NomBateau += " (INCONNU)";
+        else
+            NomBateau += " (" + InfosBateau.LabelPort.getText() + ")";
         
+        LabelBateau.setText(NomBateau);
         DTMEquipage = new DefaultTableModel ();
         DTMEquipage.addColumn("Numéro du registre nationnal");
         DTMEquipage.addColumn("Nom");
@@ -398,11 +401,21 @@ public class PublishEquipage extends javax.swing.JFrame
         }
         
         
-        if (TableEquipage.getRowCount() > 0)
+        if (TableEquipage.getRowCount() > 0) // Si un membre existe déja
         {
+            for (int j = 0; j < TableEquipage.getRowCount(); j++)
+            {
+                if (TableEquipage.getValueAt(j, 0).equals(RegistreNationalMarin)) // Je vérifie seulement pour les registres de l'équipage actuel (à modifier)
+                {
+                    String msg;
+                    msg = "Un membre de l'équipe a déja ce numéro de registre !"; 
+                    JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE); 
+                    return;
+                }
+            }
             for (int i = 0; i < TableEquipage.getRowCount(); i++)
             {
-                if (TableEquipage.getValueAt(i, 5).equals("Capitaine") && Fonction.equals("Capitaine"))
+                if (TableEquipage.getValueAt(i, 5).equals("Capitaine") && Fonction.equals("Capitaine")) // Un capitaine existe déja
                 {
                     String msg;
                     msg = "Vous avez déja ajouté un capitaine !";
@@ -433,36 +446,46 @@ public class PublishEquipage extends javax.swing.JFrame
                     }catch (ParseException e){
                         String msg;
                         msg = "Erreur : la date est invalide !";
-                        JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
+                        JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE);            
                     }
-                }
+                }  
             }     
         }
-        else
-        {       
-            try
+        else // Création du capitaine
+        {      
+            if (Fonction.equalsIgnoreCase("Capitaine")) // Je vérifie si c'est bien un capitaine que l'user veut ajouter
             {
-                Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
-                try {
-                    Marin marin = new Marin (RegistreNationalMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
-                    Vector ligne = new Vector();
-                    ligne.add(marin.getIdentifiant());                    
-                    ligne.add(marin.getNom());
-                    ligne.add(marin.getPrenom());
-                    ligne.add(DateNaissance);
-                    ligne.add(Nationalite);
-                    ligne.add(marin.getFonction());
-                    Capitainerie.fichierLog.ecritLigne ("Création du marin : " + RegistreNationalMarin);
-                    DTMEquipage.addRow(ligne);
-                    this.TableEquipage.setModel(DTMEquipage);              
-                } catch (SailorWithoutIdentificationException ex) {
-                    Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
-                }            
-            }catch (ParseException e){
-                String msg;
-                msg = "Erreur : la date est invalide !";
-                JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
+                try
+                {
+                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
+                    try {
+                        Marin marin = new Marin (RegistreNationalMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
+                        Vector ligne = new Vector();
+                        ligne.add(marin.getIdentifiant());                    
+                        ligne.add(marin.getNom());
+                        ligne.add(marin.getPrenom());
+                        ligne.add(DateNaissance);
+                        ligne.add(Nationalite);
+                        ligne.add(marin.getFonction());
+                        Capitainerie.fichierLog.ecritLigne ("Création du capitaine : " + RegistreNationalMarin);
+                        DTMEquipage.addRow(ligne);
+                        this.TableEquipage.setModel(DTMEquipage);              
+                    } catch (SailorWithoutIdentificationException ex) {
+                        Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
+                    }            
+                }catch (ParseException e){
+                    String msg;
+                    msg = "Erreur : la date est invalide !";
+                    JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE);            
+                }    
             }
+            else
+            {
+                String msg;
+                msg = "Vous devez ajouter un capitaine comme premier membre d'équipage !";
+                JOptionPane.showMessageDialog(this, msg, "Attention !", JOptionPane.WARNING_MESSAGE);  
+            }
+            
         }
     }//GEN-LAST:event_BoutonAjouterActionPerformed
 
@@ -471,60 +494,136 @@ public class PublishEquipage extends javax.swing.JFrame
         i = TableEquipage.getSelectedRow();
         if (i != -1)
         {
-            DTMEquipage.removeRow(i);
-            String IdentifiantMarin = LabelRegistre.getText(); 
-            String Nom = LabelNom.getText();
-            String Prenom = LabelPrenom.getText();
-            String DateNaissance = BoxJour.getItemAt(0) + "/" + BoxMois.getItemAt(0) + "/" + BoxAnnee.getItemAt(0);
-            String Nationalite = LabelNationalite.getText().toUpperCase();
-            String Fonction = null;
-            if (BoxCapitaine.isSelected()){
-                Fonction = "Capitaine";
+            if (i == 0)
+            {
+                if (!BoxCapitaine.isSelected())
+                {
+                    String msg;
+                    msg = "Vous ne pouvez pas modifier le capitaine !";
+                    JOptionPane.showMessageDialog(this, msg, "Action impossible", JOptionPane.WARNING_MESSAGE);                      
+                }
+                else // modification du capitaine
+                {
+                    
+                    String IdentifiantMarin = LabelRegistre.getText(); 
+                    String Nom = LabelNom.getText();
+                    String Prenom = LabelPrenom.getText();
+                    String DateNaissance = BoxJour.getItemAt(0) + "/" + BoxMois.getItemAt(0) + "/" + BoxAnnee.getItemAt(0);
+                    String Nationalite = LabelNationalite.getText().toUpperCase();
+                    String Fonction = "Capitaine";
+
+                    for (int j = 0; j < TableEquipage.getRowCount(); j++)
+                    {
+                        if (TableEquipage.getValueAt(j, 0).equals(IdentifiantMarin)) // Je vérifie seulement pour les registres de l'équipage actuel (à modifier)
+                        {
+                            String msg;
+                            msg = "Un membre de l'équipe a déja ce numéro de registre !"; 
+                            JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE); 
+                            return;
+                        }
+                    }
+                    try{
+                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
+                    try {
+                        Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
+                        Vector ligne = new Vector();
+                        ligne.add(marin.getIdentifiant());                    
+                        ligne.add(marin.getNom());
+                        ligne.add(marin.getPrenom());
+                        ligne.add(marin.getDateNaissance());
+                        ligne.add(marin.getNationalite());
+                        ligne.add(marin.getFonction());
+                        Capitainerie.fichierLog.ecritLigne ("Modification du Capitaine : " + IdentifiantMarin);
+                        DTMEquipage.removeRow(i);
+                        DTMEquipage.insertRow(i,ligne);
+                        this.TableEquipage.setModel(DTMEquipage);              
+                    } catch (SailorWithoutIdentificationException ex) {
+                        Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
+                    }            
+                    }catch (ParseException e){
+                        String msg;
+                        msg = "Erreur : la date est invalide !";
+                        JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE);            
+                    } 
+                }
             }
-            else if (BoxSecond.isSelected()) {
-                Fonction = "Second";
-            }
-            else if (BoxBosco.isSelected()) {
-                Fonction = "Bosco";
-            }
-            else if (BoxMatelot.isSelected()) {
-                Fonction = "Matelot";
-            }
-            else if (BoxPassager.isSelected()) {
-                Fonction = "Passager";
-            }
-            else {
-                Fonction = "Clandestin";
-            }
-            
-            try{
-                Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
-                try {
-                    Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
-                    Vector ligne = new Vector();
-                    ligne.add(marin.getIdentifiant());                    
-                    ligne.add(marin.getNom());
-                    ligne.add(marin.getPrenom());
-                    ligne.add(marin.getDateNaissance().getDay() + "/" + marin.getDateNaissance().getMonth() + "/" + marin.getDateNaissance().getYear());
-                    ligne.add(marin.getNationalite());
-                    ligne.add(marin.getFonction());
-                    Capitainerie.fichierLog.ecritLigne ("Modification du marin : " + IdentifiantMarin);
-                    DTMEquipage.addRow(ligne);
-                    this.TableEquipage.setModel(DTMEquipage);              
-                } catch (SailorWithoutIdentificationException ex) {
-                    Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
-                }            
-            }catch (ParseException e){
-                String msg;
-                msg = "Erreur : la date est invalide !";
-                JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.INFORMATION_MESSAGE);            
+            else
+            {
+
+                
+                String IdentifiantMarin = LabelRegistre.getText(); 
+                String Nom = LabelNom.getText();
+                String Prenom = LabelPrenom.getText();
+                String DateNaissance = BoxJour.getItemAt(0) + "/" + BoxMois.getItemAt(0) + "/" + BoxAnnee.getItemAt(0);
+                String Nationalite = LabelNationalite.getText().toUpperCase();
+                String Fonction = null;
+                
+                for (int j = 0; j < TableEquipage.getRowCount(); j++)
+                {
+                    if (TableEquipage.getValueAt(j, 0).equals(IdentifiantMarin)) // Je vérifie seulement pour les registres de l'équipage actuel (à modifier)
+                    {
+                        String msg;
+                        msg = "Un membre de l'équipe a déja ce numéro de registre !"; 
+                        JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE); 
+                        return;
+                    }
+                }
+                    
+                if (BoxCapitaine.isSelected())
+                {
+                    String msg;
+                    msg = "Vous ne pouvez pas ajouter un deuxième capitaine !";
+                    JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE); 
+                }
+                else 
+                {
+                    if (BoxSecond.isSelected()) {
+                        Fonction = "Second";
+                        }
+                    else if (BoxBosco.isSelected()) {
+                        Fonction = "Bosco";
+                    }
+                    else if (BoxMatelot.isSelected()) {
+                        Fonction = "Matelot";
+                    }
+                    else if (BoxPassager.isSelected()) {
+                        Fonction = "Passager";
+                    }
+                    else {
+                        Fonction = "Clandestin";
+                    }
+
+                    try{
+                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
+                    try {
+                        Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
+                        Vector ligne = new Vector();
+                        ligne.add(marin.getIdentifiant());                    
+                        ligne.add(marin.getNom());
+                        ligne.add(marin.getPrenom());
+                        ligne.add(marin.getDateNaissance());
+                        ligne.add(marin.getNationalite());
+                        ligne.add(marin.getFonction());
+                        Capitainerie.fichierLog.ecritLigne ("Modification du marin : " + IdentifiantMarin);
+                        DTMEquipage.removeRow(i);
+                        DTMEquipage.insertRow(i,ligne);
+                        this.TableEquipage.setModel(DTMEquipage);              
+                    } catch (SailorWithoutIdentificationException ex) {
+                        Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
+                    }            
+                    }catch (ParseException e){
+                        String msg;
+                        msg = "Erreur : la date est invalide !";
+                        JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE);            
+                    }
+                }  
             }
         }
         else
         {
             String msg;
             msg = "Vous devez sélectionner un marin dans l'équipage !";
-            JOptionPane.showMessageDialog(this, msg, "Action impossible", JOptionPane.INFORMATION_MESSAGE);    
+            JOptionPane.showMessageDialog(this, msg, "Action impossible", JOptionPane.WARNING_MESSAGE);    
         }
     }//GEN-LAST:event_BoutonModifierActionPerformed
 
@@ -603,12 +702,14 @@ public class PublishEquipage extends javax.swing.JFrame
     private void BoutonSupprimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSupprimerActionPerformed
         FenetreEtesVousSur fevs = new FenetreEtesVousSur(this, rootPaneCheckingEnabled, "Êtes-vous sur de vouloir supprimer l'équipage ?");
         fevs.setVisible(true);
-        while (fevs.isVisible())
-        {
-            
-        }
         if (fevs.info)
-            TableEquipage.clearSelection();
+        {
+            for (int i=0 ; i < DTMEquipage.getRowCount();)
+            {
+                DTMEquipage.removeRow(i);
+            } 
+            TableEquipage.setModel(DTMEquipage);
+        }   
     }//GEN-LAST:event_BoutonSupprimerActionPerformed
 
     private void BoutonAnnulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAnnulerActionPerformed
@@ -655,9 +756,6 @@ public class PublishEquipage extends javax.swing.JFrame
         }
     }//GEN-LAST:event_TableEquipageMouseClicked
 
-    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
-        this.setVisible(false);
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonAjouter;
