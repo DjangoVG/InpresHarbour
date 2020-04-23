@@ -3,7 +3,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Quai extends Amarrage implements AUnIdentifiant, Serializable{
-    private String Identifiant;
     private int NbrBateaux;
     private int Capacite;
     public ArrayList<MoyenDeTransportSurEau> listeBateau;
@@ -40,10 +39,10 @@ public class Quai extends Amarrage implements AUnIdentifiant, Serializable{
     public void setListeBateau (ArrayList<MoyenDeTransportSurEau> list){ this.listeBateau = list; }   
     
     // Autres fonctions.    
-    public void ajouterBateau (MoyenDeTransportSurEau bpe, int emp){
+    public void ajouterBateau (MoyenDeTransportSurEau bateau, int emp){
         int nbr = getNbrBateau();
         System.out.println ("Ajout du numéro : " + emp);
-        listeBateau.add(emp, bpe);
+        listeBateau.add(emp, bateau);
         nbr++;
         setNbrBateau(nbr);
     }  

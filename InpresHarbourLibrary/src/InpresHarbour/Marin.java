@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Marin extends Humain implements AUnIdentifiant, Serializable {
-    
     private String Identifiant; 
     private String Fonction;
     

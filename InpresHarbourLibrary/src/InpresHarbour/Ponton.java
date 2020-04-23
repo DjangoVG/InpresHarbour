@@ -3,8 +3,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
-    
-    private String Identifiant;
     private int NbrBateaux;
     private int CapacitePonton;
     private int emplacement;
@@ -64,7 +62,7 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
     public void setListeBateauCoté2 (ArrayList<MoyenDeTransportSurEau> list){ this.ListeBateauCoté2 = list; }       
     
     public void ajouterBateau (MoyenDeTransportSurEau bpl, int Emplacement, int Cote){
-        int NbrBateaux = getNbrBateau();
+        int nbrBateaux = getNbrBateau();
         if (Cote == 2)
         {
             ListeBateauCoté1.add(Emplacement, bpl);
@@ -75,8 +73,8 @@ public class Ponton extends Amarrage implements AUnIdentifiant, Serializable{
             ListeBateauCoté2.add(Emplacement, bpl);
             System.out.println ("Ajouté cote b : " + Emplacement );      
         }
-        NbrBateaux++;
-        setNbrBateau(NbrBateaux);
+        nbrBateaux++;
+        setNbrBateau(nbrBateaux);
     }  
     
     public void modifierBateau (MoyenDeTransportSurEau bpl, int emp, int cote){

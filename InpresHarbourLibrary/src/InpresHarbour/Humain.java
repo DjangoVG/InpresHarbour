@@ -1,5 +1,4 @@
 package InpresHarbour;
-
 import java.io.*;
 import java.util.Date;
 
@@ -15,6 +14,7 @@ public class Humain implements Serializable {
         DateNaissance = null;
         Nationalite = null;
     }
+    
     public Humain (String n, String p, String Nationalite, Date dN){
         Nom = n;
         Prenom = p;
