@@ -63,6 +63,9 @@ public class InfosBateau extends javax.swing.JFrame {
             case "UK" :
                 LabelPavillon.setIcon(new ImageIcon(getClass().getResource("/images/UK.jpg")));
                 break;
+            case "NL" :
+                //LabelPavillon.setIcon(new ImageIcon(getClass().getResource("/images/UK.jpg"))); TO DO
+                break;
         }
         
         

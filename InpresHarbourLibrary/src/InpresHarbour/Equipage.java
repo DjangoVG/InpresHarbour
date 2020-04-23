@@ -1,5 +1,4 @@
 package InpresHarbour;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -9,7 +8,6 @@ public class Equipage implements Serializable {
     private Marin second;
     private ArrayList<Marin> listeMarin;
     
-    // Constructeurs.
     public Equipage (){
         NombreHumains = 0;
         capitaine = new Marin ();
@@ -29,7 +27,6 @@ public class Equipage implements Serializable {
         listeMarin = new ArrayList<> ();
     }    
     
-    // Get et Set.
     public int getNombreHumains (){ return NombreHumains; }
     public void setNombreHumains (int NbrPers){ this.NombreHumains = NbrPers; }
     
@@ -42,8 +39,8 @@ public class Equipage implements Serializable {
     public ArrayList<Marin> getListeMarin (){ return listeMarin; }
     public void setListeMarin (ArrayList<Marin> list){ this.listeMarin = list; }
     
-    // Autres fonctions.
-   public void ajouterMarin (Marin m){
+   public void ajouterMarin (Marin m)
+   {
        if (m.getFonction().equalsIgnoreCase("Capitaine"))
            this.setCapitaine(m);
        if (m.getFonction().equalsIgnoreCase("Second"))

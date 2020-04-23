@@ -19,5 +19,5 @@ public class BateauPeche extends Bateau implements Serializable{
     @Override
     public String toString (){
         return super.toString() + "\nBateau de pêche : type (" + type +")";
-    }   
+    }
 }

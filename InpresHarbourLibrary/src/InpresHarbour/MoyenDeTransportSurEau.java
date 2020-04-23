@@ -1,8 +1,6 @@
 package InpresHarbour;
 
-import java.io.Serializable;
-
-public abstract class MoyenDeTransportSurEau extends MoyenDeTransport implements Serializable{
+public abstract class MoyenDeTransportSurEau extends MoyenDeTransport {
     
     protected boolean estSubmersible;
     
