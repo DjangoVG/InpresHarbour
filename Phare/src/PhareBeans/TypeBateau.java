@@ -7,9 +7,8 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.Properties;
 import Thread.*;
-import static Phare.Phare.fichierLog;
 
-public class KindOfBoatBean implements Serializable, UtilisateurNombre {
+public class TypeBateau implements Serializable, UtilisateurNombre {
        
     private ThreadRandomGenerator trg;
     private String Info;
@@ -23,7 +22,7 @@ public class KindOfBoatBean implements Serializable, UtilisateurNombre {
     private final String repertoireCourant;
     private final String separateur;
     
-    public KindOfBoatBean() {
+    public TypeBateau() {
         
         separateur = System.getProperty("file.separator");
         repertoireCourant = System.getProperty("user.dir");        
@@ -79,7 +78,7 @@ public class KindOfBoatBean implements Serializable, UtilisateurNombre {
     
     @Override
     public String getIdentifiant(){
-        return "KindOfBoatBean";
+        return "TypeBateau";
     }
     
     //VA CREER UN NOUVEAU BATEAU QUAND LE THREAD LE SIGNALE

@@ -22,9 +22,9 @@ public class Phare extends javax.swing.JFrame {
     private final String repertoireCourant;
     private final String separateur;
     
-    private KindOfBoatBean kobb;
-    private BoatBean bb;
-    private NotifyBean nb;
+    private TypeBateau kobb;
+    private BateauBean bb;
+    private NotifBean nb;
     
     @SuppressWarnings("static-access")
     public Phare() {
@@ -48,7 +48,7 @@ public class Phare extends javax.swing.JFrame {
         
         //CREATION DES BEANS
         try{
-            kobb = (KindOfBoatBean) Beans.instantiate(null, "PhareBeans.KindOfBoatBean");
+            kobb = (TypeBateau) Beans.instantiate(null, "PhareBeans.KindOfBoatBean");
         }
         catch(ClassNotFoundException e){
             fichierLog.ecritLigne("Classe KindOfBoatBean non trouvée");
@@ -58,7 +58,7 @@ public class Phare extends javax.swing.JFrame {
         }
         
         try{
-            bb = (BoatBean) Beans.instantiate(null, "PhareBeans.BoatBean");
+            bb = (BateauBean) Beans.instantiate(null, "PhareBeans.BoatBean");
         }
         catch(ClassNotFoundException e){
             fichierLog.ecritLigne("Classe BoatBean non trouvée");
@@ -68,7 +68,7 @@ public class Phare extends javax.swing.JFrame {
         }
         
         try{
-            nb = (NotifyBean) Beans.instantiate(null, "PhareBeans.NotifyBean");
+            nb = (NotifBean) Beans.instantiate(null, "PhareBeans.NotifyBean");
         }
         catch(ClassNotFoundException e){
             fichierLog.ecritLigne("Classe NotifyBean non trouvée");

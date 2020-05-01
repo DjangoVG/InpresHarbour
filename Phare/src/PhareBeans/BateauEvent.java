@@ -1,26 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package PhareBeans;
-
 import java.util.Date;
 import java.util.Locale;
 import java.text.DateFormat;
 import java.util.EventObject;
 
-/**
- *
- * @author Timon
- */
-public class BoatEvent extends EventObject{
+public class BateauEvent extends EventObject{
     
     private String dhReception;
     private String typeBoat;
     private String pavillon;
     
-    public BoatEvent(Object source, String tb){
+    public BateauEvent(Object source, String tb){
        super(source);
        Date maintenant = new Date ();
        setDhReception(new String(DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT, Locale.FRANCE).format(maintenant)));

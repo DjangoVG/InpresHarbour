@@ -431,3 +431,5 @@
 [23/04/20 14:35] : Nous avons chargé le fichier properties.
 [23/04/20 14:41] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
 [23/04/20 14:41] : Nous avons chargé le fichier properties.
+[30/04/20 22:19] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[30/04/20 22:19] : Nous avons chargé le fichier properties.

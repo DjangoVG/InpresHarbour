@@ -5,10 +5,10 @@ import javax.swing.DefaultListModel;
 import java.io.Serializable;
 import javax.swing.JOptionPane;
 
-public class NotifyBean implements Serializable, BoatEventListener{
+public class NotifBean implements Serializable, BateauEventListener{
     
     @Override
-    public void BoatEventDetected(BoatEvent be){
+    public void BateauEventDetected(BateauEvent be){
         //AJOUT A LA LISTE D'ATTENTE DE PHARE
         DefaultListModel dlmAttente = new DefaultListModel();
         dlmAttente = (DefaultListModel) Phare.ListeAttente.getModel();

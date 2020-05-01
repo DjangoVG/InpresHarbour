@@ -36,16 +36,16 @@ public class InfosBateau extends javax.swing.JFrame {
     private BateauPlaisance bateauPlaisance = null;
     private BateauPeche bateauPeche = null;
     
-    public InfosBateau(ArrayList<BateauPlaisance> ListeBateauPlaisance, ArrayList<BateauPeche> ListeBateauPeche, ArrayList<Ponton> ListePonton, ArrayList<Quai> ListeQuai) {
+    public InfosBateau(ArrayList<BateauPlaisance> ListeBateauPlaisance, ArrayList<BateauPeche> ListeBateauPeche, ArrayList<Ponton> ListePonton, ArrayList<Quai> ListeQuai, int SelectedRow) {
         initComponents();
         
         equipage = new Equipage ();
-        IdentifiantBateau = (String) Capitainerie.TableBateaux.getValueAt(0, 0);
-        NomBateau = (String) Capitainerie.TableBateaux.getValueAt(0, 1);
-        LongueurBateau = (float) Capitainerie.TableBateaux.getValueAt(0, 2);
-        PavillonBateau = (String) Capitainerie.TableBateaux.getValueAt(0, 3);
-        String emplacement = (String) Capitainerie.TableBateaux.getValueAt(0, 4);
-        TypeBateau = (String) Capitainerie.TableBateaux.getValueAt(0, 5);
+        IdentifiantBateau = (String) Capitainerie.TableBateaux.getValueAt(SelectedRow, 0);
+        NomBateau = (String) Capitainerie.TableBateaux.getValueAt(SelectedRow, 1);
+        LongueurBateau = (float) Capitainerie.TableBateaux.getValueAt(SelectedRow, 2);
+        PavillonBateau = (String) Capitainerie.TableBateaux.getValueAt(SelectedRow, 3);
+        String emplacement = (String) Capitainerie.TableBateaux.getValueAt(SelectedRow, 4);
+        TypeBateau = (String) Capitainerie.TableBateaux.getValueAt(SelectedRow, 5);
         LabelEmplacement.setText(emplacement);
         LabelNomBateau.setText(NomBateau);
         

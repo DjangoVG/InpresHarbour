@@ -903,7 +903,7 @@ public class Capitainerie extends javax.swing.JFrame {
         if (TableBateaux.getSelectedRow() != -1)
         {
             java.awt.EventQueue.invokeLater(() -> {
-                new InfosBateau(ListeBateauxPlaisances, ListeBateauPeches, ListePonton, ListeQuai).setVisible(true);
+                new InfosBateau(ListeBateauxPlaisances, ListeBateauPeches, ListePonton, ListeQuai, TableBateaux.getSelectedRow()).setVisible(true);
             });            
         }
         else
