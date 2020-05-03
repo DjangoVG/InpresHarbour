@@ -704,8 +704,8 @@ public class PublishEquipage extends javax.swing.JFrame
             }
         }       
         InfosBateau.ListEquipage.setModel((ComboBoxModel) DCBMEquipage);
-        setVisible(false);
-        this.TableEquipage.clearSelection();
+        this.setVisible(false);
+        this.dispose();
     }//GEN-LAST:event_BoutonValiderActionPerformed
 
     private void BoutonSupprimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSupprimerActionPerformed

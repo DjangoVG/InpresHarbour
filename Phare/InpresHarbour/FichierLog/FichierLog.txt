@@ -433,3 +433,18 @@
 [23/04/20 14:41] : Nous avons chargé le fichier properties.
 [30/04/20 22:19] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
 [30/04/20 22:19] : Nous avons chargé le fichier properties.
+[03/05/20 16:58] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[03/05/20 16:58] : Nous avons chargé le fichier properties.
+[03/05/20 16:58] : Classe KindOfBoatBean non trouvée
+[03/05/20 16:58] : Classe BoatBean non trouvée
+[03/05/20 16:58] : Classe NotifyBean non trouvée
+[03/05/20 16:59] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[03/05/20 16:59] : Nous avons chargé le fichier properties.
+[03/05/20 17:02] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[03/05/20 17:02] : Nous avons chargé le fichier properties.
+[03/05/20 17:03] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[03/05/20 17:03] : Nous avons chargé le fichier properties.
+[03/05/20 17:04] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[03/05/20 17:04] : Nous avons chargé le fichier properties.
+[03/05/20 17:07] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[03/05/20 17:07] : Nous avons chargé le fichier properties.

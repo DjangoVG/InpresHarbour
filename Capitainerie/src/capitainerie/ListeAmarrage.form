@@ -40,13 +40,11 @@
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="BoutonSelectionner" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="LabelSupprimer" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="BoutonQuitter" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="821" max="32767" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane2" alignment="0" pref="1071" max="32767" attributes="0"/>
               </Group>
@@ -77,7 +75,6 @@
               <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="BoutonSelectionner" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="LabelSupprimer" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="BoutonQuitter" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -145,17 +142,9 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BoutonSelectionnerActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="LabelSupprimer">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Supprimer"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LabelSupprimerActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="BoutonQuitter">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Quitter"/>
+        <Property name="text" type="java.lang.String" value="Annuler mon choix"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BoutonQuitterActionPerformed"/>

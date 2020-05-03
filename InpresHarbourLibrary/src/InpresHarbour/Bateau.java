@@ -1,7 +1,6 @@
 package InpresHarbour;
-import java.io.Serializable;
 
-public class Bateau extends MoyenDeTransportSurEau implements AUnIdentifiant, Serializable{
+public class Bateau extends MoyenDeTransportSurEau implements AUnIdentifiant {
     
     protected String identifiant;
     protected String nom;

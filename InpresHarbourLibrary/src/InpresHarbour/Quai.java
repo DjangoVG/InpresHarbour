@@ -3,6 +3,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Quai extends Amarrage implements AUnIdentifiant, Serializable{
+    private String Identifiant; // Obligation pour le fichier .data
     private int NbrBateaux;
     private int Capacite;
     public ArrayList<MoyenDeTransportSurEau> listeBateau;

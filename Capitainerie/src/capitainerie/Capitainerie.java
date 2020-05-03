@@ -397,7 +397,6 @@ public class Capitainerie extends javax.swing.JFrame {
         MenuNewUser = new javax.swing.JMenuItem();
         MenuAmarrage = new javax.swing.JMenu();
         MenuPlaisance = new javax.swing.JMenuItem();
-        MenuPeche = new javax.swing.JMenuItem();
         MenuBateau = new javax.swing.JMenu();
         MenuListeBateau = new javax.swing.JMenuItem();
         MenuRechercheBateau = new javax.swing.JMenuItem();
@@ -551,21 +550,13 @@ public class Capitainerie extends javax.swing.JFrame {
         MenuAmarrage.setText("Amarrage");
         MenuAmarrage.setEnabled(false);
 
-        MenuPlaisance.setText("Bateau de plaisance");
+        MenuPlaisance.setText("Liste des bateaux");
         MenuPlaisance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenuPlaisanceActionPerformed(evt);
             }
         });
         MenuAmarrage.add(MenuPlaisance);
-
-        MenuPeche.setText("Bateau de pêche");
-        MenuPeche.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuPecheActionPerformed(evt);
-            }
-        });
-        MenuAmarrage.add(MenuPeche);
 
         MenuBarCapitainerie.add(MenuAmarrage);
 
@@ -781,12 +772,6 @@ public class Capitainerie extends javax.swing.JFrame {
         });
         LogCapit.setVisible(true);
     }//GEN-LAST:event_MenuNewUserActionPerformed
-
-    private void MenuPecheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPecheActionPerformed
-        java.awt.EventQueue.invokeLater(() -> {
-            new ListeAmarrage(ListePonton, ListeQuai).setVisible(true);
-        });
-    }//GEN-LAST:event_MenuPecheActionPerformed
 
     private void MenuFormatDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuFormatDateActionPerformed
         try {
@@ -1271,7 +1256,6 @@ public class Capitainerie extends javax.swing.JFrame {
     public javax.swing.JMenuItem MenuLogout;
     public javax.swing.JMenuItem MenuNewUser;
     private javax.swing.JMenu MenuParametres;
-    private javax.swing.JMenuItem MenuPeche;
     public javax.swing.JMenu MenuPersonnel;
     private javax.swing.JMenuItem MenuPlaisance;
     private javax.swing.JMenuItem MenuRechercheBateau;

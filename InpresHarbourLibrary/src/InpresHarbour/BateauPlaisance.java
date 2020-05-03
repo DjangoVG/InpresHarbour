@@ -1,8 +1,6 @@
 package InpresHarbour;
 
-import java.io.Serializable;
-
-public class BateauPlaisance extends Bateau implements Serializable {
+public class BateauPlaisance extends Bateau {
     private String Permis;
     
     // Constructeurs.

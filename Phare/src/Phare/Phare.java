@@ -48,30 +48,30 @@ public class Phare extends javax.swing.JFrame {
         
         //CREATION DES BEANS
         try{
-            kobb = (TypeBateau) Beans.instantiate(null, "PhareBeans.KindOfBoatBean");
+            kobb = (TypeBateau) Beans.instantiate(null, "PhareBeans.TypeBateau");
         }
         catch(ClassNotFoundException e){
-            fichierLog.ecritLigne("Classe KindOfBoatBean non trouvée");
+            fichierLog.ecritLigne("Classe TypeBateau non trouvée");
         }
         catch(IOException e){
             fichierLog.ecritLigne("Fichier de sérialisation non trouvé");
         }
         
         try{
-            bb = (BateauBean) Beans.instantiate(null, "PhareBeans.BoatBean");
+            bb = (BateauBean) Beans.instantiate(null, "PhareBeans.BateauBean");
         }
         catch(ClassNotFoundException e){
-            fichierLog.ecritLigne("Classe BoatBean non trouvée");
+            fichierLog.ecritLigne("Classe BateauBean non trouvée");
         }
         catch(IOException e){
             fichierLog.ecritLigne("Fichier de sérialisation non trouvé");
         }
         
         try{
-            nb = (NotifBean) Beans.instantiate(null, "PhareBeans.NotifyBean");
+            nb = (NotifBean) Beans.instantiate(null, "PhareBeans.NotifBean");
         }
         catch(ClassNotFoundException e){
-            fichierLog.ecritLigne("Classe NotifyBean non trouvée");
+            fichierLog.ecritLigne("Classe NotifBean non trouvée");
         }
         catch(IOException e){
             fichierLog.ecritLigne("Fichier de sérialisation non trouvé");

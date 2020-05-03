@@ -59,18 +59,10 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="MenuPlaisance">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Bateau de plaisance"/>
+                <Property name="text" type="java.lang.String" value="Liste des bateaux"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuPlaisanceActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="MenuPeche">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Bateau de p&#xea;che"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuPecheActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>

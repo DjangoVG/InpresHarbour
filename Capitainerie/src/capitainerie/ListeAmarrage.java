@@ -48,7 +48,8 @@ public class ListeAmarrage extends javax.swing.JFrame {
             {
                 @SuppressWarnings("UseOfObsoleteCollectionType")
                 Vector ligne = new Vector();
-                if (i < tempA){
+                if (i < tempA)
+                {
                     if (i == 0)
                         ligne.add(p.getIdentifiant());
                     else
@@ -206,7 +207,6 @@ public class ListeAmarrage extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         BoutonSelectionner = new javax.swing.JButton();
-        LabelSupprimer = new javax.swing.JButton();
         BoutonQuitter = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         TableAmarragePonton = new javax.swing.JTable();
@@ -246,14 +246,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
             }
         });
 
-        LabelSupprimer.setText("Supprimer");
-        LabelSupprimer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LabelSupprimerActionPerformed(evt);
-            }
-        });
-
-        BoutonQuitter.setText("Quitter");
+        BoutonQuitter.setText("Annuler mon choix");
         BoutonQuitter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BoutonQuitterActionPerformed(evt);
@@ -298,11 +291,9 @@ public class ListeAmarrage extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(BoutonSelectionner)
-                                .addGap(18, 18, 18)
-                                .addComponent(LabelSupprimer)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(BoutonQuitter)))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 821, Short.MAX_VALUE))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1071, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -328,17 +319,12 @@ public class ListeAmarrage extends javax.swing.JFrame {
                 .addGap(4, 4, 4)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BoutonSelectionner)
-                    .addComponent(LabelSupprimer)
                     .addComponent(BoutonQuitter))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void LabelSupprimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LabelSupprimerActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_LabelSupprimerActionPerformed
 
     private void BoutonSelectionnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSelectionnerActionPerformed
         BoutonLire.setEnabled(false);
@@ -404,7 +390,7 @@ public class ListeAmarrage extends javax.swing.JFrame {
 
     private void BoutonQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonQuitterActionPerformed
         BoutonLire.setEnabled(false);
-        BoutonChoisir.setEnabled(false);
+        BoutonChoisir.setEnabled(true);
         this.setVisible(false);
     }//GEN-LAST:event_BoutonQuitterActionPerformed
 
@@ -461,7 +447,6 @@ public class ListeAmarrage extends javax.swing.JFrame {
     private javax.swing.JButton BoutonQuitter;
     private javax.swing.JButton BoutonSelectionner;
     private javax.swing.JTextField LabelEmplacement;
-    private javax.swing.JButton LabelSupprimer;
     private javax.swing.JTable TableAmarragePonton;
     private javax.swing.JTable TableAmarrageQuai;
     private javax.swing.JLabel jLabel1;

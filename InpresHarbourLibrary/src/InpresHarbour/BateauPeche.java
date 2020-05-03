@@ -1,7 +1,6 @@
 package InpresHarbour;
-import java.io.Serializable;
 
-public class BateauPeche extends Bateau implements Serializable{
+public class BateauPeche extends Bateau {
     private String type;
     
     public BateauPeche (){

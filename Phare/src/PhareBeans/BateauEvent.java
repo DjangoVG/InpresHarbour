@@ -39,44 +39,26 @@ public class BateauEvent extends EventObject{
         return s;
     }
     
-    /**
-     * @return the dhReception
-     */
     public String getDhReception() {
         return dhReception;
     }
 
-    /**
-     * @param dhReception the dhReception to set
-     */
     public void setDhReception(String dhReception) {
         this.dhReception = dhReception;
     }
 
-    /**
-     * @return the typeBoat
-     */
     public String getTypeBoat() {
         return typeBoat;
     }
 
-    /**
-     * @param typeBoat the typeBoat to set
-     */
     public void setTypeBoat(String typeBoat) {
         this.typeBoat = typeBoat;
     }
 
-    /**
-     * @return the pavillon
-     */
     public String getPavillon() {
         return pavillon;
     }
 
-    /**
-     * @param pavillon the pavillon to set
-     */
     public void setPavillon(String pavillon) {
         this.pavillon = pavillon;
     }

@@ -1,9 +1,7 @@
 package InpresHarbour;
-
-import java.io.Serializable;
 import java.util.Date;
 
-public class Marin extends Humain implements AUnIdentifiant, Serializable {
+public class Marin extends Humain implements AUnIdentifiant {
     private String Identifiant; 
     private String Fonction;
     
@@ -14,8 +12,8 @@ public class Marin extends Humain implements AUnIdentifiant, Serializable {
     }
     public Marin (String id, String n, String p, String nationalite, Date dN,  String fct) throws SailorWithoutIdentificationException{
         super(n, p, nationalite, dN);
-        //if((!n.matches("^[a-zA-Z][a-zA-Z]{1,25}$")) || (!p.matches("^[a-zA-Z][a-zA-Z]{1,25}$")))
-            //throw new SailorWithoutIdentificationException(id);
+        //if (n == null || p == null)
+          //  new SailorWithoutIdentificationException(id);
         Identifiant = id;
         Fonction = fct;
     }
