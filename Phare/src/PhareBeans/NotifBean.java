@@ -16,7 +16,7 @@ public class NotifBean implements Serializable, BateauEventListener{
         
         //AFFICHAGE DE LA FENETRE DE DIALOGUE MODALE
         JOptionPane jop = new JOptionPane();
-        String s2 = new String("(" + be.getDhReception() + " ) Nouveau bateau en vue : " + be.getTypeBoat() + "/" + be.getPavillon());
+        String s2 = new String("(" + be.getDhReception() + ") Bateau en entrée : " + be.getTypeBoat() + "/" + be.getPavillon());
         jop.showMessageDialog(null, s2);
     }
 }

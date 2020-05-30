@@ -90,7 +90,7 @@ public class TypeBateau implements Serializable, UtilisateurNombre {
         
         while(hasToRestart)
         {
-            nbAlea = new Double(Math.floor( 1 + (Math.random() * 17)));
+            nbAlea = new Double(Math.floor( 1 + (Math.random() * 20)));
             
             System.out.println(nbAlea);
             

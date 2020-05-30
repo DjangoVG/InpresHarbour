@@ -41,7 +41,7 @@ public class PublishEquipage extends javax.swing.JFrame
         
         if (equipage.getNombreHumains() > 0)
         {
-            Marin Capitaine = equipage.getCapitaine();
+           /* Marin Capitaine = equipage.getCapitaine();
             Marin Second = equipage.getSecond();
             if (Capitaine != null)
             {
@@ -64,9 +64,11 @@ public class PublishEquipage extends javax.swing.JFrame
                 ligne.add(Second.getNationalite());
                 ligne.add(Second.getFonction());
                 DTMEquipage.addRow(ligne);               
-            }
-            if (equipage.getListeMarin() != null){
-                for (Marin marin : equipage.getListeMarin()){
+            }*/
+            if (equipage.getListeMarin() != null)
+            {
+                for (Marin marin : equipage.getListeMarin())
+                {
                     Vector UnMarin = new Vector ();
                     UnMarin.add(marin.getIdentifiant());
                     UnMarin.add(marin.getNom());

@@ -448,3 +448,9 @@
 [03/05/20 17:04] : Nous avons chargé le fichier properties.
 [03/05/20 17:07] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
 [03/05/20 17:07] : Nous avons chargé le fichier properties.
+[18/05/20 19:47] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[18/05/20 19:47] : Nous avons chargé le fichier properties.
+[18/05/20 19:47] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[18/05/20 19:47] : Nous avons chargé le fichier properties.
+[18/05/20 19:52] : C:\Users\Regis\Bureau\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[18/05/20 19:52] : Nous avons chargé le fichier properties.
