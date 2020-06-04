@@ -154,46 +154,16 @@ public class RechercheMarin extends javax.swing.JFrame {
             this.DTMMarin.removeRow(0);
         String id = this.LabelRegistre.getText();
         boolean trouve = false;
-        for (BateauPlaisance Elem : ListeBateauxPlaisances){
+        for (BateauPlaisance Elem : ListeBateauxPlaisances)
+        {
             Equipage equi = Elem.getEquipage();
-            String idCap = equi.getCapitaine().getIdentifiant();
-            if (idCap.equals(id)){
-                trouve = true;
-                Vector ligne = new Vector();
-                Marin cap = equi.getCapitaine();
-                ligne.add(cap.getIdentifiant());
-                ligne.add(cap.getNom());
-                ligne.add(cap.getPrenom());
-                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-                String strDate = dateFormat.format(cap.getDateNaissance());
-                ligne.add(strDate);   
-                ligne.add(cap.getNationalite());
-                ligne.add(cap.getFonction());
-                ligne.add(Elem.getIdentifiant());
-                DTMMarin.addRow(ligne); 
-                this.TableMarin.setModel(DTMMarin);
-            }
-            String idSec = equi.getSecond().getIdentifiant();
-            if (idSec.equals(id)){
-                trouve = true;
-                Vector ligne = new Vector();
-                Marin sec = equi.getSecond();
-                ligne.add(sec.getIdentifiant());
-                ligne.add(sec.getNom());
-                ligne.add(sec.getPrenom());
-                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-                String strDate = dateFormat.format(sec.getDateNaissance());
-                ligne.add(strDate);
-                ligne.add(sec.getNationalite());
-                ligne.add(sec.getFonction());
-                ligne.add(Elem.getIdentifiant());
-                DTMMarin.addRow(ligne); 
-                this.TableMarin.setModel(DTMMarin);                
-            } 
-            if (equi.getListeMarin() != null){
-                for (Marin ElemMar : equi.getListeMarin()){
+            if (equi.getListeMarin() != null)
+            {
+                for (Marin ElemMar : equi.getListeMarin())
+                {
                     String idMar = ElemMar.getIdentifiant();
-                    if (idMar.equals(id)){
+                    if (idMar.equals(id))
+                    {
                         trouve = true;
                         Vector ligne = new Vector();
                         ligne.add(ElemMar.getIdentifiant());
@@ -211,47 +181,13 @@ public class RechercheMarin extends javax.swing.JFrame {
                 }
             }  
         }
-        for (BateauPeche Elem : ListeBateauPeches){
+        for (BateauPeche Elem : ListeBateauPeches)
+        {
             Equipage equi = Elem.getEquipage();
-            String idCap = equi.getCapitaine().getIdentifiant();
-            System.out.println("ID : " + idCap);
-            if (idCap.equals(id))
+            if (equi.getListeMarin() != null)
             {
-                trouve = true;
-                Vector ligne = new Vector();
-                Marin cap = equi.getCapitaine();
-                ligne.add(cap.getIdentifiant());
-                ligne.add(cap.getNom());
-                ligne.add(cap.getPrenom());
-                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-                String strDate = dateFormat.format(cap.getDateNaissance());
-                ligne.add(strDate);
-                ligne.add(cap.getNationalite());
-                ligne.add(cap.getFonction());
-                ligne.add(Elem.getIdentifiant());
-                DTMMarin.addRow(ligne); 
-                this.TableMarin.setModel(DTMMarin);                
-            }
-            String idSec = equi.getSecond().getIdentifiant();
-            if (idSec.equals(id))
-            {
-                trouve = true;
-                Vector ligne = new Vector();
-                Marin sec = equi.getSecond();
-                ligne.add(sec.getIdentifiant());
-                ligne.add(sec.getNom());
-                ligne.add(sec.getPrenom());
-                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-                String strDate = dateFormat.format(sec.getDateNaissance());
-                ligne.add(strDate);
-                ligne.add(sec.getNationalite());
-                ligne.add(sec.getFonction());
-                ligne.add(Elem.getIdentifiant());
-                DTMMarin.addRow(ligne); 
-                this.TableMarin.setModel(DTMMarin);                 
-            } 
-            if (equi.getListeMarin() != null){
-                for (Marin ElemMar : equi.getListeMarin()){
+                for (Marin ElemMar : equi.getListeMarin())
+                {
                     String idMar = ElemMar.getIdentifiant();
                     if (idMar.equals(id))
                     {
@@ -260,7 +196,7 @@ public class RechercheMarin extends javax.swing.JFrame {
                         ligne.add(ElemMar.getIdentifiant());
                         ligne.add(ElemMar.getNom());
                         ligne.add(ElemMar.getPrenom());
-                        
+
                         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
                         String strDate = dateFormat.format(ElemMar.getDateNaissance());
                         ligne.add(strDate);
@@ -273,6 +209,7 @@ public class RechercheMarin extends javax.swing.JFrame {
                 }
             }  
         }
+
         if (!trouve)
         {
             String msg;
@@ -281,9 +218,6 @@ public class RechercheMarin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BoutonRechercherActionPerformed
 
-    private void formWindowClosing(java.awt.event.WindowEvent evt) { 
-        this.setVisible(false);
-    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BoutonQuitter;

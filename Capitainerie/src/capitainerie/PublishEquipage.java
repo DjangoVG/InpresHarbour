@@ -410,8 +410,7 @@ public class PublishEquipage extends javax.swing.JFrame
             }
             try
             {
-                Date dateNaissance=new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);    
-                System.out.println("Date : " + dateNaissance);
+                Date dateNaissance=new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);
                 try 
                 {
                     Marin marin = new Marin (RegistreNationalMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
@@ -440,8 +439,7 @@ public class PublishEquipage extends javax.swing.JFrame
             {
                 try
                 {
-                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);  
-                    System.out.println("Date : " + dateNaissance);
+                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);
                     try {
                         Marin marin = new Marin (RegistreNationalMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
                         Vector ligne = new Vector();
