@@ -3018,3 +3018,52 @@
 [30/05/20 17:46] : Le fichier C:\Users\Régis\Desktop\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
 [30/05/20 17:46] : Enregistrement des bateaux de quai juste avant la fermeture
 [30/05/20 17:46] : Le fichier C:\Users\Régis\Desktop\RegisServer\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture
+[04/06/20 12:00] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[04/06/20 12:00] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[04/06/20 12:00] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[04/06/20 12:00] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[04/06/20 12:00] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[04/06/20 12:00] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[04/06/20 12:00] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[04/06/20 12:00] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[04/06/20 12:00] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[04/06/20 12:00] : Fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.datanon trouvé en écriture juste avant la fermeture avec comme message : java.io.FileNotFoundException: C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data (Le chemin d’accès spécifié est introuvable)
+[04/06/20 12:00] : Enregistement des bateaux de pêches juste avant la fermeture.
+[04/06/20 12:00] : Fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.datanon trouvé en écriture juste avant la fermeture avec comme message : java.io.FileNotFoundException: C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data (Le chemin d’accès spécifié est introuvable)
+[04/06/20 12:00] : Enregistrement des bateaux de ponton juste avant la fermeture
+[04/06/20 12:00] : Fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data non trouvé en écriture juste avant la fermeture avec comme message : java.io.FileNotFoundException: C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data (Le chemin d’accès spécifié est introuvable)
+[04/06/20 12:00] : Enregistrement des bateaux de quai juste avant la fermeture
+[04/06/20 12:00] : Fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data non trouvé en écriture juste avant la fermeture avec comme message : java.io.FileNotFoundException: C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data (Le chemin d’accès spécifié est introuvable)
+[04/06/20 12:00] : Aucun bateau de plaisance existe : création du sous dossier Plaisance avec un Plaisance.data.
+[04/06/20 12:00] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été crée
+[04/06/20 12:00] : Aucun Ponton existe : création du sous dossier Ponton avec un Ponton.data.
+[04/06/20 12:00] : Le fichier Ponton.data a bien été crée
+[04/06/20 12:00] : Aucun bateau de pêche existe : création du sous dossier Peche avec un C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data
+[04/06/20 12:00] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été crée
+[04/06/20 12:00] : Aucun Quai existe : création du sous dossier Quai avec un Quai.data.
+[04/06/20 12:00] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été crée
+[04/06/20 12:01] : Le bateau 123456 a bien été ajouté temporairement
+[04/06/20 12:02] : Création du capitaine : 159159159
+[04/06/20 12:02] : Création d'un capitaine : 159159159
+[04/06/20 12:05] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data existe déjà, lecture du fichier.
+[04/06/20 12:05] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été lu
+[04/06/20 12:05] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data existe déjà, lecture du fichier.
+[04/06/20 12:05] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été lu
+[04/06/20 12:05] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data existe déjà, lecture du fichier.
+[04/06/20 12:05] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été lu
+[04/06/20 12:05] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data existe déjà, lecture du fichier.
+[04/06/20 12:05] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été lu
+[04/06/20 12:06] : Le bateau 1234 a bien été ajouté temporairement
+[04/06/20 12:06] : Création du capitaine : 159159
+[04/06/20 12:06] : Création d'un capitaine : 159159
+[04/06/20 12:06] : Le bateau 1234Londres a bien été enregistré
+[04/06/20 12:06] : Le bateau n'est plus en attente
+[04/06/20 12:06] : Création d'un capitaine : 159159
+[04/06/20 12:08] : Enregistrement des bateaux de plaisance juste avant la fermeture
+[04/06/20 12:08] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Plaisance\Plaisance.data a bien été enregistré juste avant la fermeture
+[04/06/20 12:08] : Enregistement des bateaux de pêches juste avant la fermeture.
+[04/06/20 12:08] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Peche\Peche.data a bien été enregistré juste avant la fermeture
+[04/06/20 12:08] : Enregistrement des bateaux de ponton juste avant la fermeture
+[04/06/20 12:08] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Ponton\Ponton.data a bien été enregistré juste avant la fermeture
+[04/06/20 12:08] : Enregistrement des bateaux de quai juste avant la fermeture
+[04/06/20 12:08] : Le fichier C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Capitainerie\InpresHarbour\Quai\Quai.data a bien été enregistré juste avant la fermeture

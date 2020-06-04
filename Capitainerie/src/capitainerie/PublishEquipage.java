@@ -8,6 +8,7 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import InpresHarbour.SailorWithoutIdentificationException;
+import java.text.DateFormat;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import java.text.SimpleDateFormat;
@@ -41,30 +42,6 @@ public class PublishEquipage extends javax.swing.JFrame
         
         if (equipage.getNombreHumains() > 0)
         {
-           /* Marin Capitaine = equipage.getCapitaine();
-            Marin Second = equipage.getSecond();
-            if (Capitaine != null)
-            {
-                System.out.println("Capitaine : " + Capitaine.getFonction() + " " + Capitaine.getIdentifiant() + " " + Capitaine.getNom());
-                Vector ligne = new Vector();
-                ligne.add(Capitaine.getIdentifiant());                    
-                ligne.add(Capitaine.getNom());
-                ligne.add(Capitaine.getPrenom());
-                ligne.add(Capitaine.getDateNaissance().getDay() + "/" + Capitaine.getDateNaissance().getMonth() + "/" + Capitaine.getDateNaissance().getYear());
-                ligne.add(Capitaine.getNationalite());
-                ligne.add(Capitaine.getFonction());
-                DTMEquipage.addRow(ligne);
-            }
-            if (Second != null){
-                Vector ligne = new Vector();
-                ligne.add(Second.getIdentifiant());                    
-                ligne.add(Second.getNom());
-                ligne.add(Second.getPrenom());
-                ligne.add(Second.getDateNaissance().getDay() + "/" + Second.getDateNaissance().getMonth() + "/" + Second.getDateNaissance().getYear());
-                ligne.add(Second.getNationalite());
-                ligne.add(Second.getFonction());
-                DTMEquipage.addRow(ligne);               
-            }*/
             if (equipage.getListeMarin() != null)
             {
                 for (Marin marin : equipage.getListeMarin())
@@ -73,7 +50,9 @@ public class PublishEquipage extends javax.swing.JFrame
                     UnMarin.add(marin.getIdentifiant());
                     UnMarin.add(marin.getNom());
                     UnMarin.add(marin.getPrenom());
-                    UnMarin.add(marin.getDateNaissance().getDay() + "/" + marin.getDateNaissance().getMonth() + "/" + marin.getDateNaissance().getYear());
+                    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");  
+                    String strDate = dateFormat.format(marin.getDateNaissance());  
+                    UnMarin.add(strDate);
                     UnMarin.add(marin.getNationalite());
                     UnMarin.add(marin.getFonction());
                     DTMEquipage.addRow(UnMarin);
@@ -431,7 +410,8 @@ public class PublishEquipage extends javax.swing.JFrame
             }
             try
             {
-                Date dateNaissance=new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
+                Date dateNaissance=new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);    
+                System.out.println("Date : " + dateNaissance);
                 try 
                 {
                     Marin marin = new Marin (RegistreNationalMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
@@ -460,7 +440,8 @@ public class PublishEquipage extends javax.swing.JFrame
             {
                 try
                 {
-                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
+                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);  
+                    System.out.println("Date : " + dateNaissance);
                     try {
                         Marin marin = new Marin (RegistreNationalMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
                         Vector ligne = new Vector();
@@ -525,8 +506,7 @@ public class PublishEquipage extends javax.swing.JFrame
                         }
                     }
                     try{
-                    Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);     
-                    try {
+                        Date dateNaissance = new SimpleDateFormat("dd/MM/yyyy").parse(DateNaissance);
                         Marin marin = new Marin (IdentifiantMarin, Nom, Prenom, Nationalite, dateNaissance, Fonction);
                         Vector ligne = new Vector();
                         ligne.add(marin.getIdentifiant());                    
@@ -538,15 +518,15 @@ public class PublishEquipage extends javax.swing.JFrame
                         Capitainerie.fichierLog.ecritLigne ("Modification du Capitaine : " + IdentifiantMarin);
                         DTMEquipage.removeRow(i);
                         DTMEquipage.insertRow(i,ligne);
-                        this.TableEquipage.setModel(DTMEquipage);              
-                    } catch (SailorWithoutIdentificationException ex) {
-                        Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
-                    }            
-                    }catch (ParseException e){
+                        this.TableEquipage.setModel(DTMEquipage);                          
+                    }catch (ParseException z){
                         String msg;
                         msg = "Erreur : la date est invalide !";
                         JOptionPane.showMessageDialog(this, msg, "Erreur de format", JOptionPane.WARNING_MESSAGE);            
                     } 
+                    catch (SailorWithoutIdentificationException ex) {
+                        Capitainerie.fichierLog.ecritLigne ("SailorWithoutIdentificationException : " + ex.getMessage());
+                    }
                 }
             }
             else
