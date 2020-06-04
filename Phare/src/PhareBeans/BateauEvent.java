@@ -18,8 +18,8 @@ public class BateauEvent extends EventObject{
        setPavillon(pickUpAPavillon());
     }
 
-    private String pickUpAPavillon(){
-        
+    private String pickUpAPavillon()
+    {
         String s = new String();
         Double nbAlea = new Double(Math.floor(Math.random() * 5));
         

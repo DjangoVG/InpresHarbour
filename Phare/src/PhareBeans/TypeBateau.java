@@ -10,7 +10,7 @@ import Thread.*;
 
 public class TypeBateau implements Serializable, UtilisateurNombre {
        
-    private ThreadRandomGenerator trg;
+    private ThreadRandomGenerator ThreadRandomGen;
     private String Info;
     private PropertyChangeSupport pcs;
     
@@ -22,8 +22,8 @@ public class TypeBateau implements Serializable, UtilisateurNombre {
     private final String repertoireCourant;
     private final String separateur;
     
-    public TypeBateau() {
-        
+    public TypeBateau() 
+    {
         separateur = System.getProperty("file.separator");
         repertoireCourant = System.getProperty("user.dir");        
         String fileProperties = repertoireCourant + separateur + "src" + separateur + "Properties" + separateur +  "ServeurProperties.properties";
@@ -41,7 +41,7 @@ public class TypeBateau implements Serializable, UtilisateurNombre {
         //RECUPERATION DES PROPERTIES
         
         Double nombreToInt = Double.parseDouble(propServeur.getProperty("sommeilThread"));
-        trg = new ThreadRandomGenerator(this, 1, 4, 3, nombreToInt.intValue());
+        ThreadRandomGen = new ThreadRandomGenerator(this, 1, 4, 3, nombreToInt.intValue());
         
         nombreToInt = Double.parseDouble(propServeur.getProperty("nombreAleatoire1"));
         nbAlea1 = nombreToInt.intValue();
@@ -54,7 +54,7 @@ public class TypeBateau implements Serializable, UtilisateurNombre {
     }
     
     public void run(){
-        trg.start();
+        ThreadRandomGen.start();
     }
     
     //MODIFICATION DE LA PROPRIETE LIEE

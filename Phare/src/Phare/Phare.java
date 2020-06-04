@@ -22,9 +22,9 @@ public class Phare extends javax.swing.JFrame {
     private final String repertoireCourant;
     private final String separateur;
     
-    private TypeBateau kobb;
-    private BateauBean bb;
-    private NotifBean nb;
+    private TypeBateau TypeBateauBean;
+    private BateauBean BateauBeann;
+    private NotifBean NotifBeann;
     
     @SuppressWarnings("static-access")
     public Phare() {
@@ -48,7 +48,7 @@ public class Phare extends javax.swing.JFrame {
         
         //CREATION DES BEANS
         try{
-            kobb = (TypeBateau) Beans.instantiate(null, "PhareBeans.TypeBateau");
+            TypeBateauBean = (TypeBateau) Beans.instantiate(null, "PhareBeans.TypeBateau");
         }
         catch(ClassNotFoundException e){
             fichierLog.ecritLigne("Classe TypeBateau non trouvée");
@@ -58,7 +58,7 @@ public class Phare extends javax.swing.JFrame {
         }
         
         try{
-            bb = (BateauBean) Beans.instantiate(null, "PhareBeans.BateauBean");
+            BateauBeann = (BateauBean) Beans.instantiate(null, "PhareBeans.BateauBean");
         }
         catch(ClassNotFoundException e){
             fichierLog.ecritLigne("Classe BateauBean non trouvée");
@@ -68,7 +68,7 @@ public class Phare extends javax.swing.JFrame {
         }
         
         try{
-            nb = (NotifBean) Beans.instantiate(null, "PhareBeans.NotifBean");
+            NotifBeann = (NotifBean) Beans.instantiate(null, "PhareBeans.NotifBean");
         }
         catch(ClassNotFoundException e){
             fichierLog.ecritLigne("Classe NotifBean non trouvée");
@@ -77,17 +77,17 @@ public class Phare extends javax.swing.JFrame {
             fichierLog.ecritLigne("Fichier de sérialisation non trouvé");
         }
         
-        kobb.addPropertyChangeListener(bb);
-        bb.addAlertBoatEventListener(nb);
+        TypeBateauBean.addPropertyChangeListener(BateauBeann);
+        BateauBeann.addAlertBoatEventListener(NotifBeann);
         
         dlmAttente = new DefaultListModel();
         dlmAttente.addElement("Peche/BE");
         dlmAttente.addElement("Plaisance/UK");
-        dlmAttente.addElement("Peche/UK");
+        dlmAttente.addElement("Peche/FR");
         this.ListeAttente.setModel(dlmAttente);
         
         //DEMARRAGE DE L'ARRIVEE ALEATOIRE DES BATEAUX
-        kobb.run();
+        TypeBateauBean.run();
     }
 
     @SuppressWarnings("unchecked")
