@@ -462,3 +462,11 @@
 [04/06/20 13:36] : Nous avons chargé le fichier properties.
 [04/06/20 18:59] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
 [04/06/20 18:59] : Nous avons chargé le fichier properties.
+[05/06/20 00:07] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[05/06/20 00:07] : Nous avons chargé le fichier properties.
+[05/06/20 00:08] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[05/06/20 00:08] : Nous avons chargé le fichier properties.
+[05/06/20 00:10] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[05/06/20 00:10] : Nous avons chargé le fichier properties.
+[05/06/20 09:40] : C:\Users\Régis\Resilio Sync\1. Info. de Gestion\2ème Année\Java\Laboratoire\InpresHarbour\Phare\src\Properties\ServeurProperties.properties
+[05/06/20 09:40] : Nous avons chargé le fichier properties.

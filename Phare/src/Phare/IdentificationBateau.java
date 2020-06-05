@@ -150,7 +150,8 @@ public class IdentificationBateau extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BoutonConfirmerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonConfirmerActionPerformed
-        try {
+        try 
+        {
             float lg = parseFloat (this.LabelLongueurBateau.getText());
             String Identification;
             Identification = LabelTypeBateau.getText();

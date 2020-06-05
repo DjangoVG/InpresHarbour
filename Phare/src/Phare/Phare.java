@@ -372,8 +372,8 @@ public class Phare extends javax.swing.JFrame {
     private void BoutonAutorisationEntreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAutorisationEntreeActionPerformed
         String msg = LabelBateauIdentifie.getText();
         String rep = cli.sendString (msg);
-        System.out.println("Je reçois un message : " + rep);
-        if ("Erreur".equals(rep)){
+        if ("Erreur".equals(rep))
+        {
             LabelBateauEntreRade.setText("Le bateau est déjà amarré");
             BoutonSuivant.setEnabled(true);
         }

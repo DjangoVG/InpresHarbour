@@ -239,7 +239,7 @@
                               <EmptySpace min="-2" pref="258" max="-2" attributes="0"/>
                           </Group>
                           <Component id="TableBateauScroll" alignment="0" pref="632" max="32767" attributes="0"/>
-                          <Component id="BoutonBateauAmarré" max="32767" attributes="0"/>
+                          <Component id="BoutonBateauAmarre" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -332,7 +332,7 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="TableBateauScroll" min="-2" pref="313" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="BoutonBateauAmarré" min="-2" max="-2" attributes="0"/>
+                      <Component id="BoutonBateauAmarre" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -522,13 +522,13 @@
         <Property name="text" type="java.lang.String" value="Bateau(x) en entr&#xe9;e(s)"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="BoutonBateauAmarr&#xe9;">
+    <Component class="javax.swing.JButton" name="BoutonBateauAmarre">
       <Properties>
         <Property name="text" type="java.lang.String" value="Bateau amarr&#xe9;"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BoutonBateauAmarr&#xe9;ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BoutonBateauAmarreActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>

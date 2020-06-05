@@ -1,0 +1,18 @@
+Compilation + run de l'application
+// -------------------------------------
+
+javac -d . Phare/*.java Capitainerie/*.java InpresHarbourLibrary/*.java
+java  InpresHarbour/Capitainerie
+
+
+Executer JAR + création JAR
+// -------------------------------------
+
+jar cvf Capitainerie.jar Phare/*.java Capitainerie/*.java InpresHarbourLibrary/*.java
+
+Manifest
+// -------------------------------------
+
+jar cvfm Capitainerie.jar manifeste.txt Capitainerie/*.java InpresHarbourLibrary/*.java
+
+java -jar Capitainerie.jar
